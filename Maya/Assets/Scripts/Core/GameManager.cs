@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
         Debug.Log($"Maya piensa: {behaviour.dialogue}");
 
         // Sound Effect
-        if (behaviour.soundEffect != null) AudioManager.Instance.PlaySFX(behaviour.soundEffect);
+        if (behaviour.soundEffect != null) AudioManager.Instance.Play3DSFX(behaviour.soundEffect, item.transform.position); ;
 
         // Tasks and Clues
         if (behaviour.isClue) AddClue(behaviour.idItem);

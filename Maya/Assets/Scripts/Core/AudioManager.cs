@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
@@ -6,8 +7,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource sfxSource;
     [SerializeField] private AudioSource musicSource;
 
-    [Header("Music")]
-    [SerializeField] private AudioClip menuMusic;
+    [SerializeField] private AudioMixer mixer;
+
 
     #region Singleton
     public static AudioManager Instance { get; private set; }
@@ -47,5 +48,17 @@ public class AudioManager : MonoBehaviour
         if (clip == null) return;
 
         sfxSource.PlayOneShot(clip);
+    }
+
+    public void Play3DSFX(AudioClip clip, Vector3 position)
+    {
+        if (clip == null) return;
+        AudioSource.PlayClipAtPoint(clip, position);
+    }
+
+    public void UpdateRoomContext(RoomData_SO roomData)
+    {
+        AudioMixerSnapshot s = mixer.FindSnapshot("Snapshot_" + roomData.roomID);
+        if (s != null) s.TransitionTo(0.5f);
     }
 }

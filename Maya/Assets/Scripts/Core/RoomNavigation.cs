@@ -1,12 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public struct RoomSetup
+{
+    public GameObject room;
+    public RoomData_SO data;
+
+}
 public class RoomNavigation : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> rooms;
     private int currentIndex = 0;
-    [SerializeField] private AudioClip roomAmbience;
-
+    [SerializeField] private List<RoomSetup> roomList;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,26 +22,26 @@ public class RoomNavigation : MonoBehaviour
 
     public void NextRoom()
     {
-        currentIndex = (currentIndex + 1) % rooms.Count;
+        currentIndex = (currentIndex + 1) % roomList.Count;
         ShowRoom(currentIndex);
     }
 
     public void PreviousRoom()
     {
-        currentIndex = (currentIndex - 1 + rooms.Count) % rooms.Count;
+        currentIndex = (currentIndex - 1 + roomList.Count) % roomList.Count;
         ShowRoom(currentIndex);
     }
 
     private void ShowRoom(int index)
     {
-        AudioManager.Instance.PlayRoomAmbience(roomAmbience);
-
-        for (int i = 0; i < rooms.Count; i++)
+        for (int i = 0; i < roomList.Count; i++)
         {
-            rooms[i].SetActive(i == index);
+            roomList[i].room.SetActive(i == index);
         }
 
+        AudioManager.Instance.UpdateRoomContext(roomList[index].data);
 
-        Debug.Log("Has entrado en: " + rooms[index].name);
+        Debug.Log("Has entrado en: " + roomList[index].data.name);
     }
 }
+
