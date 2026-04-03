@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private float typingSpeed = 0.05f;
+    [SerializeField] private AudioClip typingSound;
 
     private Coroutine typingCoroutine;
     private bool isTyping = false;
@@ -64,9 +65,18 @@ public class DialogueManager : MonoBehaviour
         isTyping = true;
         dialogueText.text = "";
 
+        int charCount = 0;
         foreach (char letter in line.ToCharArray())
         {
             dialogueText.text += letter;
+
+            if (charCount % 2 == 0 && typingSound != null)
+            {
+                AudioManager.Instance.PlayDialogueSFX(typingSound);
+            }
+
+            charCount++;
+
             yield return new WaitForSeconds(typingSpeed);
         }
 

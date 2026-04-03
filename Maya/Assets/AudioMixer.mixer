@@ -238,6 +238,7 @@ AudioMixerController:
     - 2cd7fd0e2cdff49418c4d56d16270213
     - a1a1567da555ed144ae9d1b7ce3d5f15
     - 865a564e94ff8f24bacdf33a5f5ec5dd
+    - f38b8b9712c923b49b978d74206105f9
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 4585001789403488104}
@@ -257,6 +258,7 @@ AudioMixerGroupController:
   - {fileID: -1730391429875084983}
   - {fileID: -1755884620627653728}
   - {fileID: -3317693495839111616}
+  - {fileID: 5548276605635788983}
   m_Volume: f3f9778a5ae79c341a7b5eae01136a35
   m_Pitch: c1d3098d4f5a88b45946411d08d80543
   m_Send: 00000000000000000000000000000000
@@ -404,6 +406,39 @@ AudioMixerSnapshotController:
     1c64e16e75fb03a4e8c1cf4d10950c51: -10.139159
     126211cfd8c9b0a49a89d1b00cd4380a: -10.139159
   m_TransitionOverrides: {}
+--- !u!243 &5548276605635788983
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Maya
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: f38b8b9712c923b49b978d74206105f9
+  m_Children: []
+  m_Volume: 760a14353ed108f4d8c9d3f27c73df28
+  m_Pitch: cd18156f33acf0f47a0399e86e6fbff6
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 5987797888838611743}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &5987797888838611743
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 23875dd600b47b246b531317712b2743
+  m_EffectName: Attenuation
+  m_MixLevel: a34e72be4510cbc409c9cffa8bf3f69c
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &7324854527921600383
 AudioMixerEffectController:
   m_ObjectHideFlags: 3

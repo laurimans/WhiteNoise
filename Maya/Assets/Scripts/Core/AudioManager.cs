@@ -50,6 +50,22 @@ public class AudioManager : MonoBehaviour
         sfxSource.PlayOneShot(clip);
     }
 
+    public void PlayDialogueSFX(AudioClip clip, bool randomizePitch = true)
+    {
+        if (clip == null) return;
+
+        if (randomizePitch)
+        {
+            sfxSource.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
+        }
+        else
+        {
+            sfxSource.pitch = 1f;
+        }
+
+        sfxSource.PlayOneShot(clip);
+    }
+
     public void Play3DSFX(AudioClip clip, Vector3 position)
     {
         if (clip == null) return;
@@ -59,6 +75,6 @@ public class AudioManager : MonoBehaviour
     public void UpdateRoomContext(RoomData_SO roomData)
     {
         AudioMixerSnapshot s = mixer.FindSnapshot("Snapshot_" + roomData.roomID);
-        if (s != null) s.TransitionTo(0.5f);
+        if (s != null) s.TransitionTo(0f);
     }
 }

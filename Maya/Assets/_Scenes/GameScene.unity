@@ -1397,7 +1397,7 @@ AudioSource:
   m_GameObject: {fileID: 1125337252}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 8544990636160243660, guid: 452e16d6b79d9af448c7dfa64424508a, type: 2}
+  OutputAudioMixerGroup: {fileID: 5548276605635788983, guid: 452e16d6b79d9af448c7dfa64424508a, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
@@ -1494,7 +1494,7 @@ AudioSource:
   m_GameObject: {fileID: 1125337252}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 5548276605635788983, guid: 452e16d6b79d9af448c7dfa64424508a, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
@@ -1542,7 +1542,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2037,6 +2037,8 @@ MonoBehaviour:
   dialoguePanel: {fileID: 198227767}
   dialogueText: {fileID: 755318130}
   typingSpeed: 0.05
+  typingSound: {fileID: 8300000, guid: 4166237faa6a0b6498d7c14c26fae472, type: 3}
+  volume: 0.5
 --- !u!1 &1732153752
 GameObject:
   m_ObjectHideFlags: 0
