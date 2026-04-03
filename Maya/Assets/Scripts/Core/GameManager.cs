@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public List<Day_SO> daysList = new List<Day_SO>();
     public List<ItemBehaviour> currentObjectBehaviourList = new List<ItemBehaviour>();
 
+    
+
     #region Singleton
     public static GameManager Instance { get; private set; }
 
@@ -72,7 +74,7 @@ public class GameManager : MonoBehaviour
         Debug.Log($"Maya piensa: {behaviour.dialogue}");
 
         // Sound Effect
-
+        if (behaviour.soundEffect != null) AudioManager.Instance.PlaySFX(behaviour.soundEffect);
 
         // Tasks and Clues
         if (behaviour.isClue) AddClue(behaviour.idItem);

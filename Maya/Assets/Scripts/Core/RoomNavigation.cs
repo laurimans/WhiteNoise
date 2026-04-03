@@ -5,6 +5,7 @@ public class RoomNavigation : MonoBehaviour
 {
     [SerializeField] private List<GameObject> rooms;
     private int currentIndex = 0;
+    [SerializeField] private AudioClip roomAmbience;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,10 +28,13 @@ public class RoomNavigation : MonoBehaviour
 
     private void ShowRoom(int index)
     {
+        AudioManager.Instance.PlayRoomAmbience(roomAmbience);
+
         for (int i = 0; i < rooms.Count; i++)
         {
             rooms[i].SetActive(i == index);
         }
+
 
         Debug.Log("Has entrado en: " + rooms[index].name);
     }
