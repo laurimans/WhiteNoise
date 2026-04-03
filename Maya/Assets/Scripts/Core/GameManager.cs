@@ -19,8 +19,6 @@ public class GameManager : MonoBehaviour
     public List<Day_SO> daysList = new List<Day_SO>();
     public List<ItemBehaviour> currentObjectBehaviourList = new List<ItemBehaviour>();
 
-    [SerializeField] private InputManager InputManager;
-
     #region Singleton
     public static GameManager Instance { get; private set; }
 
@@ -44,9 +42,9 @@ public class GameManager : MonoBehaviour
     {
         StartNewDay(daysList[0]); // Day 1: Sunday
 
-        if (InputManager != null)
+        if (InputManager.Instance != null)
         {
-            InputManager.OnInteractableItemClicked += InteractionWithItem;
+            InputManager.Instance.OnInteractableItemClicked += InteractionWithItem;
         }
 
 
@@ -66,6 +64,45 @@ public class GameManager : MonoBehaviour
 
     private void InteractionWithItem(InteractableObject item)
     {
+        ItemBehaviour behaviour = currentDay.itemBehaviour.Find(x => x.idItem == item.GetID());
+
+        if (behaviour == null) return;
+
+        // Dialogue
+        Debug.Log($"Maya piensa: {behaviour.dialogue}");
+
+        // Sound Effect
+
+
+        // Tasks and Clues
+        if (behaviour.isClue) AddClue(behaviour.idItem);
+        if (behaviour.isTask) AddTaskDone(behaviour.idItem);
+
+        if (behaviour.isDayStateChanger) CheckEndDayPhase();
+
         Debug.Log("Has interactuado con:" + item.name);
+    }
+
+    private void AddClue(string clueId)
+    {
+        cluesFound++;
+    }
+
+    private void CheckEndDayPhase()
+    {
+
+    }
+
+    private void AddTaskDone(string taskId)
+    {
+        tasksDone++;
+    }
+
+    private void OnDestroy()
+    {
+        if (InputManager.Instance != null)
+        {
+            InputManager.Instance.OnInteractableItemClicked -= InteractionWithItem;
+        }
     }
 }
