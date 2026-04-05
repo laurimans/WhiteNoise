@@ -20,11 +20,13 @@ MonoBehaviour:
     dialogue: "Es muy tarde, ma\xF1ana tengo que trabajar."
     isTask: 0
     isClue: 0
+    isDayStateChanger: 0
     soundEffect: {fileID: 0}
     specialSprite: {fileID: 0}
   - idItem: wc
     dialogue: 
     isTask: 0
     isClue: 0
+    isDayStateChanger: 0
     soundEffect: {fileID: 8300000, guid: 091022a6592d0274e8268b6541f72fbd, type: 3}
     specialSprite: {fileID: 0}

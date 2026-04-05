@@ -1,25 +1,39 @@
-using System.Collections.Generic;
-using UnityEngine;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
-public enum Day
+public enum GamePhase
 {
-    Sunday,
-    Monday,
-    Tuesday,
-    Wednesday, 
-    Thursday,
-    Friday
+    SundayNight,
+    MondayMorning,
+    MondayNight,
+    TuesdayMorning,
+    TuesdayNight,
+    WednesdayMorning,
+    WednesdayNight,
+    ThursdayMorning,
+    Final
 }
+
+
+
 public class GameManager : MonoBehaviour
 {
-    public Day_SO currentDay { get; private set; }
     public int cluesFound { get; private set; } = 0;
     public int tasksDone { get; private set; } = 0;
-    public List<Day_SO> daysList = new List<Day_SO>();
-    public List<ItemBehaviour> currentObjectBehaviourList = new List<ItemBehaviour>();
 
-    
+    [SerializeField] private List<Day_SO> daysList;
+
+    // Day Phase
+    private GamePhase currentPhase;
+    private Day_SO currentPhaseData;
+    private bool isNight;
+
+    //Eventos
+    public static event Action<GamePhase> OnPhaseChanged;
+
+
 
     #region Singleton
     public static GameManager Instance { get; private set; }
@@ -42,74 +56,71 @@ public class GameManager : MonoBehaviour
     
     void Start()
     {
-        StartNewDay(daysList[0]); // Day 1: Sunday
+        LoadDayPhase(0);
 
         if (InputManager.Instance != null)
-        {
             InputManager.Instance.OnInteractableItemClicked += InteractionWithItem;
-        }
-
-
     }
 
-    private void StartNewDay(Day_SO dayToStart)
+    private void LoadDayPhase(GamePhase _currentPhase)
     {
+        currentPhase = _currentPhase;
+        currentPhaseData = daysList[(int)currentPhase];
+
         // Reiniciar los contadores
         tasksDone = 0;
         cluesFound = 0;
 
-        //currentObjectBehaviourList = dayToStart.itemBehaviour;
-        currentDay = dayToStart;
 
-        
+        OnPhaseChanged?.Invoke(currentPhase);
+        Debug.Log($"Iniciando: {currentPhase.ToString()}");
     }
+
 
     private void InteractionWithItem(InteractableObject item)
     {
-        ItemBehaviour behaviour = currentDay.itemBehaviour.Find(x => x.idItem == item.GetID());
+        item.OnObjectClicked();
 
-        if (behaviour == null) return;
 
-        // Dialogue
-        Debug.Log($"Maya piensa: {behaviour.dialogue}");
-
-        if (!string.IsNullOrEmpty(behaviour.dialogue))
-        {
-            DialogueManager.Instance.ShowDialogue(behaviour.dialogue);
-        }
+        // Dialogo
+        //if (!string.IsNullOrEmpty(behaviour.dialogue))
+            //DialogueManager.Instance.ShowDialogue(behaviour.dialogue);
+        
 
         // Sound Effect
-        if (behaviour.soundEffect != null) AudioManager.Instance.Play3DSFX(behaviour.soundEffect, item.transform.position); ;
+        //if (behaviour.soundEffect != null) 
+            //AudioManager.Instance.Play3DSFX(behaviour.soundEffect, item.transform.position); ;
 
         // Tasks and Clues
-        if (behaviour.isClue) AddClue(behaviour.idItem);
-        if (behaviour.isTask) AddTaskDone(behaviour.idItem);
-
-        if (behaviour.isDayStateChanger) CheckEndDayPhase();
 
         Debug.Log("Has interactuado con:" + item.name);
     }
 
-    private void AddClue(string clueId)
+    public void AddClue(string clueId)
     {
         cluesFound++;
     }
 
-    private void CheckEndDayPhase()
-    {
-
-    }
-
-    private void AddTaskDone(string taskId)
+    public void AddTaskDone(string taskId)
     {
         tasksDone++;
+        Debug.Log($"Tarea completada: {taskId}. Total: {tasksDone}/{currentPhaseData.tasksNumber}");
     }
+
+    private void CheckEndDayPhase()
+    {
+        if (tasksDone== currentPhaseData.tasksNumber)
+        {
+            // Pemitir acabar la fase
+        }
+    }
+
+
 
     private void OnDestroy()
     {
         if (InputManager.Instance != null)
-        {
             InputManager.Instance.OnInteractableItemClicked -= InteractionWithItem;
-        }
+        
     }
 }

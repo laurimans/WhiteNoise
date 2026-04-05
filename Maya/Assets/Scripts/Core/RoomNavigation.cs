@@ -6,14 +6,13 @@ public struct RoomSetup
 {
     public GameObject room;
     public RoomData_SO data;
-
 }
+
 public class RoomNavigation : MonoBehaviour
 {
     private int currentIndex = 0;
     [SerializeField] private List<RoomSetup> roomList;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentIndex = 0;
@@ -38,10 +37,10 @@ public class RoomNavigation : MonoBehaviour
         {
             roomList[i].room.SetActive(i == index);
         }
-
-        AudioManager.Instance.UpdateRoomContext(roomList[index].data);
-
-        Debug.Log("Has entrado en: " + roomList[index].data.name);
+        if (roomList[index].data != null)
+        {
+            AudioManager.Instance.UpdateRoomContext(roomList[index].data);
+            Debug.Log("Has entrado en: " + roomList[index].data.name);
+        }
     }
 }
-
