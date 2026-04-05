@@ -9,22 +9,16 @@ public class InteractableObject : MonoBehaviour
     [SerializeField] private InteractableData[] phasesData;
 
     private SpriteRenderer sRenderer;
-    private GamePhase currentPhase;
-    private int currentDialogueIndex;
+    private GamePhase currentPhase = 0;
+    private int currentDialogueIndex = 0;
 
-    void OnEnable()
-    {
-        GameManager.OnPhaseChanged += RefreshObject;
-    }
 
-    void OnDisable()
-    {
-        GameManager.OnPhaseChanged -= RefreshObject;
-    }
 
     void Awake()
     {
         sRenderer = GetComponent<SpriteRenderer>();
+
+        GameManager.OnPhaseChanged += RefreshObject;
     }
 
     void Start()
@@ -44,48 +38,72 @@ public class InteractableObject : MonoBehaviour
         currentPhase = _currentPhase;
         currentDialogueIndex = 0;
 
-        Sprite sprite = phasesData[(int)currentPhase].initialSprite;
-        if (sprite!=null) sRenderer.sprite = sprite;
+        if (phasesData != null && (int)currentPhase < phasesData.Length && phasesData[(int)currentPhase] != null)
+        {
+            Sprite sprite = phasesData[(int)currentPhase].initialSprite;
+            this.gameObject.SetActive(true);
+            if (sprite != null)
+            {
+                sRenderer.sprite = sprite;
+            }
+            else
+            {
+                sRenderer.sprite = null;
+            }
+        }
+        else
+        {
+            Debug.LogWarning($"El objeto {itemID} no tiene datos asignados para la fase {currentPhase}");
+            this.gameObject.SetActive(false);
+        }
         
     }
 
     public void OnObjectClicked()
     {
-        InteractableData data = phasesData[(int)currentPhase];
-
-        // Dialogues
-        if (data.dialoguesList.Count > 0)
+        if (phasesData != null && (int)currentPhase < phasesData.Length && phasesData[(int)currentPhase] != null)
         {
-            string textToSay = "";
-            if (currentDialogueIndex < data.dialoguesList.Count)
+            InteractableData data = phasesData[(int)currentPhase];
+
+            // Dialogues
+            if (data.dialoguesList.Count > 0)
             {
-                textToSay = data.dialoguesList[currentDialogueIndex];
-                currentDialogueIndex++;
+                string textToSay = "";
+                if (currentDialogueIndex < data.dialoguesList.Count)
+                {
+                    textToSay = data.dialoguesList[currentDialogueIndex];
+                    currentDialogueIndex++;
+                }
+                else
+                {
+                    textToSay = data.dialoguesList[data.dialoguesList.Count - 1];
+                }
+
+                DialogueManager.Instance.ShowDialogue(textToSay);
+                Debug.Log($"{itemID}: {textToSay}");
             }
-            else
+
+            // Sound
+            if (data.sound != null)
             {
-                textToSay = data.dialoguesList[data.dialoguesList.Count - 1];
+                AudioManager.Instance.PlaySFX(data.sound);
             }
 
-            DialogueManager.Instance.ShowDialogue(textToSay);
-            Debug.Log($"{itemID}: {textToSay}");
-        }
+            // Sprite change
+            if (data.otherSprite != null && sRenderer.sprite != data.otherSprite)
+            {
+                sRenderer.sprite = data.otherSprite;
+            }
 
-        // Sound
-        if (data.sound != null)
-        {
-            AudioManager.Instance.PlaySFX(data.sound);
+            // Clue or Task
+            if (data.isTask) GameManager.Instance.AddTaskDone(itemID);
+            if (data.isClue) GameManager.Instance.AddClue(itemID);
         }
+    }
 
-        // Sprite change
-        if (data.otherSprite != null && sRenderer.sprite != data.otherSprite)
-        {
-            sRenderer.sprite = data.otherSprite;
-        }
-
-        // Clue or Task
-        if (data.isTask) GameManager.Instance.AddTaskDone(itemID);
-        if (data.isClue) GameManager.Instance.AddClue(itemID);
+    void OnDestroy()
+    {
+        GameManager.OnPhaseChanged -= RefreshObject;
     }
 
 }

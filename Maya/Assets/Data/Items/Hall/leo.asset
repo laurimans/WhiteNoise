@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0546ed498f1d5ae49b165140270459f1, type: 3}
-  m_Name: sundayN_door
+  m_Name: leo
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
   initialSprite: {fileID: 0}
   otherSprite: {fileID: 0}
   sound: {fileID: 0}
   dialoguesList:
-  - "No puedo irme ahora, ma\xF1ana trabajo."
+  - Como hecho de menos a leo
+  - "Que bonito qued\xF3 el cuadro que pinte de Leo."
   isTask: 0
   isClue: 0

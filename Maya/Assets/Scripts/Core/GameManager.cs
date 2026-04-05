@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<Day_SO> daysList;
 
     // Day Phase
-    private GamePhase currentPhase;
+    private GamePhase currentPhase = 0;
     private Day_SO currentPhaseData;
     private bool isNight;
 

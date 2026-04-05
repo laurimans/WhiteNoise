@@ -3265,6 +3265,38 @@ PrefabInstance:
       propertyPath: itemID
       value: hall_leo
       objectReference: {fileID: 0}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e093a821421d6924e8e21ae17fedeba5, type: 2}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e093a821421d6924e8e21ae17fedeba5, type: 2}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e093a821421d6924e8e21ae17fedeba5, type: 2}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e093a821421d6924e8e21ae17fedeba5, type: 2}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e093a821421d6924e8e21ae17fedeba5, type: 2}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e093a821421d6924e8e21ae17fedeba5, type: 2}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e093a821421d6924e8e21ae17fedeba5, type: 2}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e093a821421d6924e8e21ae17fedeba5, type: 2}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2042
@@ -4234,6 +4266,22 @@ PrefabInstance:
       propertyPath: itemID
       value: hall_door
       objectReference: {fileID: 0}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 74c7944b33bb9274d8082db87d1d51de, type: 2}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 74c7944b33bb9274d8082db87d1d51de, type: 2}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 74c7944b33bb9274d8082db87d1d51de, type: 2}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 74c7944b33bb9274d8082db87d1d51de, type: 2}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.6689
