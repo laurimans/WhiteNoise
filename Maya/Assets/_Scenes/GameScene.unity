@@ -3837,7 +3837,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1724327937}
   - component: {fileID: 1724327936}
-  - component: {fileID: 1724327938}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3874,22 +3873,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1724327938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724327935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ce29b99c7c30ca4384e8bb605ee0bac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
-  dialoguePanel: {fileID: 198227767}
-  dialogueText: {fileID: 755318130}
-  typingSpeed: 0.05
-  typingSound: {fileID: 8300000, guid: 4166237faa6a0b6498d7c14c26fae472, type: 3}
 --- !u!1 &1732153752
 GameObject:
   m_ObjectHideFlags: 0
@@ -5091,6 +5074,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
   m_PrefabInstance: {fileID: 2037128929}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2043548569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2043548572}
+  - component: {fileID: 2043548571}
+  - component: {fileID: 2043548570}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2043548570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043548569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ce29b99c7c30ca4384e8bb605ee0bac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  dialoguePanel: {fileID: 198227767}
+  dialogueText: {fileID: 755318130}
+  typingSpeed: 0.05
+  typingSound: {fileID: 8300000, guid: 4166237faa6a0b6498d7c14c26fae472, type: 3}
+--- !u!114 &2043548571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043548569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a548ee1501f234893785a8ec563b4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorManager
+  defaultCursor: {fileID: 2800000, guid: fdc9399e7f1eaf84a84663daa19f0b0f, type: 3}
+  interactableCursor: {fileID: 2800000, guid: 5c4088bc2172aea4691853a9a6bbdba7, type: 3}
+  hotSpot: {x: 0, y: 0}
+--- !u!4 &2043548572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043548569}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.42249, y: -1.2923, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2063044068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5413,3 +5460,4 @@ SceneRoots:
   - {fileID: 256601696}
   - {fileID: 1125337257}
   - {fileID: 830409008}
+  - {fileID: 2043548572}

@@ -101,6 +101,19 @@ public class InteractableObject : MonoBehaviour
         }
     }
 
+    public void OnMouseEnter()
+    {
+        if (!UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
+        {
+            CursorManager.Instance.SetInteractableCursor();
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        CursorManager.Instance.SetDefaultCursor();
+    }
+
     void OnDestroy()
     {
         GameManager.OnPhaseChanged -= RefreshObject;
