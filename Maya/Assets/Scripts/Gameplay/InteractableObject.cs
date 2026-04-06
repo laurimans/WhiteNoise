@@ -6,13 +6,18 @@ using UnityEngine;
 public class InteractableObject : MonoBehaviour
 {
     [SerializeField] private string itemID;
+
+    [Header("Ordering System")]
+    [SerializeField] private GameObject objectToActivateGO;
+
+    private bool wasInteractedInThisPhase = false;
+
     [SerializeField] private InteractableData[] phasesData;
 
     private SpriteRenderer sRenderer;
     private GamePhase currentPhase = 0;
+    private GamePhase lastPhase;
     private int currentDialogueIndex = 0;
-
-
 
     void Awake()
     {
@@ -25,79 +30,147 @@ public class InteractableObject : MonoBehaviour
     {
         if (itemID == null) Debug.LogWarning($"El item {itemID} no tiene id");
         if (sRenderer == null) Debug.LogError($"El item {itemID} no tiene spriteRenderer");
-
+        
         // Comprobar que tenga collider
 
         if (phasesData.Length != Enum.GetValues(typeof(GamePhase)).Length) Debug.LogError($"El item {itemID} no tiene todos los comportamientos");
+    }
+
+    void OnEnable()
+    {
+        if (GameManager.Instance != null)
+        {
+            RefreshObject(currentPhase);
+        }
     }
 
     public string GetID() => itemID;
 
     private void RefreshObject (GamePhase _currentPhase)
     {
-        currentPhase = _currentPhase;
-        currentDialogueIndex = 0;
-
-        if (phasesData != null && (int)currentPhase < phasesData.Length && phasesData[(int)currentPhase] != null)
+        if (_currentPhase != lastPhase) // Cambio de fase
         {
-            Sprite sprite = phasesData[(int)currentPhase].initialSprite;
-            this.gameObject.SetActive(true);
-            if (sprite != null)
-            {
-                sRenderer.sprite = sprite;
-            }
-            else
-            {
-                sRenderer.sprite = null;
-            }
+            currentDialogueIndex = 0;
+            lastPhase = _currentPhase;
+            currentPhase = _currentPhase;
+
+            wasInteractedInThisPhase = false;
+        }
+
+        if (phasesData == null || (int)currentPhase >= phasesData.Length || phasesData[(int)currentPhase] == null)
+        {
+            Debug.Log($"El objeto {itemID} esta desactivado");
+            gameObject.SetActive(false);
+            return;
+        } else
+        {
+            bool isCurrentlyDisabled = phasesData[(int)currentPhase].startDisable;
+            bool finalActiveState = wasInteractedInThisPhase ? !isCurrentlyDisabled : isCurrentlyDisabled;
+
+            HandleObjectActivation(finalActiveState);
+        }  
+    }
+
+    private void HandleObjectActivation(bool shouldBeDisabled)
+    {
+        if (shouldBeDisabled)
+        {
+            Debug.Log($"El objeto {itemID} esta desactivado");
+            gameObject.SetActive(false);
+            return;
+        }
+
+        Sprite sprite = phasesData[(int)currentPhase].initialSprite;
+
+        if (sprite != null)
+        {
+            sRenderer.sprite = sprite;
         }
         else
         {
-            Debug.LogWarning($"El objeto {itemID} no tiene datos asignados para la fase {currentPhase}");
-            this.gameObject.SetActive(false);
+            sRenderer.sprite = null;
         }
-        
+
+        this.gameObject.SetActive(true);
     }
+
 
     public void OnObjectClicked()
     {
-        if (phasesData != null && (int)currentPhase < phasesData.Length && phasesData[(int)currentPhase] != null)
+
+        InteractableData data = phasesData[(int)currentPhase];
+
+        // Dialogues
+        if (data.dialoguesList.Count > 0)
         {
-            InteractableData data = phasesData[(int)currentPhase];
+            HandleDialogue(data);
+        }
 
-            // Dialogues
-            if (data.dialoguesList.Count > 0)
+        // Sound
+        if (data.sound != null)
+        {
+            HandleSoundEffect(data);
+        }
+
+        // Sprite change
+        if (data.otherSprite != null)
+        {
+            HandleSpriteChange(data);
+        }
+
+        if (data.activateOtherItem)
+        {
+            this.wasInteractedInThisPhase = true;
+            this.RefreshObject(currentPhase);
+
+            if (objectToActivateGO != null)
             {
-                string textToSay = "";
-                if (currentDialogueIndex < data.dialoguesList.Count)
+                objectToActivateGO.SetActive(true);
+                InteractableObject nextScript = objectToActivateGO.GetComponent<InteractableObject>();
+                if (nextScript != null)
                 {
-                    textToSay = data.dialoguesList[currentDialogueIndex];
-                    currentDialogueIndex++;
+                    nextScript.wasInteractedInThisPhase = true;
+                    nextScript.RefreshObject(currentPhase);
                 }
-                else
-                {
-                    textToSay = data.dialoguesList[data.dialoguesList.Count - 1];
-                }
-
-                DialogueManager.Instance.ShowDialogue(textToSay);
-                Debug.Log($"{itemID}: {textToSay}");
             }
+        }
 
-            // Sound
-            if (data.sound != null)
-            {
-                AudioManager.Instance.PlaySFX(data.sound);
-            }
+        // Clue or Task
+        if (data.isTask) GameManager.Instance.AddTaskDone(itemID);
+        if (data.isClue) GameManager.Instance.AddClue(itemID);
+        
+    }
 
-            // Sprite change
-            if (data.otherSprite != null && sRenderer.sprite != data.otherSprite)
-            {
-                sRenderer.sprite = data.otherSprite;
-            }
+    private void HandleDialogue(InteractableData data)
+    {
+        string textToSay = "";
+        if (currentDialogueIndex < data.dialoguesList.Count)
+        {
+            textToSay = data.dialoguesList[currentDialogueIndex];
+            currentDialogueIndex++;
+        }
+        else
+        {
+            textToSay = data.dialoguesList[data.dialoguesList.Count - 1];
+        }
 
-            // Clue or Task
-            if (data.isTask) GameManager.Instance.AddTaskDone(itemID);
-            if (data.isClue) GameManager.Instance.AddClue(itemID);
+        DialogueManager.Instance.ShowDialogue(textToSay);
+        //Debug.Log($"{itemID}: {textToSay}");
+    }
+
+    private void HandleSoundEffect(InteractableData data)
+    {
+        AudioManager.Instance.PlaySFX(data.sound);
+    }
+
+    private void HandleSpriteChange(InteractableData data)
+    {
+        if(sRenderer.sprite != data.otherSprite)
+        {
+            sRenderer.sprite = data.otherSprite;
+        } else
+        {
+            sRenderer.sprite = data.initialSprite;
         }
     }
 

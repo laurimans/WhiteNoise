@@ -8,6 +8,8 @@ public class InteractableData : ScriptableObject
     [Header("Visual")]
     public Sprite initialSprite;
     public Sprite otherSprite;
+    public bool startDisable;
+    public bool activateOtherItem;
 
     [Header("Sound")]
     public AudioClip sound;

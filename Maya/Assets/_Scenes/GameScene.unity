@@ -135,7 +135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &3591913
 SpriteRenderer:
   serializedVersion: 2
@@ -813,6 +813,10 @@ PrefabInstance:
       propertyPath: itemID
       value: living_book
       objectReference: {fileID: 0}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: dee0ecf153cc86e4d9e79fdb396d2ce2, type: 2}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1380,6 +1384,18 @@ PrefabInstance:
       propertyPath: itemID
       value: living_bookTable
       objectReference: {fileID: 0}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: objectToActivate
+      value: 
+      objectReference: {fileID: 1295732108}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: objectToActivateGO
+      value: 
+      objectReference: {fileID: 1295732107}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: ecc9cc49d27cfe241b74a65656976094, type: 2}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -2920,6 +2936,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
   m_PrefabInstance: {fileID: 1225498409}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1295732107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1425736612035570046, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+  m_PrefabInstance: {fileID: 349212168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1295732108 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+  m_PrefabInstance: {fileID: 349212168}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295732107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ef27dbd49e0ae4cbcaf005d3b653d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
 --- !u!1001 &1301549997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3669,7 +3701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1598618645
 SpriteRenderer:
   serializedVersion: 2
@@ -4339,6 +4371,10 @@ PrefabInstance:
       propertyPath: itemID
       value: kitchen_list
       objectReference: {fileID: 0}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 068153382cb9f7340bd32a97a181738c, type: 2}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0545
@@ -5236,6 +5272,10 @@ PrefabInstance:
       propertyPath: itemID
       value: bedroom_board
       objectReference: {fileID: 0}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 6b272b669d73d394aa6cedd3ec34ea84, type: 2}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     private bool isTyping = false;
     private bool isLineComplete = false;
     private string currentFullText = "";
+    private float timeStarted = 0f;
 
     #region Singleton
     public static DialogueManager Instance { get; private set; }
@@ -52,6 +53,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (string.IsNullOrEmpty(text)) return;
 
+        timeStarted = Time.time;
         currentFullText = text;
         dialoguePanel.SetActive(true);
         isLineComplete = false;
@@ -94,6 +96,7 @@ public class DialogueManager : MonoBehaviour
     public void OnSubmitPressed()
     {
         if (!dialoguePanel.activeSelf) return;
+        if (Time.time - timeStarted < 0.1f) return;
 
         if (isTyping)
         {

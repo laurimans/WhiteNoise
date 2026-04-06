@@ -7,8 +7,6 @@ public class Day_SO : ScriptableObject
     public int id_day;
     public int tasksNumber;
     public int cluesNumber;
-
-    public List<InteractableObject> dayItems;
 }
 
 
