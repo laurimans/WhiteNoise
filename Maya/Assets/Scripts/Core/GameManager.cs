@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int tasksDone = 0;
 
     [SerializeField] private List<DayPhaseData> daysList;
+    [SerializeField] private Room[] roomList;
 
     // Day Phase
     private GamePhase currentPhase = 0;
@@ -96,6 +97,8 @@ public class GameManager : MonoBehaviour
         // Reiniciar los contadores
         tasksDone = 0;
         cluesFound = 0;
+
+        AudioManager.Instance.SetupDayAmbience(roomList, currentPhase);
 
 
         OnPhaseChanged?.Invoke(currentPhase);

@@ -230,8 +230,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Room
   roomID: hall
   phasesData:
-  - {fileID: 11400000, guid: 329256a0fafab5a43ae50867534b3206, type: 2}
   - {fileID: 11400000, guid: 3f62d0a1fd5cbd047b8e518c6643a525, type: 2}
+  - {fileID: 11400000, guid: 329256a0fafab5a43ae50867534b3206, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -753,8 +753,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Room
   roomID: bedroom
   phasesData:
-  - {fileID: 11400000, guid: 08e6c5d2a7a0e064a96647f475320126, type: 2}
   - {fileID: 11400000, guid: 3730d2deed789d34fb7a5a5d8f5767e3, type: 2}
+  - {fileID: 11400000, guid: 08e6c5d2a7a0e064a96647f475320126, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -776,7 +776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: itemID
-      value: living_book
+      value: living_bookShelf
       objectReference: {fileID: 0}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[0]'
@@ -1078,8 +1078,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Room
   roomID: kitchen
   phasesData:
-  - {fileID: 11400000, guid: 9f4e5e6037eca924c86180c05985271d, type: 2}
   - {fileID: 11400000, guid: d091b88d0b4dd3a4fac12bff47d87574, type: 2}
+  - {fileID: 11400000, guid: 9f4e5e6037eca924c86180c05985271d, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1528,11 +1528,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 720389695}
+  - {fileID: 2142386706}
   - {fileID: 1765544888}
   - {fileID: 1096121366}
   - {fileID: 2011928505}
-  - {fileID: 2142386706}
-  - {fileID: 720389695}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &855520310
@@ -2275,7 +2275,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -641451216497003778, guid: 452e16d6b79d9af448c7dfa64424508a, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 7a13d2eeb171d254db9cdaa468a6b3b4, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2688,6 +2688,12 @@ MonoBehaviour:
   sfxSource: {fileID: 1125337254}
   musicSource: {fileID: 1125337253}
   mixer: {fileID: 24100000, guid: 452e16d6b79d9af448c7dfa64424508a, type: 2}
+  audioRooms:
+  - {fileID: 720389696}
+  - {fileID: 2142386707}
+  - {fileID: 1765544889}
+  - {fileID: 1096121367}
+  - {fileID: 2011928506}
 --- !u!4 &1125337257
 Transform:
   m_ObjectHideFlags: 0
@@ -3789,8 +3795,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Room
   roomID: living
   phasesData:
-  - {fileID: 11400000, guid: 332a4dec23dc77a4bbc99cacb3226827, type: 2}
   - {fileID: 11400000, guid: c91e0d514e0875f488a8eab82827c998, type: 2}
+  - {fileID: 11400000, guid: 332a4dec23dc77a4bbc99cacb3226827, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -3901,6 +3907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa93ddd896300fd4a9b8c9f85f97862a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  cluesFound: 0
+  tasksDone: 0
   daysList:
   - {fileID: 11400000, guid: 98f6d04c12542bb4dab93cb3968523a1, type: 2}
   - {fileID: 11400000, guid: 98f6d04c12542bb4dab93cb3968523a1, type: 2}
@@ -3911,6 +3919,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 98f6d04c12542bb4dab93cb3968523a1, type: 2}
   - {fileID: 11400000, guid: 98f6d04c12542bb4dab93cb3968523a1, type: 2}
   - {fileID: 11400000, guid: 98f6d04c12542bb4dab93cb3968523a1, type: 2}
+  roomList:
+  - {fileID: 1894324767}
+  - {fileID: 332685262}
+  - {fileID: 3591915}
+  - {fileID: 684289910}
+  - {fileID: 1598618647}
 --- !u!4 &1724327937
 Transform:
   m_ObjectHideFlags: 0
@@ -4627,8 +4641,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Room
   roomID: bathroom
   phasesData:
-  - {fileID: 11400000, guid: 3455b5bb6be7db5478d283fb4e6ed881, type: 2}
   - {fileID: 11400000, guid: b02728a0d029ad74aa803352c1b3849b, type: 2}
+  - {fileID: 11400000, guid: 3455b5bb6be7db5478d283fb4e6ed881, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -4831,7 +4845,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -1730391429875084983, guid: 452e16d6b79d9af448c7dfa64424508a, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 019efb27fac0b3b40ac3b678b93a8060, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.597
   m_Pitch: 1

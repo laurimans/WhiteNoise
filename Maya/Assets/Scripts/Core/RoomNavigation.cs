@@ -27,18 +27,25 @@ public class RoomNavigation : MonoBehaviour
 
     private void ShowRoom(int index)
     {
+        if (index < 0 || index >= roomList.Count || roomList[index] == null) return;
+
         for (int i = 0; i < roomList.Count; i++)
         {
-            roomList[i].SetActive(i == index);
+            if (roomList[i] != null) roomList[i].SetActive(i == index);
         }
+        Room roomComponent = roomList[index].GetComponent<Room>();
 
-        RoomData roomData = roomList[index].GetComponent<Room>().GetPhaseData();
-        string roomID = roomList[index].GetComponent<Room>().GetID();
-
-        if (roomData != null)
+        if (roomComponent != null)
         {
-            AudioManager.Instance.UpdateRoomContext(roomData, roomID);
-            //Debug.Log("Has entrado en: " + roomList[index].name);
+            RoomData roomData = roomComponent.GetPhaseData();
+            string roomID = roomComponent.GetID(); if (roomData != null)
+            {
+                AudioManager.Instance.UpdateRoomContext(roomID);
+            }
+            else
+            {
+                Debug.LogWarning($"La habitación {roomID} no tiene RoomData para esta fase.");
+            }
         }
     }
 }

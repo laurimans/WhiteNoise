@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource musicSource;
 
     [SerializeField] private AudioMixer mixer;
-
+    [SerializeField] private AudioSource[] audioRooms;
 
     #region Singleton
     public static AudioManager Instance { get; private set; }
@@ -28,6 +28,26 @@ public class AudioManager : MonoBehaviour
 
     #endregion
 
+    public void SetupDayAmbience(Room[] rooms, GamePhase gamePhase)
+    {
+        for (int i = 0; i < audioRooms.Length; i++)
+        {
+            if (i >= rooms.Length || rooms[i] == null) continue;
+
+            RoomData data = rooms[i].GetRoomDataAt((int)gamePhase);
+
+            if (data != null && data.ambientClip != null)
+            {
+                audioRooms[i].clip = data.ambientClip;
+                audioRooms[i].loop = true;
+                audioRooms[i].Play();
+            } else
+            {
+                audioRooms[i].clip = null;
+                audioRooms[i].Stop();
+            }
+        }
+    }
     public void PlayMusic(AudioClip clip, bool loop = true)
     {
         if (musicSource.clip == clip) return;
@@ -72,7 +92,7 @@ public class AudioManager : MonoBehaviour
         AudioSource.PlayClipAtPoint(clip, position);
     }
 
-    public void UpdateRoomContext(RoomData roomData, string roomID)
+    public void UpdateRoomContext(string roomID)
     {
         AudioMixerSnapshot s = mixer.FindSnapshot("Snapshot_" + roomID);
         if (s != null) s.TransitionTo(0f);

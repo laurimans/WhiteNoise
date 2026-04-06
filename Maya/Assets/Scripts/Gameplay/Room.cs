@@ -29,6 +29,16 @@ public class Room : MonoBehaviour
     public string GetID() => roomID;
     public RoomData GetPhaseData() => phasesData[(int)currentPhase];
 
+    public RoomData GetRoomDataAt(int index)
+    {
+        if (phasesData == null || index < 0 || index >= phasesData.Length)
+        {
+            return null;
+        }
+        
+        return phasesData[index]; 
+    }
+
     private void RefreshRoom(GamePhase _currentPhase)
     {
         if (_currentPhase != lastPhase) // Cambio de fase
