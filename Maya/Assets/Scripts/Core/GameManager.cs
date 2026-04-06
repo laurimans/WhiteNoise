@@ -13,7 +13,8 @@ public enum GamePhase
     WednesdayMorning,
     WednesdayNight,
     ThursdayMorning,
-    Final
+    Final,
+    None
 }
 
 
@@ -62,6 +63,8 @@ public class GameManager : MonoBehaviour
             InputManager.Instance.OnInteractableItemClicked += InteractionWithItem;
     }
 
+    public GamePhase GetCurrentPhase() => currentPhase;
+
     private void LoadDayPhase(GamePhase _currentPhase)
     {
         currentPhase = _currentPhase;
@@ -80,18 +83,6 @@ public class GameManager : MonoBehaviour
     private void InteractionWithItem(InteractableObject item)
     {
         item.OnObjectClicked();
-
-
-        // Dialogo
-        //if (!string.IsNullOrEmpty(behaviour.dialogue))
-            //DialogueManager.Instance.ShowDialogue(behaviour.dialogue);
-        
-
-        // Sound Effect
-        //if (behaviour.soundEffect != null) 
-            //AudioManager.Instance.Play3DSFX(behaviour.soundEffect, item.transform.position); ;
-
-        // Tasks and Clues
 
         Debug.Log("Has interactuado con:" + item.name);
     }

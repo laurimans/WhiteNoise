@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9bb84335b955fa7428fa5350ed6f6ad6, type: 3}
-  m_Name: bathroom
-  m_EditorClassIdentifier: Assembly-CSharp::RoomData_SO
-  roomID: bathroom
+  m_Name: bedroom_night
+  m_EditorClassIdentifier: Assembly-CSharp::RoomData
+  roomID: 
   ambientClip: {fileID: 0}
+  defaultBackground: {fileID: 0}
+  otherBackgroung: {fileID: 0}

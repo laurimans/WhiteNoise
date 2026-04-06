@@ -72,9 +72,9 @@ public class AudioManager : MonoBehaviour
         AudioSource.PlayClipAtPoint(clip, position);
     }
 
-    public void UpdateRoomContext(RoomData_SO roomData)
+    public void UpdateRoomContext(RoomData roomData, string roomID)
     {
-        AudioMixerSnapshot s = mixer.FindSnapshot("Snapshot_" + roomData.roomID);
+        AudioMixerSnapshot s = mixer.FindSnapshot("Snapshot_" + roomID);
         if (s != null) s.TransitionTo(0f);
     }
 }

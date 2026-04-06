@@ -1,17 +1,11 @@
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
-
-[System.Serializable]
-public struct RoomSetup
-{
-    public GameObject room;
-    public RoomData_SO data;
-}
 
 public class RoomNavigation : MonoBehaviour
 {
     private int currentIndex = 0;
-    [SerializeField] private List<RoomSetup> roomList;
+    [SerializeField] private List<GameObject> roomList;
     
     void Start()
     {
@@ -35,12 +29,16 @@ public class RoomNavigation : MonoBehaviour
     {
         for (int i = 0; i < roomList.Count; i++)
         {
-            roomList[i].room.SetActive(i == index);
+            roomList[i].SetActive(i == index);
         }
-        if (roomList[index].data != null)
+
+        RoomData roomData = roomList[index].GetComponent<Room>().GetPhaseData();
+        string roomID = roomList[index].GetComponent<Room>().GetID();
+
+        if (roomData != null)
         {
-            AudioManager.Instance.UpdateRoomContext(roomList[index].data);
-            Debug.Log("Has entrado en: " + roomList[index].data.name);
+            AudioManager.Instance.UpdateRoomContext(roomData, roomID);
+            Debug.Log("Has entrado en: " + roomList[index].name);
         }
     }
 }

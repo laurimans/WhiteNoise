@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InteractableObject : MonoBehaviour
@@ -9,7 +10,6 @@ public class InteractableObject : MonoBehaviour
 
     [Header("Ordering System")]
     [SerializeField] private GameObject objectToActivateGO;
-
     private bool wasInteractedInThisPhase = false;
 
     [SerializeField] private InteractableData[] phasesData;
@@ -30,10 +30,9 @@ public class InteractableObject : MonoBehaviour
     {
         if (itemID == null) Debug.LogWarning($"El item {itemID} no tiene id");
         if (sRenderer == null) Debug.LogError($"El item {itemID} no tiene spriteRenderer");
-        
-        // Comprobar que tenga collider
+        if (this.GetComponent<BoxCollider2D>() == null) Debug.LogError($"El item {itemID} no tiene Collider");
 
-        if (phasesData.Length != Enum.GetValues(typeof(GamePhase)).Length) Debug.LogError($"El item {itemID} no tiene todos los comportamientos");
+        if (phasesData.Length != Enum.GetValues(typeof(GamePhase)).Length-1) Debug.LogWarning($"El item {itemID} no tiene todos los comportamientos");
     }
 
     void OnEnable()
@@ -61,7 +60,6 @@ public class InteractableObject : MonoBehaviour
         {
             Debug.Log($"El objeto {itemID} esta desactivado");
             gameObject.SetActive(false);
-            return;
         } else
         {
             bool isCurrentlyDisabled = phasesData[(int)currentPhase].startDisable;
@@ -95,7 +93,7 @@ public class InteractableObject : MonoBehaviour
     }
 
 
-    public void OnObjectClicked()
+    public virtual void OnObjectClicked()
     {
 
         InteractableData data = phasesData[(int)currentPhase];
