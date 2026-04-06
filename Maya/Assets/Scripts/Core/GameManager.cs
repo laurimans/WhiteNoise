@@ -17,18 +17,16 @@ public enum GamePhase
     None
 }
 
-
-
 public class GameManager : MonoBehaviour
 {
-    public int cluesFound { get; private set; } = 0;
-    public int tasksDone { get; private set; } = 0;
+    [SerializeField] private int cluesFound = 0;
+    [SerializeField] private int tasksDone = 0;
 
-    [SerializeField] private List<Day_SO> daysList;
+    [SerializeField] private List<DayPhaseData> daysList;
 
     // Day Phase
     private GamePhase currentPhase = 0;
-    private Day_SO currentPhaseData;
+    private DayPhaseData currentPhaseData;
     private bool isNight;
 
     //Eventos
@@ -65,6 +63,31 @@ public class GameManager : MonoBehaviour
 
     public GamePhase GetCurrentPhase() => currentPhase;
 
+    public bool CanFinishPhase()
+    {
+        if (currentPhaseData == null) return false;
+
+        bool canFinish = false;
+
+        if (tasksDone >= currentPhaseData.tasksNumber && cluesFound >= currentPhaseData.cluesNumber) canFinish = true;
+
+        return canFinish;
+    }
+
+    public void NextPhase()
+    {
+        int nextPhase = (int)currentPhase + 1;
+
+        if (nextPhase < Enum.GetValues(typeof(GamePhase)).Length && nextPhase != (int) GamePhase.None)
+        {
+            LoadDayPhase((GamePhase)nextPhase);
+        }
+        else
+        {
+            Debug.Log("¡Fin del juego o Créditos!");
+        }
+    }
+
     private void LoadDayPhase(GamePhase _currentPhase)
     {
         currentPhase = _currentPhase;
@@ -98,13 +121,6 @@ public class GameManager : MonoBehaviour
         Debug.Log($"Tarea completada: {taskId}. Total: {tasksDone}/{currentPhaseData.tasksNumber}");
     }
 
-    private void CheckEndDayPhase()
-    {
-        if (tasksDone== currentPhaseData.tasksNumber)
-        {
-            // Pemitir acabar la fase
-        }
-    }
 
 
 

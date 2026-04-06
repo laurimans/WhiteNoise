@@ -44,6 +44,7 @@ public class InteractableObject : MonoBehaviour
     }
 
     public string GetID() => itemID;
+    public InteractableData GetPhaseData() => phasesData[(int)currentPhase];
 
     private void RefreshObject (GamePhase _currentPhase)
     {
@@ -58,7 +59,7 @@ public class InteractableObject : MonoBehaviour
 
         if (phasesData == null || (int)currentPhase >= phasesData.Length || phasesData[(int)currentPhase] == null)
         {
-            Debug.Log($"El objeto {itemID} esta desactivado");
+            //Debug.Log($"El objeto {itemID} esta desactivado");
             gameObject.SetActive(false);
         } else
         {

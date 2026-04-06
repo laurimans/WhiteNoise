@@ -38,7 +38,7 @@ public class RoomNavigation : MonoBehaviour
         if (roomData != null)
         {
             AudioManager.Instance.UpdateRoomContext(roomData, roomID);
-            Debug.Log("Has entrado en: " + roomList[index].name);
+            //Debug.Log("Has entrado en: " + roomList[index].name);
         }
     }
 }
