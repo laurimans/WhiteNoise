@@ -15,3 +15,5 @@ MonoBehaviour:
   ambientClip: {fileID: 0}
   defaultBackground: {fileID: 21300000, guid: 1e194b10923c18f4882da57c4e909b86, type: 3}
   otherBackgroung: {fileID: 0}
+  initialDialogue: "Que dia mas largo madre mia, que cansadilla estoy. Ma\xF1ana
+    trabajo :("

@@ -10,6 +10,8 @@ public class Room : MonoBehaviour
     private GamePhase currentPhase = GamePhase.None;
     private GamePhase lastPhase = GamePhase.None;
 
+    public bool dialogueDone = false;
+
     void Awake()
     {
         sRenderer = GetComponent<SpriteRenderer>();
@@ -23,8 +25,6 @@ public class Room : MonoBehaviour
             RefreshRoom(GameManager.Instance.GetCurrentPhase());
         }
     }
-
-
 
     public string GetID() => roomID;
     public RoomData GetPhaseData() => phasesData[(int)currentPhase];
@@ -45,6 +45,7 @@ public class Room : MonoBehaviour
         {
             lastPhase = _currentPhase;
             currentPhase = _currentPhase;
+            dialogueDone = false;
 
             if (phasesData == null || (int)currentPhase >= phasesData.Length || phasesData[(int)currentPhase] == null)
             {

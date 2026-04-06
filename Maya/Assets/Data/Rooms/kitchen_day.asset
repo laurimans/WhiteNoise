@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: kitchen_day
   m_EditorClassIdentifier: Assembly-CSharp::RoomData_SO
   ambientClip: {fileID: 8300000, guid: 7a13d2eeb171d254db9cdaa468a6b3b4, type: 3}
-  defaultBackground: {fileID: -4281277943876875953, guid: cd4e48c0b054b84429852540543d93c3, type: 3}
+  defaultBackground: {fileID: 21300000, guid: cd4e48c0b054b84429852540543d93c3, type: 3}
   otherBackgroung: {fileID: 0}

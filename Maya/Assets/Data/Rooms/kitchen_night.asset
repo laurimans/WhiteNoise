@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb84335b955fa7428fa5350ed6f6ad6, type: 3}
   m_Name: kitchen_night
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
-  ambientClip: {fileID: 0}
-  defaultBackground: {fileID: -1247048449784502744, guid: ae1f1330845c1874e895667f94684a28, type: 3}
-  otherBackgroung: {fileID: 1018309599747455068, guid: b54d2eb28a84f0d47a9fdefe70a200bf, type: 3}
+  ambientClip: {fileID: 8300000, guid: 7a13d2eeb171d254db9cdaa468a6b3b4, type: 3}
+  defaultBackground: {fileID: 21300000, guid: ae1f1330845c1874e895667f94684a28, type: 3}
+  otherBackgroung: {fileID: 21300000, guid: b54d2eb28a84f0d47a9fdefe70a200bf, type: 3}
+  initialDialogue: joe macho los platos

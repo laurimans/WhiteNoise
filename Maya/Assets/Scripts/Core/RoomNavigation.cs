@@ -33,14 +33,23 @@ public class RoomNavigation : MonoBehaviour
         {
             if (roomList[i] != null) roomList[i].SetActive(i == index);
         }
+
         Room roomComponent = roomList[index].GetComponent<Room>();
 
         if (roomComponent != null)
         {
             RoomData roomData = roomComponent.GetPhaseData();
-            string roomID = roomComponent.GetID(); if (roomData != null)
+            string roomID = roomComponent.GetID(); 
+
+            if (roomData != null)
             {
                 AudioManager.Instance.UpdateRoomContext(roomID);
+
+                if(roomData.initialDialogue != null && !roomComponent.dialogueDone)
+                {
+                    DialogueManager.Instance.ShowDialogue(roomData.initialDialogue);
+                    roomComponent.dialogueDone = true;
+                }
             }
             else
             {

@@ -7,4 +7,6 @@ public class RoomData : ScriptableObject
 
     public Sprite defaultBackground;
     public Sprite otherBackgroung;
+
+    [TextArea] public string initialDialogue;
 }
