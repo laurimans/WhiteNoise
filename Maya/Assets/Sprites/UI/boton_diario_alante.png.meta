@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 691739b3a3a03b74a9713b729d056db6
+guid: 46db52942b280544bb97cea66a5fcd15
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2248429943504357829
-    second: salon_dia_0
+      213: 4778853723443197906
+    second: boton_diario_alante_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: salon_dia_0
+      name: boton_diario_alante_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 1580
+        y: 40
+        width: 165
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c9cde4fe17043f10800000000000000
-      internalID: 2248429943504357829
+      spriteID: 2d7726b5426e15240800000000000000
+      internalID: 4778853723443197906
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      salon_dia_0: 2248429943504357829
+      boton_diario_alante_0: 4778853723443197906
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

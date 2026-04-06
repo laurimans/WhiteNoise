@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: caf1a53ae190aaf468027a06a15af767
+guid: ede4b2555d597784d90010ed7d7ed495
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 44324130981857345
-    second: cocina_0
+      213: 1797543736392928100
+    second: interruptor_on_noche_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cocina_0
+      name: interruptor_on_noche_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 1108
+        y: 721
+        width: 60
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 148c622ff887d9000800000000000000
-      internalID: 44324130981857345
+      spriteID: 46bcde3218822f810800000000000000
+      internalID: 1797543736392928100
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cocina_0: 44324130981857345
+      interruptor_on_noche_0: 1797543736392928100
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

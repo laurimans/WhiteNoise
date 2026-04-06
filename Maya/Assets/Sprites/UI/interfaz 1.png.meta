@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: 478c636647af0a244b34b76dbfac0082
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2409272936196567603
+    second: interfaz_0
+  - first:
+      213: 4700643413833133030
+    second: interfaz_1
+  - first:
+      213: -3866084540776588118
+    second: interfaz_2
+  - first:
+      213: -2073342591278704176
+    second: interfaz_3
+  - first:
+      213: 4823597492908078862
+    second: interfaz_4
+  - first:
+      213: -3958010941758710621
+    second: interfaz_5
+  - first:
+      213: -4306137685424465282
+    second: interfaz_6
+  - first:
+      213: -5718237223317637497
+    second: interfaz_7
+  - first:
+      213: -7026733692906790829
+    second: interfaz_8
+  - first:
+      213: -1229162688194861217
+    second: interfaz_9
+  - first:
+      213: 3017284274608273543
+    second: interfaz_10
+  - first:
+      213: 8096362336088208289
+    second: interfaz_11
+  - first:
+      213: 483932880514320753
+    second: interfaz_12
+  - first:
+      213: 6465575624634537881
+    second: interfaz_13
+  - first:
+      213: 2355107933617225778
+    second: interfaz_14
+  - first:
+      213: -8476249302212325158
+    second: interfaz_15
+  - first:
+      213: 5817167582187855655
+    second: interfaz_16
+  - first:
+      213: 7032986072246366317
+    second: interfaz_17
+  - first:
+      213: 366624568735453908
+    second: interfaz_18
+  - first:
+      213: 3682904761829542535
+    second: interfaz_19
+  - first:
+      213: -983126135930233142
+    second: interfaz_20
+  - first:
+      213: 9154815422126665164
+    second: interfaz_21
+  - first:
+      213: 5472307542107663618
+    second: interfaz_22
+  - first:
+      213: 462710552615312618
+    second: interfaz_23
+  - first:
+      213: -7852670188008325259
+    second: interfaz_24
+  - first:
+      213: -2814082431767022929
+    second: interfaz_25
+  - first:
+      213: -1060095489002758596
+    second: interfaz_26
+  - first:
+      213: -7758411318558653222
+    second: interfaz_27
+  - first:
+      213: 682525414088899469
+    second: interfaz_28
+  - first:
+      213: 6449693077889384496
+    second: interfaz_29
+  - first:
+      213: 4957191181344720977
+    second: interfaz_30
+  - first:
+      213: -518052768470609029
+    second: interfaz_31
+  - first:
+      213: -6914316422280942676
+    second: interfaz_32
+  - first:
+      213: 8736345484727100252
+    second: interfaz_33
+  - first:
+      213: -7095141962821422935
+    second: interfaz_34
+  - first:
+      213: -1431540552485981252
+    second: interfaz_35
+  - first:
+      213: 2252321294036833071
+    second: interfaz_36
+  - first:
+      213: -3133142546175145513
+    second: interfaz_37
+  - first:
+      213: 2280996748691047165
+    second: interfaz_38
+  - first:
+      213: -231983470109818530
+    second: interfaz_39
+  - first:
+      213: 7709452287168363616
+    second: interfaz_40
+  - first:
+      213: 1819562556668707152
+    second: interfaz_41
+  - first:
+      213: -5956791759972817064
+    second: interfaz_42
+  - first:
+      213: -7941205410854526915
+    second: interfaz_43
+  - first:
+      213: 8838103668591811824
+    second: interfaz_44
+  - first:
+      213: 253142275804143068
+    second: interfaz_45
+  - first:
+      213: 6725146121589629722
+    second: interfaz_46
+  - first:
+      213: -353241721503997028
+    second: interfaz_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: interfaz 1_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 9
+        width: 747
+        height: 444
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 113, z: 0, w: 103}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4ca2964a3781440bae7091b1f6534a
+      internalID: 1513680125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 489816367ba584944a8ba6e21a12f3cd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      interfaz 1_0: 1513680125
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

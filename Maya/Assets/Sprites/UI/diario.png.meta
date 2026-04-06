@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: fdc9399e7f1eaf84a84663daa19f0b0f
+guid: b113fc27f40780b498d7126b3e4c5674
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1591186111671998124
-    second: Cursor3_0
-  - first:
-      213: 436473369544510520
-    second: Cursor3_1
+      213: 6208977296930351583
+    second: diario_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -27,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -60,7 +57,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 7
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cursor3_0
+      name: diario_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 210
-        width: 6
-        height: 32
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 459614279a8fae9e0800000000000000
-      internalID: -1591186111671998124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cursor3_1
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 48
-        width: 423
-        height: 508
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 83c4e91973aae0600800000000000000
-      internalID: 436473369544510520
+      spriteID: fd9aff974f7ba2650800000000000000
+      internalID: 6208977296930351583
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cursor3_0: -1591186111671998124
-      Cursor3_1: 436473369544510520
+      diario_0: 6208977296930351583
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
