@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb84335b955fa7428fa5350ed6f6ad6, type: 3}
   m_Name: living_day
   m_EditorClassIdentifier: Assembly-CSharp::RoomData_SO
-  ambientClip: {fileID: 8300000, guid: 019efb27fac0b3b40ac3b678b93a8060, type: 3}
+  ambientClip: {fileID: 0}
   defaultBackground: {fileID: 21300000, guid: f39be701bd3301d4e8608843dfafd07c, type: 3}
   otherBackgroung: {fileID: 0}
+  initialDialogue: 
