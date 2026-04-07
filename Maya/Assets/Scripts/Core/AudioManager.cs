@@ -77,6 +77,12 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
+    public void StopMusic () 
+    { 
+        musicSource.Stop();
+        musicSource.clip = null;
+    }
+
     public void PlayRoomAmbience(AudioClip clip)
     {
         //if (ambientSource.clip == clip) return;
