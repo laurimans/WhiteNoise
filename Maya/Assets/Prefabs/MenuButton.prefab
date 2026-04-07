@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2088644481019256082}
   - component: {fileID: 4295669911502866738}
   - component: {fileID: 1525747898061575963}
+  - component: {fileID: 3803478033660723792}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -121,6 +122,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3803478033660723792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7196055974564974580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18130e9efbf8e5840bc013f9cd58bea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverEffect
+  textTransform: {fileID: 5881966688016014889}
+  offset: {x: 5, y: -5}
 --- !u!1 &8738951938183272383
 GameObject:
   m_ObjectHideFlags: 0

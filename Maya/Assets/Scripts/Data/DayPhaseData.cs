@@ -7,6 +7,8 @@ public class DayPhaseData : ScriptableObject
     public GamePhase id_day;
     public int tasksNumber;
     public int cluesNumber;
+
+    public AudioClip transitionAudio;
 }
 
 

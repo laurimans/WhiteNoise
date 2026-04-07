@@ -15,3 +15,4 @@ MonoBehaviour:
   id_day: 0
   tasksNumber: 2
   cluesNumber: 0
+  transitionAudio: {fileID: 8300000, guid: e5a1a198507048a4caacf6571855e9df, type: 3}

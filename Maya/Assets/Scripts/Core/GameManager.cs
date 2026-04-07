@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private List<DayPhaseData> daysList;
     [SerializeField] private Room[] roomList;
+    [SerializeField] private TransitionUI transitionPanel;
 
     // Day Phase
     private GamePhase currentPhase = 0;
@@ -81,7 +82,10 @@ public class GameManager : MonoBehaviour
 
         if (nextPhase < Enum.GetValues(typeof(GamePhase)).Length && nextPhase != (int) GamePhase.None)
         {
-            LoadDayPhase((GamePhase)nextPhase);
+            StartCoroutine(transitionPanel.PhaseTransition(() =>
+            {
+                LoadDayPhase((GamePhase)nextPhase);
+            }, daysList[nextPhase].transitionAudio));
         }
         else
         {
@@ -98,11 +102,12 @@ public class GameManager : MonoBehaviour
         tasksDone = 0;
         cluesFound = 0;
 
-        AudioManager.Instance.SetupDayAmbience(roomList, currentPhase);
-
-
         OnPhaseChanged?.Invoke(currentPhase);
+
+
         Debug.Log($"Iniciando: {currentPhase.ToString()}");
+
+        AudioManager.Instance.SetupDayAmbience(roomList, currentPhase);
     }
 
 

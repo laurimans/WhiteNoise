@@ -10,6 +10,10 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioMixer mixer;
     [SerializeField] private AudioSource[] audioRooms;
 
+    [Header("Efectos de sonido")]
+    [SerializeField] private AudioClip clickButtonClip;
+    [SerializeField] private AudioClip pageJournalClip;
+
     #region Singleton
     public static AudioManager Instance { get; private set; }
 
@@ -27,6 +31,23 @@ public class AudioManager : MonoBehaviour
     }
 
     #endregion
+
+    public void PlayClickButton()
+    {
+        PlayUISound(clickButtonClip);
+    }
+
+    public void PlayTurnPageButton()
+    {
+        PlayUISound(pageJournalClip);
+    }
+
+    private void PlayUISound(AudioClip clip)
+    {
+        sfxSource.clip = clip;
+        sfxSource.loop = false;
+        sfxSource.Play();
+    }
 
     public void SetupDayAmbience(Room[] rooms, GamePhase gamePhase)
     {
