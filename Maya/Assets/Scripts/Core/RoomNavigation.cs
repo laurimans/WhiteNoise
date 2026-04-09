@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
@@ -6,7 +7,9 @@ public class RoomNavigation : MonoBehaviour
 {
     private int currentIndex = 0;
     [SerializeField] private List<GameObject> roomList;
-    
+
+    public static event Action<string> OnDialogueSaid;
+
     void Start()
     {
         currentIndex = 0;
@@ -47,7 +50,7 @@ public class RoomNavigation : MonoBehaviour
 
                 if(roomData.initialDialogue != null && !roomComponent.dialogueDone)
                 {
-                    DialogueManager.Instance.ShowDialogue(roomData.initialDialogue);
+                    OnDialogueSaid?.Invoke(roomData.initialDialogue);
                     roomComponent.dialogueDone = true;
                 }
             }

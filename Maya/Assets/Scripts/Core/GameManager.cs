@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<DayPhaseData> daysList;
     [SerializeField] private Room[] roomList;
     [SerializeField] private TransitionUI transitionPanel;
+    [SerializeField] private AudioSource[] roomAudioSources;
 
     // Day Phase
     private GamePhase currentPhase = 0;
@@ -57,10 +58,14 @@ public class GameManager : MonoBehaviour
     
     void Start()
     {
+        Initialize();
+
         LoadDayPhase(0);
 
         if (InputManager.Instance != null)
             InputManager.Instance.OnInteractableItemClicked += InteractionWithItem;
+
+
     }
 
     public GamePhase GetCurrentPhase() => currentPhase;
@@ -90,6 +95,17 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.Log("¡Fin del juego o Créditos!");
+        }
+    }
+
+    
+
+    private void Initialize()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.RegisterRoomSources(roomAudioSources);
+
         }
     }
 

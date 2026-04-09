@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: hall_day
   m_EditorClassIdentifier: Assembly-CSharp::RoomData_SO
   ambientClip: {fileID: 0}
-  defaultBackground: {fileID: 21300000, guid: 1e194b10923c18f4882da57c4e909b86, type: 3}
+  defaultBackground: {fileID: 21300000, guid: fb16e72c245f897459b417acb0bbf457, type: 3}
   otherBackgroung: {fileID: 0}
+  initialDialogue: 

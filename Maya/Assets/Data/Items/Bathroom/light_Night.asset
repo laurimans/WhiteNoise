@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0546ed498f1d5ae49b165140270459f1, type: 3}
-  m_Name: light_Day
+  m_Name: light_Night
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
-  initialSprite: {fileID: 21300000, guid: 2ee9b5bd646161545b3e6048fa6742c8, type: 3}
-  otherSprite: {fileID: 0}
+  initialSprite: {fileID: 21300000, guid: 5ec6356b3491cce4c8bf3deb7042da41, type: 3}
+  otherSprite: {fileID: 21300000, guid: 0b4043b438f891045b752c1e124833cc, type: 3}
   startDisable: 0
   activateOtherItem: 0
-  sound: {fileID: 0}
-  dialoguesList:
-  - maya nena la luz etsa muy cara
+  sound: {fileID: 8300000, guid: 4166237faa6a0b6498d7c14c26fae472, type: 3}
+  dialoguesList: []
   isTask: 0
   isClue: 0

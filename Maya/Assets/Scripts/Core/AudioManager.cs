@@ -1,18 +1,19 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] private AudioSource ambientSource;
-    [SerializeField] private AudioSource sfxSource;
+    [SerializeField] private AudioSource UISource;
     [SerializeField] private AudioSource musicSource;
 
     [SerializeField] private AudioMixer mixer;
-    [SerializeField] private AudioSource[] audioRooms;
+    private AudioSource[] audioRooms;
 
     [Header("Efectos de sonido")]
     [SerializeField] private AudioClip clickButtonClip;
     [SerializeField] private AudioClip pageJournalClip;
+    [SerializeField] private AudioClip menuMusicClip;
 
     #region Singleton
     public static AudioManager Instance { get; private set; }
@@ -27,10 +28,28 @@ public class AudioManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
     }
 
     #endregion
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "MainMenuScene")
+        {
+            if (menuMusicClip != null)
+            {
+                PlayMusic(menuMusicClip, true); 
+            }
+        }
+        else
+        {
+            StopMusic(); 
+        }
+    }
+
 
     public void PlayClickButton()
     {
@@ -44,9 +63,15 @@ public class AudioManager : MonoBehaviour
 
     private void PlayUISound(AudioClip clip)
     {
-        sfxSource.clip = clip;
-        sfxSource.loop = false;
-        sfxSource.Play();
+        UISource.clip = clip;
+        UISource.loop = false;
+        UISource.Play();
+    }
+
+    public void RegisterRoomSources(AudioSource[] sources)
+    {
+        audioRooms = sources;
+        Debug.Log("Fuentes de audio de las habitaciones registradas.");
     }
 
     public void SetupDayAmbience(Room[] rooms, GamePhase gamePhase)
@@ -69,7 +94,8 @@ public class AudioManager : MonoBehaviour
             }
         }
     }
-    public void PlayMusic(AudioClip clip, bool loop = true)
+
+    private void PlayMusic(AudioClip clip, bool loop = true)
     {
         if (musicSource.clip == clip) return;
         musicSource.clip = clip;
@@ -77,24 +103,17 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
-    public void StopMusic () 
+    private void StopMusic () 
     { 
         musicSource.Stop();
         musicSource.clip = null;
-    }
-
-    public void PlayRoomAmbience(AudioClip clip)
-    {
-        //if (ambientSource.clip == clip) return;
-        ambientSource.clip = clip;
-        ambientSource.Play();
     }
 
     public void PlaySFX(AudioClip clip)
     {
         if (clip == null) return;
 
-        sfxSource.PlayOneShot(clip);
+        UISource.PlayOneShot(clip);
     }
 
     public void PlayDialogueSFX(AudioClip clip, bool randomizePitch = true)
@@ -103,25 +122,34 @@ public class AudioManager : MonoBehaviour
 
         if (randomizePitch)
         {
-            sfxSource.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
+            UISource.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
         }
         else
         {
-            sfxSource.pitch = 1f;
+            UISource.pitch = 1f;
         }
 
-        sfxSource.PlayOneShot(clip);
+        UISource.PlayOneShot(clip);
     }
 
-    public void Play3DSFX(AudioClip clip, Vector3 position)
+    public void Play3DSFX(AudioClip clip, AudioSource audioSource)
     {
         if (clip == null) return;
-        AudioSource.PlayClipAtPoint(clip, position);
+        if (audioSource == null) return;
+
+        audioSource.clip = clip;
+        audioSource.loop = false;
+        audioSource.Play();        
     }
 
     public void UpdateRoomContext(string roomID)
     {
         AudioMixerSnapshot s = mixer.FindSnapshot("Snapshot_" + roomID);
         if (s != null) s.TransitionTo(0f);
+    }
+
+    void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }

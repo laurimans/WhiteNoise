@@ -16,25 +16,17 @@ public class DialogueManager : MonoBehaviour
     private string currentFullText = "";
     private float timeStarted = 0f;
 
-    #region Singleton
-    public static DialogueManager Instance { get; private set; }
-
     void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-
         dialoguePanel.SetActive(false);
     }
 
-    #endregion
+
+    private void Start()
+    {
+        InteractableObject.OnDialogueSaid += ShowDialogue;
+        RoomNavigation.OnDialogueSaid += ShowDialogue;
+    }
 
     void Update()
     {
@@ -112,6 +104,12 @@ public class DialogueManager : MonoBehaviour
     {
         dialoguePanel.SetActive(false);
         isLineComplete = false;
+    }
+
+    private void OnDestroy()
+    {
+        InteractableObject.OnDialogueSaid -= ShowDialogue;
+        RoomNavigation.OnDialogueSaid -= ShowDialogue;
     }
 
 }

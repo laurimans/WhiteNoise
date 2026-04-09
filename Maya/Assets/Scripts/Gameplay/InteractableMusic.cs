@@ -2,18 +2,34 @@ using UnityEngine;
 
 public class InteractableMusic : InteractableObject
 {
-    [SerializeField] private bool isPlaying;
+    private bool isPlaying;
+
+    void Start()
+    {
+        audioSource.loop = true;
+        audioSource.playOnAwake = false;
+    }
+
+
+
     public override void OnObjectClicked()
     {
+        InteractableData data = GetPhaseData();
 
         if (isPlaying)
         {
-            AudioManager.Instance.StopMusic();
+            audioSource.Stop();
             isPlaying = false;
         } else 
         {
-            AudioManager.Instance.PlayMusic(GetPhaseData().sound);
-            isPlaying = true;
-        }     
+            if (data.sound != null)
+            {
+                audioSource.clip = data.sound;
+                audioSource.Play();
+                isPlaying = true;
+            }
+        }
+
+        //HandleSpriteChange(data);
     }
 }

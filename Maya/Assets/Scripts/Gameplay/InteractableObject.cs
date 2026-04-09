@@ -19,6 +19,10 @@ public class InteractableObject : MonoBehaviour
     private GamePhase lastPhase;
     private int currentDialogueIndex = 0;
 
+    public static event Action<string> OnDialogueSaid;
+
+    [SerializeField] protected AudioSource audioSource;
+
     void Awake()
     {
         sRenderer = GetComponent<SpriteRenderer>();
@@ -55,6 +59,8 @@ public class InteractableObject : MonoBehaviour
             currentPhase = _currentPhase;
 
             wasInteractedInThisPhase = false;
+
+            if (audioSource != null) audioSource.clip = null;
         }
 
         if (phasesData == null || (int)currentPhase >= phasesData.Length || phasesData[(int)currentPhase] == null)
@@ -68,6 +74,7 @@ public class InteractableObject : MonoBehaviour
 
             HandleObjectActivation(finalActiveState);
         }  
+
     }
 
     private void HandleObjectActivation(bool shouldBeDisabled)
@@ -153,13 +160,18 @@ public class InteractableObject : MonoBehaviour
             textToSay = data.dialoguesList[data.dialoguesList.Count - 1];
         }
 
-        DialogueManager.Instance.ShowDialogue(textToSay);
-        //Debug.Log($"{itemID}: {textToSay}");
+        OnDialogueSaid?.Invoke(textToSay);
     }
 
     private void HandleSoundEffect(InteractableData data)
     {
-        AudioManager.Instance.PlaySFX(data.sound);
+        if(audioSource == null)
+        {
+            AudioManager.Instance.PlaySFX(data.sound);
+        } else
+        {
+            AudioManager.Instance.Play3DSFX(data.sound, audioSource);
+        }
     }
 
     private void HandleSpriteChange(InteractableData data)
