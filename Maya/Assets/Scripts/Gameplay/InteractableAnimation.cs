@@ -25,4 +25,13 @@ public class InteractableAnimation : MonoBehaviour
         isOn = state;
         if (visualObject != null) visualObject.SetActive(state);
     }
+
+    public void DesactivateObject()
+    {
+        if (visualObject != null)
+        {
+            visualObject.SetActive(false);
+            isOn = false;
+        }
+    }
 }

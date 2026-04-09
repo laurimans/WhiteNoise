@@ -19,7 +19,8 @@ public class InteractableObject : MonoBehaviour
     private GamePhase currentPhase = 0;
     private GamePhase lastPhase;
     private int currentDialogueIndex = 0;
-    private InteractableAnimation interactableAnimation;
+    [Header("Animator")]
+    [SerializeField] private InteractableAnimation interactableAnimation;
 
     public static event Action<string> OnDialogueSaid;
 
@@ -30,7 +31,6 @@ public class InteractableObject : MonoBehaviour
     void Awake()
     {
         sRenderer = GetComponent<SpriteRenderer>();
-        interactableAnimation = GetComponent<InteractableAnimation>();
 
         GameManager.OnPhaseChanged += RefreshObject;
     }
