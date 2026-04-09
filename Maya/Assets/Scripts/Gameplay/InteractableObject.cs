@@ -12,20 +12,25 @@ public class InteractableObject : MonoBehaviour
     [SerializeField] private GameObject objectToActivateGO;
     private bool wasInteractedInThisPhase = false;
 
+    [Header("Phases")]
     [SerializeField] private InteractableData[] phasesData;
 
-    private SpriteRenderer sRenderer;
+    protected SpriteRenderer sRenderer;
     private GamePhase currentPhase = 0;
     private GamePhase lastPhase;
     private int currentDialogueIndex = 0;
+    private InteractableAnimation interactableAnimation;
 
     public static event Action<string> OnDialogueSaid;
 
+    [Header("Sound")]
     [SerializeField] protected AudioSource audioSource;
+
 
     void Awake()
     {
         sRenderer = GetComponent<SpriteRenderer>();
+        interactableAnimation = GetComponent<InteractableAnimation>();
 
         GameManager.OnPhaseChanged += RefreshObject;
     }
@@ -61,6 +66,7 @@ public class InteractableObject : MonoBehaviour
             wasInteractedInThisPhase = false;
 
             if (audioSource != null) audioSource.clip = null;
+            if (interactableAnimation != null) interactableAnimation.SetActive(false); // Apagar animaciones
         }
 
         if (phasesData == null || (int)currentPhase >= phasesData.Length || phasesData[(int)currentPhase] == null)
@@ -140,6 +146,8 @@ public class InteractableObject : MonoBehaviour
                 }
             }
         }
+
+        if (interactableAnimation != null) interactableAnimation.ToggleAnimation();
 
         // Clue or Task
         if (data.isTask) GameManager.Instance.AddTaskDone(itemID);
