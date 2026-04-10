@@ -28,27 +28,24 @@ MonoBehaviour:
     journalText: '- Dejo los platos fregados'
   hasPhoneCall: 1
   conversation:
-  - senderName: qwe
-    messageContent: asdad
-    isMaya: 0
-  - senderName: eee
-    messageContent: asdasd
+  - senderName: Maya
+    messageContent: " Mam\xE1, estoy durmiendo fatal. Encuentro cosas movidas de
+      sitio por las ma\xF1anas y siento que puede que haya entrado alguien a casa. "
     isMaya: 1
-  - senderName: e
-    messageContent: asdasd
-    isMaya: 1
-  - senderName: e
-    messageContent: asdasd
+  - senderName: "Mam\xE1"
+    messageContent: "Cari\xF1o, respira, seguro que es el estr\xE9s por el nuevo
+      trabajo. \xBFNo te acuerdas de que de peque\xF1a, cuando estabas nerviosa,
+      te levantabas son\xE1mbula por las noches?"
     isMaya: 0
-  - senderName: 
-    messageContent: asdasd
+  - senderName: Maya
+    messageContent: "\xBFSon\xE1mbula? Buf, hace mil a\xF1os que no me pasa\u2026
+      pero supongo que explicar\xEDa por qu\xE9 me encuentro todo descolocado. "
     isMaya: 1
-  - senderName: 
-    messageContent: asdasd
+  - senderName: "Mam\xE1"
+    messageContent: "Haz una cosa, apunta en tu libreta todo lo que te parezca raro
+      y com\xE9ntaselo a alg\xFAn compa\xF1ero de tu planta, a ver qu\xE9 te aconsejan."
     isMaya: 0
-  - senderName: 
-    messageContent: asdasd
+  - senderName: Maya
+    messageContent: "Tienes raz\xF3n mam\xE1. Muchas gracias, espero que est\xE9is
+      todos bien. Te quiero. Adi\xF3s."
     isMaya: 1
-  - senderName: 
-    messageContent: asdasd
-    isMaya: 0

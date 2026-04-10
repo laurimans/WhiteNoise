@@ -60,4 +60,18 @@ public class RoomNavigation : MonoBehaviour
             }
         }
     }
+
+    void CheckForChaos()
+    {
+        if (GameManager.Instance.GetCurrentPhase() == GamePhase.ThursdayMorning)
+        {
+            for (int i = 0; i < roomList.Count; i++)
+            {
+                GameObject temp = roomList[i];
+                int randomIndex = UnityEngine.Random.Range(i, roomList.Count);
+                roomList[i] = roomList[randomIndex];
+                roomList[randomIndex] = temp;
+            }
+        }
+    }
 }

@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
 
     // Day Phase
     private DayPhaseData currentPhaseData;
+    private bool isJournalPickedUp = false;
 
     //Eventos
     public static event Action<GamePhase> OnPhaseChanged;
@@ -73,6 +74,11 @@ public class GameManager : MonoBehaviour
 
     public GamePhase GetCurrentPhase() => currentPhase;
     public DayPhaseData GetCurrentPhaseData() => daysList[(int)currentPhase];
+
+    public void PickUpJournal(bool isPicked)
+    {
+        isJournalPickedUp = isPicked;
+    }
 
     public bool CanFinishPhase()
     {
@@ -139,6 +145,12 @@ public class GameManager : MonoBehaviour
 
         AudioManager.Instance.SetupDayAmbience(roomList, currentPhase);
 
+        if (_currentPhase == GamePhase.ThursdayMorning)
+        {
+            GameObject camBtn = GameObject.Find("CameraButton");
+            if (camBtn != null) camBtn.SetActive(false);
+        }
+
         journalManager.AddEntry(currentPhaseData.dateText, currentPhaseData.bodyText);
     }
 
@@ -150,8 +162,10 @@ public class GameManager : MonoBehaviour
         Debug.Log("Has interactuado con:" + item.name);
     }
 
-    public void AddClue(string clueId)
+    public bool AddClue(string clueId)
     {
+        if (!isJournalPickedUp) return false; // Sin diario n puede apuntar listas
+
         cluesFound++;
 
         string textForJournal = currentPhaseData.GetClueText(clueId);
@@ -159,6 +173,7 @@ public class GameManager : MonoBehaviour
         journalManager.AddClueToCurrentEntry(textForJournal);
 
         journalUI.TypeNewClue("\n- " + textForJournal);
+        return true;
     }
 
 

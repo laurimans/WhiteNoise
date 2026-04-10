@@ -10,6 +10,9 @@ public class InteractableJournal : InteractableObject
         if (!this.GetPhaseData().activateOtherItem)
         {
             journal.OpenJournal();
+        } else
+        {
+            GameManager.Instance.PickUpJournal(true);
         }
     }
 }

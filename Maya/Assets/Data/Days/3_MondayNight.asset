@@ -21,12 +21,16 @@ MonoBehaviour:
   cluesForThisDay: []
   hasPhoneCall: 1
   conversation:
-  - senderName: Mama
-    messageContent: asdfasd
+  - senderName: "Mam\xE1"
+    messageContent: "\xA1Hola cari\xF1o! \xBFQu\xE9 tal te est\xE1s adaptando en
+      el piso nuevo? \xBFSe te est\xE1n haciendo muy pesados los turnos?"
     isMaya: 0
-  - senderName: ssss
-    messageContent: asdfasdfsdfasd
+  - senderName: Maya
+    messageContent: "Hola mam\xE1. Todo bien, de verdad. Ya tengo todo m\xE1s o menos
+      organizado y en el hospital\u2026 bueno, echando muchas horas, pero bien. Me
+      voy haciendo a la rutina. \r\n"
     isMaya: 1
-  - senderName: ff
-    messageContent: safd
+  - senderName: "Mam\xE1"
+    messageContent: "Ay, me dejas m\xE1s tranquila. Ya sabes que los principios siempre
+      cuestan. Bueno, te dejo. Descansa que ma\xF1ana madrugas."
     isMaya: 0

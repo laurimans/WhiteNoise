@@ -73,7 +73,7 @@ public class JournalUI : MonoBehaviour
 
         if (journal.GetEntriesCount() > 0)
         {
-            currentIndex = journal.GetEntriesCount() - 1;
+            if (currentIndex < 0) currentIndex = journal.GetEntriesCount() - 1;
             UpdateJournalUI();
         }
     }

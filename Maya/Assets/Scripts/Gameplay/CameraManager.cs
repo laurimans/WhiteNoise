@@ -71,7 +71,10 @@ public class CameraManager : MonoBehaviour
         roomsPhotographed.Add(roomID);
         GameManager.Instance.AddTaskDone("photo_" + roomID);
 
-        ToggleAiming();
+        isAiming = false;
+        cameraLense.SetActive(false);
+        HUDPanel.SetActive(false);
+
         journalUI.OpenWithPhoto(roomID);
 
         Debug.Log($"Foto guardada de: {roomID}. Total: {roomsPhotographed.Count}/{TOTAL_PHOTOS_REQUIRED}");
