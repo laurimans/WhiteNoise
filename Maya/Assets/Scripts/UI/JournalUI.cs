@@ -1,7 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+
+[System.Serializable]
+public struct Photo
+{
+    public string idRoom;
+    public Sprite normalPhoto;
+    public Sprite changedPhoto;
+}
 
 public class JournalUI : MonoBehaviour
 {
@@ -15,6 +24,10 @@ public class JournalUI : MonoBehaviour
     [Header("Journal Buttons")]
     [SerializeField] private Button nextButton;
     [SerializeField] private Button prevButton;
+
+    [Header("Photo System")]
+    [SerializeField] private Image photoContainer; 
+    [SerializeField] private List<Photo> roomPhotos; 
 
     private int currentIndex = 0;
     private Coroutine typewriterCoroutine;
@@ -127,22 +140,55 @@ public class JournalUI : MonoBehaviour
     private void UpdateJournalUI()
     {
         JournalEntry entry = journal.GetEntry(currentIndex);
+        if (entry == null) return;
 
-        if (entry != null)
+        dateText.text = entry.GetDate();
+        bodyText.text = entry.GetBody();
+
+        if (entry.GetDate().Contains("Foto:"))
         {
-            dateText.text = entry.GetDate();
-            bodyText.text = entry.GetBody();
+            photoContainer.gameObject.SetActive(true);
+            string roomID = entry.GetDate().Replace("Foto: ", "");
+
+            ShowCorrectPhoto(roomID);
+        }
+        else
+        {
+            photoContainer.gameObject.SetActive(false);
         }
 
-        // Bloqueo botones
         int totalEntries = journal.GetEntriesCount();
-
         nextButton.interactable = currentIndex < totalEntries - 1;
         prevButton.interactable = currentIndex > 0;
     }
 
+    public void ShowCorrectPhoto(string roomID)
+    {
+        bool found = false;
+        foreach (var photoObj in roomPhotos)
+        {
+            if (photoObj.idRoom.Contains(roomID))
+            {             
+                if (GameManager.Instance.GetCurrentPhase() == GamePhase.ThursdayMorning)
+                {
+                    photoContainer.sprite = photoObj.changedPhoto;
+                } else
+                {
+                    photoContainer.sprite = photoObj.normalPhoto;
+                }
+
+                found = true;
+                break;
+            }
+        }
+
+        photoContainer.gameObject.SetActive(found);
+    }
+
     public void OpenWithPhoto(string roomID)
     {
+        journal.AddEntry("Foto: " + roomID, "");
+        ShowCorrectPhoto(roomID);
         OpenJournal();
     }
 

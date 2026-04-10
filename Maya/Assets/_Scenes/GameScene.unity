@@ -4218,7 +4218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &753051299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4302,6 +4302,7 @@ RectTransform:
   - {fileID: 1478524985}
   - {fileID: 840093910}
   - {fileID: 968126989}
+  - {fileID: 764616376}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4327,6 +4328,23 @@ MonoBehaviour:
   bodyText: {fileID: 968126987}
   nextButton: {fileID: 37193834}
   prevButton: {fileID: 1608800217}
+  photoContainer: {fileID: 764616377}
+  roomPhotos:
+  - idRoom: bathroom
+    normalPhoto: {fileID: 2978225957030099729, guid: fe314f333a13f0a4a8c5f82b5da8ec4d, type: 3}
+    changedPhoto: {fileID: -4647809437275953161, guid: 7447ddef59720824f8c218c937a7a8c6, type: 3}
+  - idRoom: bedroom
+    normalPhoto: {fileID: 5588275182730999323, guid: 2777fc954ef384d4c9fff2e0bee5ec0c, type: 3}
+    changedPhoto: {fileID: -4647809437275953161, guid: 7447ddef59720824f8c218c937a7a8c6, type: 3}
+  - idRoom: hall
+    normalPhoto: {fileID: 2978225957030099729, guid: fe314f333a13f0a4a8c5f82b5da8ec4d, type: 3}
+    changedPhoto: {fileID: -4647809437275953161, guid: 7447ddef59720824f8c218c937a7a8c6, type: 3}
+  - idRoom: kitchen
+    normalPhoto: {fileID: 2978225957030099729, guid: fe314f333a13f0a4a8c5f82b5da8ec4d, type: 3}
+    changedPhoto: {fileID: -4647809437275953161, guid: 7447ddef59720824f8c218c937a7a8c6, type: 3}
+  - idRoom: living
+    normalPhoto: {fileID: 2978225957030099729, guid: fe314f333a13f0a4a8c5f82b5da8ec4d, type: 3}
+    changedPhoto: {fileID: -4647809437275953161, guid: 7447ddef59720824f8c218c937a7a8c6, type: 3}
 --- !u!1001 &754886308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4544,6 +4562,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755318128}
+  m_CullTransparentMesh: 1
+--- !u!1 &764616375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 764616376}
+  - component: {fileID: 764616378}
+  - component: {fileID: 764616377}
+  m_Layer: 5
+  m_Name: Polaroid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &764616376
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764616375}
+  m_LocalRotation: {x: -0, y: -0, z: 0.04347312, w: 0.9990547}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 753051302}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.983}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 39, y: -108}
+  m_SizeDelta: {x: 1106, y: 901}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &764616377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764616375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 2978225957030099729, guid: fe314f333a13f0a4a8c5f82b5da8ec4d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &764616378
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764616375}
   m_CullTransparentMesh: 1
 --- !u!1001 &776417689
 PrefabInstance:
@@ -9860,6 +9953,7 @@ MonoBehaviour:
   cameraLense: {fileID: 1231309778}
   journalUI: {fileID: 753051303}
   HUDPanel: {fileID: 1086749066}
+  cameraAudio: {fileID: 0}
 --- !u!1 &1724327935
 GameObject:
   m_ObjectHideFlags: 0
