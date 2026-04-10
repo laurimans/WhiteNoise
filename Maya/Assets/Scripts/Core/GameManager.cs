@@ -85,6 +85,8 @@ public class GameManager : MonoBehaviour
         return canFinish;
     }
 
+
+
     public void NextPhase()
     {
         int nextPhase = (int)currentPhase + 1;

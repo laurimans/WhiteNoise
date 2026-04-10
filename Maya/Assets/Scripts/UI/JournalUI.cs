@@ -141,4 +141,9 @@ public class JournalUI : MonoBehaviour
         prevButton.interactable = currentIndex > 0;
     }
 
+    public void OpenWithPhoto(string roomID)
+    {
+        OpenJournal();
+    }
+
 }
