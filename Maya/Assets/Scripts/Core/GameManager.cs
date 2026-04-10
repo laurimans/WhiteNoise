@@ -27,6 +27,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TransitionUI transitionPanel;
     [SerializeField] private AudioSource[] roomAudioSources;
 
+    [Header("Journal System")]
+    [SerializeField] private JournalManager journalManager;
+    [SerializeField] private JournalUI journalUI;
+
     // Day Phase
     private GamePhase currentPhase = 0;
     private DayPhaseData currentPhaseData;
@@ -69,6 +73,7 @@ public class GameManager : MonoBehaviour
     }
 
     public GamePhase GetCurrentPhase() => currentPhase;
+    public DayPhaseData GetCurrentPhaseData() => daysList[(int)currentPhase];
 
     public bool CanFinishPhase()
     {
@@ -124,6 +129,8 @@ public class GameManager : MonoBehaviour
         Debug.Log($"Iniciando: {currentPhase.ToString()}");
 
         AudioManager.Instance.SetupDayAmbience(roomList, currentPhase);
+
+        journalManager.AddEntry(currentPhaseData.dateText, currentPhaseData.bodyText);
     }
 
 
@@ -137,7 +144,14 @@ public class GameManager : MonoBehaviour
     public void AddClue(string clueId)
     {
         cluesFound++;
+
+        string textForJournal = currentPhaseData.GetClueText(clueId);
+
+        journalManager.AddClueToCurrentEntry(textForJournal);
+
+        journalUI.TypeNewClue("\n- " + textForJournal);
     }
+
 
     public void AddTaskDone(string taskId)
     {

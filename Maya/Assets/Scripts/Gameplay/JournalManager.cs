@@ -54,6 +54,16 @@ public class JournalManager : MonoBehaviour
         journalEntries[index].AddClue(clue);
     }
 
+    public void AddClueToCurrentEntry(string clueText)
+    {
+        if (journalEntries.Count > 0)
+        {
+            JournalEntry currentEntry = GetLastEntry();
+            string updatedBody = currentEntry.GetBody() + "\n- " + clueText;
+
+            journalEntries[journalEntries.Count - 1] = new JournalEntry(currentEntry.GetDate(), updatedBody);
+        }
+    }
 
 }
     

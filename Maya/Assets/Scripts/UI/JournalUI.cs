@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class JournalUI : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class JournalUI : MonoBehaviour
     [SerializeField] private Button prevButton;
 
     private int currentIndex = 0;
+    private Coroutine typewriterCoroutine;
 
     private void Start()
     {
@@ -64,6 +66,43 @@ public class JournalUI : MonoBehaviour
         UpdateJournalUI();
 
         this.gameObject.SetActive(true);
+    }
+
+    public void TypeNewEntry(string date, string content)
+    {
+        this.gameObject.SetActive(true); 
+        dateText.text = date;
+
+        if (typewriterCoroutine != null) StopCoroutine(typewriterCoroutine);
+        typewriterCoroutine = StartCoroutine(TypeSentece(content));
+    }
+
+    IEnumerator TypeSentece(string sentence)
+    {
+        bodyText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            bodyText.text += letter;
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        UpdateJournalUI();
+    }
+
+    public void TypeNewClue(string newText)
+    {
+        this.gameObject.SetActive(true);
+        if (typewriterCoroutine != null) StopCoroutine(typewriterCoroutine);
+        typewriterCoroutine = StartCoroutine(AppendText(newText));
+    }
+
+    IEnumerator AppendText(string textToAppend)
+    {
+        foreach (char letter in textToAppend.ToCharArray())
+        {
+            bodyText.text += letter;
+            yield return new WaitForSeconds(0.04f);
+        }
     }
 
     private void UpdateJournalUI()

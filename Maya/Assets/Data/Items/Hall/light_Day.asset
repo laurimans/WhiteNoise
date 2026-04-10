@@ -18,6 +18,6 @@ MonoBehaviour:
   activateOtherItem: 0
   sound: {fileID: 0}
   dialoguesList:
-  - maya nena la luz etsa muy cara
+  - 
   isTask: 0
   isClue: 0

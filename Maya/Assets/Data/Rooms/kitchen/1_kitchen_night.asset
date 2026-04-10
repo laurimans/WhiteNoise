@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb84335b955fa7428fa5350ed6f6ad6, type: 3}
+  m_Name: 1_kitchen_night
+  m_EditorClassIdentifier: Assembly-CSharp::RoomData
+  ambientClip: {fileID: 8300000, guid: 7a13d2eeb171d254db9cdaa468a6b3b4, type: 3}
+  defaultBackground: {fileID: 21300000, guid: ae1f1330845c1874e895667f94684a28, type: 3}
+  otherBackgroung: {fileID: 21300000, guid: b54d2eb28a84f0d47a9fdefe70a200bf, type: 3}
+  initialDialogue: joe macho los platos

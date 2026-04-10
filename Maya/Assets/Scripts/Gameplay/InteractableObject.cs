@@ -150,9 +150,18 @@ public class InteractableObject : MonoBehaviour
         if (interactableAnimation != null) interactableAnimation.ToggleAnimation();
 
         // Clue or Task
-        if (data.isTask) GameManager.Instance.AddTaskDone(itemID);
-        if (data.isClue) GameManager.Instance.AddClue(itemID);
-        
+        if (data.isTask && !wasInteractedInThisPhase)
+        {
+            wasInteractedInThisPhase = true;
+            GameManager.Instance.AddTaskDone(itemID);
+        }
+           
+        if (data.isClue && !wasInteractedInThisPhase)
+        {
+            wasInteractedInThisPhase = true;
+            GameManager.Instance.AddClue(itemID);
+        }
+
     }
 
     private void HandleDialogue(InteractableData data)
