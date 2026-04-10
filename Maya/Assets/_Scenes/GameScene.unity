@@ -130,13 +130,14 @@ GameObject:
   - component: {fileID: 3591914}
   - component: {fileID: 3591913}
   - component: {fileID: 3591915}
+  - component: {fileID: 3591916}
   m_Layer: 0
   m_Name: Hall
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &3591913
 SpriteRenderer:
   serializedVersion: 2
@@ -241,6 +242,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7bd3b5547b0ff9d4495861ff190a86cd, type: 2}
   - {fileID: 11400000, guid: 97b15eed2fc2893429e32a6e42485c90, type: 2}
   dialogueDone: 0
+--- !u!114 &3591916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3591912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a919682e05eae46a90a507c9341c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomLightGlitch
 --- !u!1 &21833775
 GameObject:
   m_ObjectHideFlags: 0
@@ -2177,6 +2190,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278391623}
   m_CullTransparentMesh: 1
+--- !u!1 &293839591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 293839592}
+  - component: {fileID: 293839594}
+  - component: {fileID: 293839593}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &293839592
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293839591}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 629416121}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &293839593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293839591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &293839594
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293839591}
+  m_CullTransparentMesh: 1
 --- !u!1001 &306332833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2274,9 +2362,10 @@ GameObject:
   - component: {fileID: 332685261}
   - component: {fileID: 332685260}
   - component: {fileID: 332685262}
+  - component: {fileID: 332685263}
   m_Layer: 0
   m_Name: Bedroom
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2387,6 +2476,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4cbd4c0c6c8b89041a2ed0b88e6fee0e, type: 2}
   - {fileID: 11400000, guid: be1d95f494c30194a9d4fe1af30e5143, type: 2}
   dialogueDone: 0
+--- !u!114 &332685263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332685259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a919682e05eae46a90a507c9341c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomLightGlitch
 --- !u!1001 &349212168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3395,6 +3496,109 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605556826}
   m_CullTransparentMesh: 1
+--- !u!1 &629416117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629416121}
+  - component: {fileID: 629416120}
+  - component: {fileID: 629416119}
+  - component: {fileID: 629416118}
+  m_Layer: 5
+  m_Name: RandomGlitch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &629416118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629416117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &629416119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629416117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &629416120
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629416117}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &629416121
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629416117}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 293839592}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &671372561
 GameObject:
   m_ObjectHideFlags: 0
@@ -3406,6 +3610,7 @@ GameObject:
   - component: {fileID: 671372563}
   - component: {fileID: 671372562}
   - component: {fileID: 671372564}
+  - component: {fileID: 671372565}
   m_Layer: 0
   m_Name: GlitchManager
   m_TagString: Untagged
@@ -3461,6 +3666,22 @@ MonoBehaviour:
   fakeCursor: {fileID: 411208085}
   errorScreen: {fileID: 894289660}
   ghostPrefab: {fileID: 411208084}
+  glitchScreen: {fileID: 629416117}
+--- !u!114 &671372565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671372561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae266e0b3976be4287a24badb79bb38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LightGlitch
+  shortTab: 0.2
+  longTab: 0.6
+  pause: 0.2
 --- !u!1 &684289907
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,9 +3693,10 @@ GameObject:
   - component: {fileID: 684289909}
   - component: {fileID: 684289908}
   - component: {fileID: 684289910}
+  - component: {fileID: 684289911}
   m_Layer: 0
   m_Name: Kitchen
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3586,6 +3808,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 381723b16241ce74aab6b25ca516effe, type: 2}
   - {fileID: 11400000, guid: 54d1c538ae699bf4387ae36026016521, type: 2}
   dialogueDone: 0
+--- !u!114 &684289911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684289907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a919682e05eae46a90a507c9341c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomLightGlitch
 --- !u!1 &690935194
 GameObject:
   m_ObjectHideFlags: 0
@@ -8985,9 +9219,10 @@ GameObject:
   - component: {fileID: 1598618646}
   - component: {fileID: 1598618645}
   - component: {fileID: 1598618647}
+  - component: {fileID: 1598618648}
   m_Layer: 0
   m_Name: LivingRoom
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9099,6 +9334,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 855992d8f71f26242965f624d466be5d, type: 2}
   - {fileID: 11400000, guid: 35cda2337fb571747ae0c2e44bb57a29, type: 2}
   dialogueDone: 0
+--- !u!114 &1598618648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598618644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a919682e05eae46a90a507c9341c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomLightGlitch
 --- !u!1001 &1602958024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11093,9 +11340,10 @@ GameObject:
   - component: {fileID: 1894324766}
   - component: {fileID: 1894324765}
   - component: {fileID: 1894324767}
+  - component: {fileID: 1894324768}
   m_Layer: 0
   m_Name: BathRoom
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11204,6 +11452,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8f093e52b5f4a7c4f89ed36883c65739, type: 2}
   - {fileID: 11400000, guid: 8efcbf750d1209f41b345e8af51e9c13, type: 2}
   dialogueDone: 0
+--- !u!114 &1894324768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894324764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a919682e05eae46a90a507c9341c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomLightGlitch
 --- !u!1001 &1899368542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13870,5 +14130,6 @@ SceneRoots:
   - {fileID: 605556831}
   - {fileID: 430982045}
   - {fileID: 1747753126}
+  - {fileID: 629416121}
   - {fileID: 671372563}
   - {fileID: 894289664}

@@ -22,9 +22,9 @@ public class InteractableLight : InteractableObject
             RoomData roomData = room.GetComponent<Room>().GetPhaseData();
 
 
-            if (roomData.defaultBackground != null && roomData.otherBackgroung)
+            if (roomData.defaultBackground != null && roomData.otherBackground)
             {
-                Sprite sprite = isLightOn? roomData.defaultBackground: roomData.otherBackgroung;
+                Sprite sprite = isLightOn? roomData.defaultBackground: roomData.otherBackground;
                 sRenderer.sprite = sprite;
             }  
         }

@@ -6,7 +6,7 @@ public class RoomData : ScriptableObject
     public AudioClip ambientClip;
 
     public Sprite defaultBackground;
-    public Sprite otherBackgroung;
+    public Sprite otherBackground;
 
     [TextArea] public string initialDialogue;
 }

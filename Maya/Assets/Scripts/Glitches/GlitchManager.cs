@@ -9,6 +9,7 @@ public class GlitchManager : MonoBehaviour
     [SerializeField] private RectTransform fakeCursor;
     [SerializeField] private GameObject errorScreen;
     [SerializeField] private GameObject ghostPrefab;
+    [SerializeField] private GameObject glitchScreen;
 
     private bool isLagging = false;
     private bool controllingMouse = false;
@@ -132,6 +133,23 @@ public class GlitchManager : MonoBehaviour
 
                 yield return null;
             }
+        }
+    }
+
+    IEnumerator RandomScreenGlitches()
+    {
+        while (true)
+        {
+            if (GameManager.Instance.GetCurrentPhase() == GamePhase.ThursdayMorning)
+            {
+                yield return new WaitForSeconds(Random.Range(5f, 15f));
+
+                glitchScreen.SetActive(true);
+
+                yield return new WaitForSeconds(Random.Range(0.05f, 0.2f));
+                glitchScreen.SetActive(false);
+            }
+            yield return null;
         }
     }
 

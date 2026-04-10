@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   ambientClip: {fileID: 0}
   defaultBackground: {fileID: 21300000, guid: b2b1721b57fcd7347a0d6fc4cc3465af, type: 3}
-  otherBackgroung: {fileID: 21300000, guid: 198f8f4c38d61914eacc3aff72d6e2d8, type: 3}
+  otherBackground: {fileID: 21300000, guid: 198f8f4c38d61914eacc3aff72d6e2d8, type: 3}
   initialDialogue: odio cuando las cosas no estan en su sitio.
