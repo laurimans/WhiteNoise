@@ -9,7 +9,7 @@ public class InteractableJournal : InteractableObject
 
         if (!this.GetPhaseData().activateOtherItem)
         {
-            journal.OpenJornal();
+            journal.OpenJournal();
         }
     }
 }

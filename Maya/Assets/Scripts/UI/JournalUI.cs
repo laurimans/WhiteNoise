@@ -59,7 +59,7 @@ public class JournalUI : MonoBehaviour
         }
     }
 
-    public void OpenJornal()
+    public void OpenJournal()
     {
         currentIndex = journal.GetEntriesCount() - 1;
 

@@ -19,9 +19,12 @@ public enum GamePhase
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Game State")]
+    [SerializeField] private GamePhase currentPhase = 0; 
     [SerializeField] private int cluesFound = 0;
     [SerializeField] private int tasksDone = 0;
 
+    [Header("Days and Rooms")]
     [SerializeField] private List<DayPhaseData> daysList;
     [SerializeField] private Room[] roomList;
     [SerializeField] private TransitionUI transitionPanel;
@@ -32,14 +35,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private JournalUI journalUI;
 
     // Day Phase
-    private GamePhase currentPhase = 0;
     private DayPhaseData currentPhaseData;
-    private bool isNight;
 
     //Eventos
     public static event Action<GamePhase> OnPhaseChanged;
-
-
 
     #region Singleton
     public static GameManager Instance { get; private set; }
