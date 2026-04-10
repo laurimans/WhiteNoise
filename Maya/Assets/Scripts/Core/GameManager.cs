@@ -85,6 +85,12 @@ public class GameManager : MonoBehaviour
         return canFinish;
     }
 
+    public void WriteDailyJournal()
+    {
+        journalManager.AddEntry(currentPhaseData.dateText, currentPhaseData.bodyText);
+        journalUI.TypeNewEntry(currentPhaseData.dateText, currentPhaseData.bodyText);
+    }
+
 
 
     public void NextPhase()
@@ -97,6 +103,8 @@ public class GameManager : MonoBehaviour
             {
                 LoadDayPhase((GamePhase)nextPhase);
             }, daysList[nextPhase].transitionAudio));
+
+            CursorManager.Instance.SetDefaultCursor();
         }
         else
         {

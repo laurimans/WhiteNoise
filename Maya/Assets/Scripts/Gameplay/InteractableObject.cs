@@ -130,10 +130,24 @@ public class InteractableObject : MonoBehaviour
             HandleSpriteChange(data);
         }
 
+        // Clue or Task
+        if (data.isTask && !wasInteractedInThisPhase)
+        {
+            wasInteractedInThisPhase = true;
+            GameManager.Instance.AddTaskDone(itemID);
+        }
+           
+        if (data.isClue && !wasInteractedInThisPhase)
+        {
+            wasInteractedInThisPhase = true;
+            GameManager.Instance.AddClue(itemID);
+        }
+
+
         if (data.activateOtherItem)
         {
-            this.wasInteractedInThisPhase = true;
             this.RefreshObject(currentPhase);
+            wasInteractedInThisPhase = true;
 
             if (objectToActivateGO != null)
             {
@@ -148,19 +162,6 @@ public class InteractableObject : MonoBehaviour
         }
 
         if (interactableAnimation != null) interactableAnimation.ToggleAnimation();
-
-        // Clue or Task
-        if (data.isTask && !wasInteractedInThisPhase)
-        {
-            wasInteractedInThisPhase = true;
-            GameManager.Instance.AddTaskDone(itemID);
-        }
-           
-        if (data.isClue && !wasInteractedInThisPhase)
-        {
-            wasInteractedInThisPhase = true;
-            GameManager.Instance.AddClue(itemID);
-        }
 
     }
 

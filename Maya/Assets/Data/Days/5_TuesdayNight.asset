@@ -26,3 +26,29 @@ MonoBehaviour:
     journalText: '- El papel estaba desenrrollado. Lo dejo bien'
   - itemID: kitchen_dirtyDishes
     journalText: '- Dejo los platos fregados'
+  hasPhoneCall: 1
+  conversation:
+  - senderName: qwe
+    messageContent: asdad
+    isMaya: 0
+  - senderName: eee
+    messageContent: asdasd
+    isMaya: 1
+  - senderName: e
+    messageContent: asdasd
+    isMaya: 1
+  - senderName: e
+    messageContent: asdasd
+    isMaya: 0
+  - senderName: 
+    messageContent: asdasd
+    isMaya: 1
+  - senderName: 
+    messageContent: asdasd
+    isMaya: 0
+  - senderName: 
+    messageContent: asdasd
+    isMaya: 1
+  - senderName: 
+    messageContent: asdasd
+    isMaya: 0

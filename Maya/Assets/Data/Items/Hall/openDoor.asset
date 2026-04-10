@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0546ed498f1d5ae49b165140270459f1, type: 3}
-  m_Name: light_Day
+  m_Name: openDoor
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
-  initialSprite: {fileID: 21300000, guid: a01d052eadd061b4a99fa878bead017a, type: 3}
-  otherSprite: {fileID: 0}
+  initialSprite: {fileID: 21300000, guid: 1d8ec4dfb2683c74780716beb9fcc629, type: 3}
+  otherSprite: {fileID: 21300000, guid: a76ae1b052f60574786828fed33e81db, type: 3}
   startDisable: 0
-  activateOtherItem: 0
+  activateOtherItem: 1
   sound: {fileID: 0}
   dialoguesList:
-  - 
+  - "Que co\xF1o hace la puerta abierta."
   isTask: 0
   isClue: 0

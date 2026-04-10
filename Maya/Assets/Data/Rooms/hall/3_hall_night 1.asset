@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   ambientClip: {fileID: 0}
   defaultBackground: {fileID: 21300000, guid: 18255d4a61fbe2d40877168f35785e78, type: 3}
-  otherBackgroung: {fileID: 21300000, guid: 1ab710f886d4a9f4ebc15b63b17f3a51, type: 3}
-  initialDialogue: "Que dia mas largo madre mia, que cansadilla estoy. Ma\xF1ana
-    trabajo :("
+  otherBackground: {fileID: 21300000, guid: 1ab710f886d4a9f4ebc15b63b17f3a51, type: 3}
+  initialDialogue: 

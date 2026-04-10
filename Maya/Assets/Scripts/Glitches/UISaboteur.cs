@@ -23,6 +23,24 @@ public class UISaboteur : MonoBehaviour
         GameManager.OnPhaseChanged += CheckForGlitchPhase;
     }
 
+    private void Start()
+    {
+        journalButton.onClick.AddListener(OnJournalClick);
+        pauseButton.onClick.AddListener(OnPauseClick);
+    }
+
+    void OnJournalClick()
+    {
+        if (isGlitched) pauseMenu.PauseFromHUD();
+        else journalUI.OpenJournal();
+    }
+
+    void OnPauseClick()
+    {
+        if (isGlitched) journalUI.OpenJournal();
+        else pauseMenu.PauseFromHUD();
+    }
+
     void CheckForGlitchPhase(GamePhase currentPhase)
     {
         if (currentPhase == GamePhase.ThursdayMorning)
@@ -34,25 +52,15 @@ public class UISaboteur : MonoBehaviour
     void ApplyUISwap()
     {
         isGlitched = true;
-
-        // Intercambiar  listeners
-        journalButton.onClick.RemoveAllListeners();
-        pauseButton.onClick.RemoveAllListeners();
-
-        journalButton.onClick.AddListener(() => pauseMenu.PauseFromHUD());
-        pauseButton.onClick.AddListener(() => journalUI.OpenJournal());
-
-        // Rotar boton
         journalIcon.localRotation = Quaternion.Euler(0, 0, 180f);
-
-        Debug.Log("Botones intercambiados.");
     }
+
 
     void Update()
     {
         if (isGlitched)
         {
-            if (Random.value > 0.99f)
+            if (Random.value > 0.995f)
             {
                 StartCoroutine(FlashUI());
             }

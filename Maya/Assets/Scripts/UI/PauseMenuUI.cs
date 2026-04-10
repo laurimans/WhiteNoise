@@ -12,6 +12,8 @@ public class PauseMenuUI : MonoBehaviour
 
     public void PauseFromHUD()
     {
+        if (JournalPanel.activeSelf) return;
+
         PauseMenuPanel.SetActive(true);
         HUDPanel.SetActive(false);
         comeFromHUD = true;
@@ -26,7 +28,8 @@ public class PauseMenuUI : MonoBehaviour
     public void Return()
     {
         PauseMenuPanel.SetActive(false);
-        if( comeFromHUD)
+
+        if(comeFromHUD)
         {
             HUDPanel.SetActive(true);
         }

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0546ed498f1d5ae49b165140270459f1, type: 3}
-  m_Name: paper_Moved
+  m_Name: paper_TuesMor
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
   initialSprite: {fileID: 21300000, guid: 495f14eebbeef5246a8f6f7c10ff2a7b, type: 3}
   otherSprite: {fileID: 0}
@@ -19,5 +19,5 @@ MonoBehaviour:
   sound: {fileID: 0}
   dialoguesList:
   - Que demonios
-  isTask: 0
-  isClue: 1
+  isTask: 1
+  isClue: 0

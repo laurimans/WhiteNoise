@@ -16,6 +16,7 @@ public class JournalUI : MonoBehaviour
 {
     [SerializeField] private GameObject HUDPanel;
     [SerializeField] private JournalManager journal;
+    [SerializeField] private GameObject journalPanel;
 
     [Header("Journal Texts")]
     [SerializeField] private TextMeshProUGUI dateText;
@@ -34,24 +35,17 @@ public class JournalUI : MonoBehaviour
 
     private void Start()
     {
-        this.gameObject.SetActive(false);
-    }
-
-    private void OnEnable()
-    {
-        HUDPanel.SetActive(false);
-    }
-
-    private void OnDisable()
-    {
-        this.gameObject.SetActive(false);
+        journalPanel.SetActive(false);
         HUDPanel.SetActive(true);
     }
+
 
     public void QuitJournal()
     {
-        this.gameObject.SetActive(false);
+        journalPanel.SetActive(false);
         HUDPanel.SetActive(true);
+
+        if (CursorManager.Instance != null) CursorManager.Instance.SetDefaultCursor();
     }
 
     public void NextPage()
@@ -74,16 +68,19 @@ public class JournalUI : MonoBehaviour
 
     public void OpenJournal()
     {
-        currentIndex = journal.GetEntriesCount() - 1;
+        journalPanel.SetActive(true);
+        HUDPanel.SetActive(false);
 
-        UpdateJournalUI();
-
-        this.gameObject.SetActive(true);
+        if (journal.GetEntriesCount() > 0)
+        {
+            currentIndex = journal.GetEntriesCount() - 1;
+            UpdateJournalUI();
+        }
     }
 
     public void TypeNewEntry(string date, string content)
     {
-        this.gameObject.SetActive(true); 
+        journalPanel.SetActive(true); 
         dateText.text = date;
 
         if (typewriterCoroutine != null) StopCoroutine(typewriterCoroutine);
@@ -104,7 +101,7 @@ public class JournalUI : MonoBehaviour
 
     public void TypeNewClue(string newText)
     {
-        this.gameObject.SetActive(true);
+        journalPanel.SetActive(true);
         if (typewriterCoroutine != null) StopCoroutine(typewriterCoroutine);
         typewriterCoroutine = StartCoroutine(AppendText(newText));
     }
@@ -187,8 +184,8 @@ public class JournalUI : MonoBehaviour
 
     public void OpenWithPhoto(string roomID)
     {
-        journal.AddEntry("Foto: " + roomID, "");
-        ShowCorrectPhoto(roomID);
+        journal.AddEntry("Foto: " + roomID, "Evidencia recogida.");
+        
         OpenJournal();
     }
 
