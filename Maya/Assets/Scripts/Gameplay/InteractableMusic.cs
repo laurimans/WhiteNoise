@@ -4,13 +4,11 @@ public class InteractableMusic : InteractableObject
 {
     private bool isPlaying;
 
-    void Start()
+    protected override void Start()
     {
         audioSource.loop = true;
         audioSource.playOnAwake = false;
     }
-
-
 
     public override void OnObjectClicked()
     {

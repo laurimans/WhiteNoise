@@ -4,7 +4,6 @@ public class RoomLightGlitch : MonoBehaviour
 {
     private SpriteRenderer sRenderer;
     private Room roomScript;
-    private bool lastIsOnState = false;
 
     void Awake()
     {

@@ -7,13 +7,14 @@ public class Room : MonoBehaviour
     [SerializeField] private RoomData[] phasesData;
     private SpriteRenderer sRenderer;
 
-    private GamePhase currentPhase = GamePhase.None;
+    private GamePhase currentPhase = 0;
     private GamePhase lastPhase = GamePhase.None;
 
     public bool dialogueDone = false;
 
     void Awake()
     {
+        currentPhase = 0;
         sRenderer = GetComponent<SpriteRenderer>();
         GameManager.OnPhaseChanged += RefreshRoom;
     }

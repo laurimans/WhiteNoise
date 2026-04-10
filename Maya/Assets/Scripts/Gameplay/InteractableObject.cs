@@ -20,7 +20,7 @@ public class InteractableObject : MonoBehaviour
     private GamePhase lastPhase;
     private int currentDialogueIndex = 0;
     [Header("Animator")]
-    [SerializeField] private InteractableAnimation interactableAnimation;
+    [SerializeField] protected InteractableAnimation interactableAnimation;
 
     public static event Action<string> OnDialogueSaid;
 
@@ -28,14 +28,14 @@ public class InteractableObject : MonoBehaviour
     [SerializeField] protected AudioSource audioSource;
 
 
-    void Awake()
+    protected virtual void Awake()
     {
         sRenderer = GetComponent<SpriteRenderer>();
 
         GameManager.OnPhaseChanged += RefreshObject;
     }
 
-    void Start()
+    protected virtual void Start()
     {
         if (itemID == null) Debug.LogWarning($"El item {itemID} no tiene id");
         if (sRenderer == null) Debug.LogError($"El item {itemID} no tiene spriteRenderer");

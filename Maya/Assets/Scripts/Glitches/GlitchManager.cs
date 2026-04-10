@@ -12,7 +12,6 @@ public class GlitchManager : MonoBehaviour
     [SerializeField] private GameObject glitchScreen;
 
     private bool isLagging = false;
-    private bool controllingMouse = false;
 
     public void StartFinalSequence()
     {
@@ -29,7 +28,6 @@ public class GlitchManager : MonoBehaviour
 
         // SOS
         isLagging = false;
-        controllingMouse = true;
         yield return StartCoroutine(MoveInSOS());
 
         // Mensaje error

@@ -19,3 +19,14 @@ MonoBehaviour:
   dateText: 
   bodyText: 
   cluesForThisDay: []
+  hasPhoneCall: 1
+  conversation:
+  - senderName: Mama
+    messageContent: asdfasd
+    isMaya: 0
+  - senderName: ssss
+    messageContent: asdfasdfsdfasd
+    isMaya: 1
+  - senderName: ff
+    messageContent: safd
+    isMaya: 0

@@ -31,7 +31,7 @@ public class DayPhaseData : ScriptableObject
     public List<ClueDictionary> cluesForThisDay;
 
     [Header("Phone Call")]
-    public bool hasCallThisPhase;
+    public bool hasPhoneCall;
     public List<PhoneMessage> conversation;
 
     public string GetClueText(string id)

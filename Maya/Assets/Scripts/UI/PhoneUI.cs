@@ -21,5 +21,6 @@ public class PhoneUI : MonoBehaviour
     }
 
     public void SetCloseButton(bool active) => closeButton.gameObject.SetActive(active);
+
 }
 
