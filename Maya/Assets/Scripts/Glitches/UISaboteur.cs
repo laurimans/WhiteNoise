@@ -45,7 +45,7 @@ public class UISaboteur : MonoBehaviour
         // Rotar boton
         journalIcon.localRotation = Quaternion.Euler(0, 0, 180f);
 
-        Debug.Log("UI Corrupta: Botones intercambiados.");
+        Debug.Log("Botones intercambiados.");
     }
 
     void Update()

@@ -96,6 +96,25 @@ public class JournalUI : MonoBehaviour
         typewriterCoroutine = StartCoroutine(AppendText(newText));
     }
 
+    IEnumerator TypeSentenceWithGlitch(string sentence)
+    {
+        bodyText.text = "";
+        string characters = "!@#$%^&*()_+=<>?/";
+
+        for (int i = 0; i < sentence.Length; i++)
+        {
+            if (GameManager.Instance.GetCurrentPhase() == GamePhase.WednesdayMorning && i > sentence.Length / 2)
+            {
+                bodyText.text += characters[Random.Range(0, characters.Length)];
+            }
+            else
+            {
+                bodyText.text += sentence[i];
+            }
+            yield return new WaitForSeconds(0.05f);
+        }
+    }
+
     IEnumerator AppendText(string textToAppend)
     {
         foreach (char letter in textToAppend.ToCharArray())
