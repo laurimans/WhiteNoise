@@ -16,7 +16,7 @@ MonoBehaviour:
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
-  sound: {fileID: 8300000, guid: 07bc07bb783e1a846bf03bc9e8bfc1a2, type: 3}
+  sound: {fileID: 8300000, guid: 5e235e517db3be546bb1af99d5a8a0c0, type: 3}
   dialoguesList:
   - Ole un poquito de musica
   - suficiente por hoy

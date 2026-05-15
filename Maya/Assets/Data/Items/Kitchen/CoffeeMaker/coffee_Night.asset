@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: coffee_Night
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
   initialSprite: {fileID: 21300000, guid: 4c45658c0ed788142b9c4423cefa3d3c, type: 3}
-  otherSprite: {fileID: 0}
+  otherSprite: {fileID: 21300000, guid: 09531f32591b1854d87e7eb938c8601c, type: 3}
   startDisable: 0
   activateOtherItem: 0
   sound: {fileID: 0}

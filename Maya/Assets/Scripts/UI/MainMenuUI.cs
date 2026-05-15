@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.VFX;
 
 public class MainMenuUI : MonoBehaviour
 {
@@ -17,7 +16,7 @@ public class MainMenuUI : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene("GameScene");
+        GameStateManager.Instance.StartGame();
     }
 
     public void Credits()

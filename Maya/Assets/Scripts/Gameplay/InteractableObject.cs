@@ -41,10 +41,10 @@ public class InteractableObject : MonoBehaviour
         if (sRenderer == null) Debug.LogError($"El item {itemID} no tiene spriteRenderer");
         if (this.GetComponent<BoxCollider2D>() == null) Debug.LogError($"El item {itemID} no tiene Collider");
 
-        if (phasesData.Length != Enum.GetValues(typeof(GamePhase)).Length-1) Debug.LogWarning($"El item {itemID} no tiene todos los comportamientos");
+        if (phasesData.Length != Enum.GetValues(typeof(GamePhase)).Length) Debug.LogWarning($"El item {itemID} no tiene todos los comportamientos");
     }
 
-    void OnEnable()
+    protected virtual void OnEnable()
     {
         if (GameManager.Instance != null)
         {

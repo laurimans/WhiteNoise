@@ -16,7 +16,7 @@ public class JournalUI : MonoBehaviour
 {
     [SerializeField] private GameObject HUDPanel;
     [SerializeField] private JournalManager journal;
-    [SerializeField] private GameObject journalPanel;
+    [SerializeField] private GameObject journalCanvas;
 
     [Header("Journal Texts")]
     [SerializeField] private TextMeshProUGUI dateText;
@@ -35,14 +35,14 @@ public class JournalUI : MonoBehaviour
 
     private void Start()
     {
-        journalPanel.SetActive(false);
+        journalCanvas.SetActive(false);
         HUDPanel.SetActive(true);
     }
 
 
     public void QuitJournal()
     {
-        journalPanel.SetActive(false);
+        journalCanvas.SetActive(false);
         HUDPanel.SetActive(true);
 
         if (CursorManager.Instance != null) CursorManager.Instance.SetDefaultCursor();
@@ -68,7 +68,7 @@ public class JournalUI : MonoBehaviour
 
     public void OpenJournal()
     {
-        journalPanel.SetActive(true);
+        journalCanvas.SetActive(true);
         HUDPanel.SetActive(false);
 
         if (journal.GetEntriesCount() > 0)
@@ -80,7 +80,7 @@ public class JournalUI : MonoBehaviour
 
     public void TypeNewEntry(string date, string content)
     {
-        journalPanel.SetActive(true); 
+        journalCanvas.SetActive(true); 
         dateText.text = date;
 
         if (typewriterCoroutine != null) StopCoroutine(typewriterCoroutine);
@@ -101,7 +101,7 @@ public class JournalUI : MonoBehaviour
 
     public void TypeNewClue(string newText)
     {
-        journalPanel.SetActive(true);
+        journalCanvas.SetActive(true);
         if (typewriterCoroutine != null) StopCoroutine(typewriterCoroutine);
         typewriterCoroutine = StartCoroutine(AppendText(newText));
     }

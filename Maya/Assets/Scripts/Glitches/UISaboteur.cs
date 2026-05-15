@@ -31,14 +31,14 @@ public class UISaboteur : MonoBehaviour
 
     void OnJournalClick()
     {
-        if (isGlitched) pauseMenu.PauseFromHUD();
+        if (isGlitched) pauseMenu.OnPauseButtonPressed();
         else journalUI.OpenJournal();
     }
 
     void OnPauseClick()
     {
         if (isGlitched) journalUI.OpenJournal();
-        else pauseMenu.PauseFromHUD();
+        else pauseMenu.OnPauseButtonPressed();
     }
 
     void CheckForGlitchPhase(GamePhase currentPhase)

@@ -159,6 +159,10 @@ public class GlitchManager : MonoBehaviour
 
     void ResetToDayOne()
     {
+        Cursor.visible = false;
+        fakeCursor.gameObject.SetActive(true);
+        glitchScreen.SetActive(false);
+
         GameManager.Instance.NextPhase();
     }
 

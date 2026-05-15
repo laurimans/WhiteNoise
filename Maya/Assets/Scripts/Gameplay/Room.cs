@@ -8,7 +8,7 @@ public class Room : MonoBehaviour
     private SpriteRenderer sRenderer;
 
     private GamePhase currentPhase = 0;
-    private GamePhase lastPhase = GamePhase.None;
+    private GamePhase lastPhase = GamePhase.FinalDay;
 
     public bool dialogueDone = false;
 

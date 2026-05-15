@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 3_MondayNight
   m_EditorClassIdentifier: Assembly-CSharp::Day_SO
   id_day: 2
-  tasksNumber: 3
+  tasksNumber: 2
   cluesNumber: 0
   transitionAudio: {fileID: 0}
   dateText: 

@@ -19,3 +19,5 @@ MonoBehaviour:
   dateText: 
   bodyText: 
   cluesForThisDay: []
+  hasPhoneCall: 0
+  conversation: []

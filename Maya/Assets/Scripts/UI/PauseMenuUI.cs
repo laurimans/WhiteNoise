@@ -6,41 +6,41 @@ public class PauseMenuUI : MonoBehaviour
 {
     [SerializeField] private GameObject PauseMenuPanel;
     [SerializeField] private GameObject HUDPanel;
-    [SerializeField] private GameObject JournalPanel;
 
-    private bool comeFromHUD;
-
-    public void PauseFromHUD()
+    private void OnEnable()
     {
-        if (JournalPanel.activeSelf) return;
 
+        GameStateManager.OnGamePause += ShowPauseMenu;
+        GameStateManager.OnGameResume += HidePauseMenu;
+        
+        
+    }
+
+    private void OnDisable()
+    {
+        GameStateManager.OnGamePause -= ShowPauseMenu;
+        GameStateManager.OnGameResume -= HidePauseMenu;
+    }
+
+    private void ShowPauseMenu()
+    {
         PauseMenuPanel.SetActive(true);
         HUDPanel.SetActive(false);
-        comeFromHUD = true;
     }
 
-    public void PauseFromJournal()
-    {
-        PauseMenuPanel.SetActive(true);
-        comeFromHUD = false;
-    }
-
-    public void Return()
+    private void HidePauseMenu()
     {
         PauseMenuPanel.SetActive(false);
+        HUDPanel.SetActive(true);
+    }
 
-        if(comeFromHUD)
-        {
-            HUDPanel.SetActive(true);
-        }
-        else
-        {
-            JournalPanel.SetActive(true);
-        }
+    public void OnPauseButtonPressed()
+    {
+        GameStateManager.Instance.TogglePause();
     }
 
     public void Quit()
     {
-        SceneManager.LoadScene("MainMenuScene");
+        GameStateManager.Instance.ReturnToMenu();
     }
 }

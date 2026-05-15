@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: 4_TuesdayMorning
   m_EditorClassIdentifier: Assembly-CSharp::Day_SO
   id_day: 3
-  tasksNumber: 2
+  tasksNumber: 1
   cluesNumber: 0
   transitionAudio: {fileID: 8300000, guid: e5a1a198507048a4caacf6571855e9df, type: 3}
   dateText: 
   bodyText: 
   cluesForThisDay: []
+  hasPhoneCall: 0
+  conversation: []
