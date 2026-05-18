@@ -10,9 +10,12 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioMixer mixer;
     private AudioSource[] audioRooms;
 
-    [Header("Efectos de sonido")]
+    [Header("Sound Effects")]
     [SerializeField] private AudioClip clickButtonClip;
     [SerializeField] private AudioClip pageJournalClip;
+    [SerializeField] private AudioClip taskDoneClip;
+
+    [Header("Music")]
     [SerializeField] private AudioClip menuMusicClip;
 
     #region Singleton
@@ -35,6 +38,15 @@ public class AudioManager : MonoBehaviour
 
     #endregion
 
+    private void OnEnable()
+    {
+        GameManager.OnTaskDone += PlayTaskDoneSound;
+    }
+
+    private void OnDisable()
+    {
+        
+    }
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "MainMenuScene")
@@ -48,6 +60,11 @@ public class AudioManager : MonoBehaviour
         {
             StopMusic(); 
         }
+    }
+
+    private void PlayTaskDoneSound()
+    {
+        PlayUISound(taskDoneClip);
     }
 
 

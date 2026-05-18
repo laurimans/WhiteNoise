@@ -11,7 +11,10 @@ public class InteractableData : ScriptableObject
     public bool startDisable;
     public bool activateOtherItem;
 
-    [Header("Sound")]
+    [Header("Phase Actions")]
+    public List<InteractableAction> actions;
+
+    [Header("Old System")]
     public AudioClip sound;
 
     [Header("Dialogues")]

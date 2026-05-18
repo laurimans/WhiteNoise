@@ -16,6 +16,9 @@ MonoBehaviour:
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
+  actions:
+  - {fileID: 11400000, guid: 863b5e07a7a943f49a299208018e8061, type: 2}
+  - {fileID: 11400000, guid: cfcd166536ddd36439f112932c5a2806, type: 2}
   sound: {fileID: 0}
   dialoguesList:
   - "A\xFAn no me puedo acostar, tengo que terminar de recoger."

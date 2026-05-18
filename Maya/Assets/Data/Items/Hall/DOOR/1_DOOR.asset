@@ -16,6 +16,8 @@ MonoBehaviour:
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
+  actions:
+  - {fileID: 11400000, guid: 863b5e07a7a943f49a299208018e8061, type: 2}
   sound: {fileID: 0}
   dialoguesList:
   - "Espera, a\xFAn no me he tomado el caf\xE9."

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce8ed3ef529ce2b46b8a9e49aa7d33c5, type: 3}
+  m_Name: dialogue_leo_0
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueAction
+  dialoguesList:
+  - "Te echo much\xEDsimo de menos, Leo."
+  - "La casa se me hace enorme sin t\xED."

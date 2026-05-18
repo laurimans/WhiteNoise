@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     public static event Action<GamePhase> OnPhaseChanged;
     public static event Action OnGameEnd;
     public static event Action<bool> OnExitLockChange;
+    public static event Action OnTaskDone;
 
     #region Singleton
     public static GameManager Instance { get; private set; }
@@ -72,7 +73,10 @@ public class GameManager : MonoBehaviour
         if (InputManager.Instance != null)
             InputManager.Instance.OnInteractableItemClicked += InteractionWithItem;
 
-        ExitItem.OnExitClicked += NextPhase;
+        GiveClueAction.OnClueFound += AddClue;
+        CompleteTaskAction.OnTaskComplete += AddTaskDone;
+
+        TryExitAction.OnExitSucess += NextPhase;
     }
 
     private void OnDisable()
@@ -80,7 +84,10 @@ public class GameManager : MonoBehaviour
         if (InputManager.Instance != null)
             InputManager.Instance.OnInteractableItemClicked -= InteractionWithItem;
 
-        ExitItem.OnExitClicked -= NextPhase;
+        GiveClueAction.OnClueFound -= AddClue;
+        CompleteTaskAction.OnTaskComplete -= AddTaskDone;
+
+        TryExitAction.OnExitSucess -= NextPhase;
     }
 
     public GamePhase GetCurrentPhase() => currentPhase;
@@ -169,10 +176,11 @@ public class GameManager : MonoBehaviour
         Debug.Log("Has interactuado con:" + item.name);
     }
 
-    public bool AddClue(string clueId)
+    public void AddClue(string clueId)
     {
-        if (!isJournalPickedUp) return false; // Sin diario n puede apuntar listas
+        if (!isJournalPickedUp) return; // Sin diario n puede apuntar listas
 
+        OnTaskDone?.Invoke();
         cluesFound++;
 
         string textForJournal = currentPhaseData.GetClueText(clueId);
@@ -182,12 +190,12 @@ public class GameManager : MonoBehaviour
         journalUI.TypeNewClue("\n- " + textForJournal);
 
         HandleExitLock();
-        return true;
     }
 
 
     public void AddTaskDone(string taskId)
     {
+        OnTaskDone?.Invoke();
         tasksDone++;
         HandleExitLock();
 

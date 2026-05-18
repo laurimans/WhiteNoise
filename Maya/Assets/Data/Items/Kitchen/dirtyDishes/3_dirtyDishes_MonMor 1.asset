@@ -16,6 +16,8 @@ MonoBehaviour:
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
+  actions:
+  - {fileID: 0}
   sound: {fileID: 0}
   dialoguesList:
   - "De verdad que este estr\xE9s me est\xE1 afectando."

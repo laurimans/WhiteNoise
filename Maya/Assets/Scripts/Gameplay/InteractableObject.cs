@@ -6,23 +6,23 @@ using UnityEngine;
 
 public class InteractableObject : MonoBehaviour
 {
-    [SerializeField] private string itemID;
+    public string itemID;
 
     [Header("Ordering System")]
     [SerializeField] private GameObject objectToActivateGO;
-    private bool wasInteractedInThisPhase = false;
+    public bool wasInteractedInThisPhase = false;
 
     [Header("Phases")]
     [SerializeField] private InteractableData[] phasesData;
 
-    protected SpriteRenderer sRenderer;
+    public SpriteRenderer sRenderer;
     private GamePhase currentPhase = 0;
     private GamePhase lastPhase;
     private int currentDialogueIndex = 0;
     [Header("Animator")]
     [SerializeField] protected InteractableAnimation interactableAnimation;
 
-    public static event Action<string> OnDialogueSaid;
+    public static event Action<string> OnDialogueSaid; //
 
     [Header("Sound")]
     [SerializeField] protected AudioSource audioSource;
@@ -55,6 +55,10 @@ public class InteractableObject : MonoBehaviour
     public string GetID() => itemID;
     public InteractableData GetPhaseData() => phasesData[(int)currentPhase];
 
+    public GameObject GetTargetObject() => objectToActivateGO;
+
+    public void MarkAsInteracted() => wasInteractedInThisPhase = true;
+
     private void RefreshObject (GamePhase _currentPhase)
     {
         if (_currentPhase != lastPhase) // Cambio de fase
@@ -75,10 +79,10 @@ public class InteractableObject : MonoBehaviour
             gameObject.SetActive(false);
         } else
         {
-            bool isCurrentlyDisabled = phasesData[(int)currentPhase].startDisable;
-            bool finalActiveState = wasInteractedInThisPhase ? !isCurrentlyDisabled : isCurrentlyDisabled;
+            bool startsDisable = phasesData[(int)currentPhase].startDisable;
+            bool shouldBeActivate = wasInteractedInThisPhase? startsDisable : !startsDisable;
 
-            HandleObjectActivation(finalActiveState);
+            HandleObjectActivation(!shouldBeActivate);
         }  
 
     }
@@ -112,38 +116,47 @@ public class InteractableObject : MonoBehaviour
 
         InteractableData data = phasesData[(int)currentPhase];
 
-        // Dialogues
+        if (data.actions != null)
+        {
+            foreach (var action in data.actions)
+            {
+                bool shouldContinue = action.Execute(this);
+                if (!shouldContinue) break;
+            }
+        }
+
+        ////////////////////////////////// Dialogues
         if (data.dialoguesList.Count > 0)
         {
-            HandleDialogue(data);
+            //HandleDialogue(data);
         }
 
-        // Sound
+        //////////////////////////////// Sound
         if (data.sound != null)
         {
-            HandleSoundEffect(data);
+            //HandleSoundEffect(data);
         }
 
-        // Sprite change
+        /////////////////////////////// Sprite change
         if (data.otherSprite != null)
         {
-            HandleSpriteChange(data);
+            //HandleSpriteChange(data);
         }
 
-        // Clue or Task
+        //////////////////////////////// Clue or Task
         if (data.isTask && !wasInteractedInThisPhase)
         {
-            wasInteractedInThisPhase = true;
-            GameManager.Instance.AddTaskDone(itemID);
+            //wasInteractedInThisPhase = true;
+            //GameManager.Instance.AddTaskDone(itemID);
         }
            
         if (data.isClue && !wasInteractedInThisPhase)
         {
-            wasInteractedInThisPhase = true;
-            GameManager.Instance.AddClue(itemID);
+            //wasInteractedInThisPhase = true;
+            //GameManager.Instance.AddClue(itemID);
         }
 
-
+        /*
         if (data.activateOtherItem)
         {
             this.RefreshObject(currentPhase);
@@ -159,9 +172,9 @@ public class InteractableObject : MonoBehaviour
                     nextScript.RefreshObject(currentPhase);
                 }
             }
-        }
+        }*/
 
-        if (interactableAnimation != null) interactableAnimation.ToggleAnimation();
+        //if (interactableAnimation != null) interactableAnimation.ToggleAnimation();
 
     }
 

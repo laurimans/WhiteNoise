@@ -16,6 +16,8 @@ MonoBehaviour:
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
+  actions:
+  - {fileID: 11400000, guid: cb4255018eb4ca847af9e1ad2b011e56, type: 2}
   sound: {fileID: 8300000, guid: 091022a6592d0274e8268b6541f72fbd, type: 3}
   dialoguesList: []
   isTask: 0

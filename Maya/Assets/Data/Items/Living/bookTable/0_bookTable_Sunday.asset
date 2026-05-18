@@ -16,6 +16,8 @@ MonoBehaviour:
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 1
+  actions:
+  - {fileID: 11400000, guid: 00d5adbfbf8259b4c91b483a95420f62, type: 2}
   sound: {fileID: 8300000, guid: 4166237faa6a0b6498d7c14c26fae472, type: 3}
   dialoguesList:
   - Ya he repasado suficiente por hoy, hora de guardarlo en su sitio.

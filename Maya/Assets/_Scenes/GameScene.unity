@@ -1745,6 +1745,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8354663151753832534, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 19.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354663151753832534, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 10.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3544,7 +3552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UISaboteur
   journalButton: {fileID: 2064299427}
-  pauseButton: {fileID: 0}
+  pauseButton: {fileID: 1525747897979829814}
   mainHUD: {fileID: 1086749072}
   journalIcon: {fileID: 2064299426}
   pauseMenu: {fileID: 1156202282}
@@ -7647,7 +7655,6 @@ GameObject:
   - component: {fileID: 1239273809}
   - component: {fileID: 1239273811}
   - component: {fileID: 1239273810}
-  - component: {fileID: 1239273812}
   m_Layer: 0
   m_Name: CoffeeAnimator
   m_TagString: Untagged
@@ -7751,19 +7758,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
---- !u!114 &1239273812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1239273808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa5c89a3120395f4d93aafeae47b8016, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractableAnimation
-  visualObject: {fileID: 1239273808}
 --- !u!1 &1286793922
 GameObject:
   m_ObjectHideFlags: 0
@@ -7929,7 +7923,6 @@ GameObject:
   - component: {fileID: 1321173496}
   - component: {fileID: 1321173499}
   - component: {fileID: 1321173498}
-  - component: {fileID: 1321173497}
   m_Layer: 0
   m_Name: CoffeeAnimator
   m_TagString: Untagged
@@ -7952,19 +7945,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1906936245}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1321173497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321173495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa5c89a3120395f4d93aafeae47b8016, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractableAnimation
-  visualObject: {fileID: 1321173495}
 --- !u!95 &1321173498
 Animator:
   serializedVersion: 7
@@ -8069,7 +8049,7 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: interactableAnimation
       value: 
-      objectReference: {fileID: 1239273812}
+      objectReference: {fileID: 1525670648}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[0]'
       value: 
@@ -8196,7 +8176,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1239273809}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1425736612035570046, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1525670648}
   m_SourcePrefab: {fileID: 100100000, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
 --- !u!4 &1338692443 stripped
 Transform:
@@ -8920,6 +8903,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493853148}
   m_CullTransparentMesh: 1
+--- !u!1 &1525670644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1425736612035570046, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+  m_PrefabInstance: {fileID: 1338692442}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1525670648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525670644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa5c89a3120395f4d93aafeae47b8016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableAnimation
+  visualObject: {fileID: 1239273808}
+--- !u!1 &1542682907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1425736612035570046, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+  m_PrefabInstance: {fileID: 1906936244}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1547869720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9908,8 +9914,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74bb9312a4196ed4a9b0a192d23487f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraBoxInteractable
-  itemID: hall_boxes
   objectToActivateGO: {fileID: 0}
+  wasInteractedInThisPhase: 0
   phasesData:
   - {fileID: 0}
   - {fileID: 0}
@@ -9920,6 +9926,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8f74d3b933f6f1f47a78300eb919f56b, type: 2}
   - {fileID: 0}
   - {fileID: 0}
+  sRenderer: {fileID: 0}
   interactableAnimation: {fileID: 0}
   audioSource: {fileID: 0}
   cameraUIButton: {fileID: 2030960553}
@@ -10285,6 +10292,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1996650856625340169, guid: 84c062ac887e3cc4ebe7706b1443d4dd, type: 3}
+      propertyPath: taskDoneClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bb8a43927b07cd240b842105c1da62b8, type: 3}
     - target: {fileID: 1996650856625340169, guid: 84c062ac887e3cc4ebe7706b1443d4dd, type: 3}
       propertyPath: menuMusicClip
       value: 
@@ -11837,7 +11848,7 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: interactableAnimation
       value: 
-      objectReference: {fileID: 1321173497}
+      objectReference: {fileID: 1906936249}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[0]'
       value: 
@@ -11984,13 +11995,29 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1321173496}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1425736612035570046, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1906936249}
   m_SourcePrefab: {fileID: 100100000, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
 --- !u!4 &1906936245 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
   m_PrefabInstance: {fileID: 1906936244}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1906936249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542682907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa5c89a3120395f4d93aafeae47b8016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableAnimation
+  visualObject: {fileID: 1321173495}
 --- !u!1 &1993488577
 GameObject:
   m_ObjectHideFlags: 0
@@ -14090,8 +14117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7284383e98413e4cb8ff19677f59b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableJournal
-  itemID: journal
   objectToActivateGO: {fileID: 2064299425}
+  wasInteractedInThisPhase: 0
   phasesData:
   - {fileID: 11400000, guid: c0ac47aaf56ac674a9826849862e9382, type: 2}
   - {fileID: 11400000, guid: b5c2d2bdf02924b40b225e93e2b9981d, type: 2}
@@ -14102,6 +14129,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  sRenderer: {fileID: 0}
   interactableAnimation: {fileID: 0}
   audioSource: {fileID: 0}
   journal: {fileID: 1156202283}
@@ -14160,14 +14188,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1425736611964451657}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ca8806d1facb141b1479a8398c324f, type: 3}
+  m_Script: {fileID: 11500000, guid: 71ef27dbd49e0ae4cbcaf005d3b653d9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ExitItem
-  itemID: living_bed
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   objectToActivateGO: {fileID: 0}
+  wasInteractedInThisPhase: 0
   phasesData:
   - {fileID: 11400000, guid: 57b6af7caf718fa4db02286be79d80a7, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 8750b8c0eef9e7646a01f0cd7e8ad464, type: 2}
   - {fileID: 11400000, guid: dd216ae3f090ca14e9f2a5d7b80af37a, type: 2}
   - {fileID: 0}
   - {fileID: 11400000, guid: d3a31c3c44a65d740bd3ff004413b781, type: 2}
@@ -14175,9 +14203,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8ab97df7f4b306f43943204bd7be95dd, type: 2}
   - {fileID: 0}
   - {fileID: 0}
+  sRenderer: {fileID: 0}
   interactableAnimation: {fileID: 0}
   audioSource: {fileID: 0}
-  isLocked: 1
 --- !u!61 &8354663152395240134
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14233,11 +14261,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1425736613474026478}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ca8806d1facb141b1479a8398c324f, type: 3}
+  m_Script: {fileID: 11500000, guid: 71ef27dbd49e0ae4cbcaf005d3b653d9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ExitItem
-  itemID: hall_door
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   objectToActivateGO: {fileID: 0}
+  wasInteractedInThisPhase: 0
   phasesData:
   - {fileID: 0}
   - {fileID: 11400000, guid: 4233cf6c2fa57254db994cec641e5f8b, type: 2}
@@ -14248,9 +14276,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 11400000, guid: 4233cf6c2fa57254db994cec641e5f8b, type: 2}
+  sRenderer: {fileID: 0}
   interactableAnimation: {fileID: 0}
   audioSource: {fileID: 0}
-  isLocked: 1
 --- !u!61 &8354663152972870686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14309,8 +14337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a5f5c30329c9a468271ad0f56e2ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableMusic
-  itemID: living_recordplayer
   objectToActivateGO: {fileID: 0}
+  wasInteractedInThisPhase: 0
   phasesData:
   - {fileID: 11400000, guid: ee656962fa346eb42877c5141501f19a, type: 2}
   - {fileID: 11400000, guid: ee656962fa346eb42877c5141501f19a, type: 2}
@@ -14321,6 +14349,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ee656962fa346eb42877c5141501f19a, type: 2}
   - {fileID: 11400000, guid: ee656962fa346eb42877c5141501f19a, type: 2}
   - {fileID: 11400000, guid: ee656962fa346eb42877c5141501f19a, type: 2}
+  sRenderer: {fileID: 0}
   interactableAnimation: {fileID: 0}
   audioSource: {fileID: 728983573}
 --- !u!61 &8354663153299129895
@@ -14383,7 +14412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractablePhone
   phoneVisual: {fileID: 1133235967}
   phoneManager: {fileID: 1718060458}
-  phoneTone: {fileID: 8300000, guid: 037c44adc212c864cbf588f9b71587f0, type: 3}
+  phoneTone: {fileID: 8300000, guid: 829b4e049a46d5f41aaf4d243dc4b6de, type: 3}
   phoneSource: {fileID: 1821013472}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

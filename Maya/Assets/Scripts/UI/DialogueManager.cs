@@ -25,6 +25,7 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         InteractableObject.OnDialogueSaid += ShowDialogue;
+        DialogueAction.OnDialogueSaid += ShowDialogue;
         RoomNavigation.OnDialogueSaid += ShowDialogue;
     }
 
@@ -109,6 +110,7 @@ public class DialogueManager : MonoBehaviour
     private void OnDestroy()
     {
         InteractableObject.OnDialogueSaid -= ShowDialogue;
+        DialogueAction.OnDialogueSaid -= ShowDialogue;
         RoomNavigation.OnDialogueSaid -= ShowDialogue;
     }
 
