@@ -16,6 +16,9 @@ MonoBehaviour:
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 1
+  actions:
+  - {fileID: 11400000, guid: 17aa2f64d4da3d346bde4e872abd4c6b, type: 2}
+  - {fileID: 11400000, guid: 4a7752fd5cf4d4049ab2110032bc5d6e, type: 2}
   sound: {fileID: 0}
   dialoguesList:
   - Ahora lo llevare siempre encima

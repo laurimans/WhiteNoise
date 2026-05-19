@@ -255,8 +255,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 189867665}
   - {fileID: 784841096}
+  - {fileID: 189867665}
   - {fileID: 1010161706}
   - {fileID: 6703939815789548053}
   - {fileID: 1462731581}
@@ -3695,8 +3695,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1180325536}
   - {fileID: 887149009}
+  - {fileID: 1180325536}
   - {fileID: 1602958025}
   - {fileID: 1821058099}
   - {fileID: 1338692443}
@@ -4447,6 +4447,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 332685259}
     - target: {fileID: 1333408216175951146, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: objectToActivateGO
+      value: 
+      objectReference: {fileID: 332685259}
+    - target: {fileID: 1333408216175951146, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
       propertyPath: 'phasesData.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: f04efee230fe8dd44a154db47f8e233c, type: 2}
@@ -4466,6 +4470,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: light
       objectReference: {fileID: 0}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: itemID
+      value: light_bedroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: objectToActivateGO
+      value: 
+      objectReference: {fileID: 332685259}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f04efee230fe8dd44a154db47f8e233c, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f04efee230fe8dd44a154db47f8e233c, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f04efee230fe8dd44a154db47f8e233c, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f04efee230fe8dd44a154db47f8e233c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4859,6 +4887,10 @@ PrefabInstance:
       value: hall_light
       objectReference: {fileID: 0}
     - target: {fileID: 1333408216175951146, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: objectToActivateGO
+      value: 
+      objectReference: {fileID: 3591912}
+    - target: {fileID: 1333408216175951146, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
       propertyPath: 'phasesData.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: 80084c2e0e1b4e8449e987d96c4a5a36, type: 2}
@@ -4930,10 +4962,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: light
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1333408216175951146, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+    - {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6930853183304552387, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1895657173}
   m_SourcePrefab: {fileID: 100100000, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
 --- !u!4 &784841096 stripped
 Transform:
@@ -5604,6 +5641,10 @@ PrefabInstance:
       value: kitchen_light
       objectReference: {fileID: 0}
     - target: {fileID: 1333408216175951146, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: objectToActivateGO
+      value: 
+      objectReference: {fileID: 684289907}
+    - target: {fileID: 1333408216175951146, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
       propertyPath: 'phasesData.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: 15fa07ac87febe542b6c5db372d30bb1, type: 2}
@@ -5695,7 +5736,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: light
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: itemID
+      value: kitchen_light
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: objectToActivateGO
+      value: 
+      objectReference: {fileID: 684289907}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 15fa07ac87febe542b6c5db372d30bb1, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e27128c3c53a2624886a4a098723896a, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 15fa07ac87febe542b6c5db372d30bb1, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e27128c3c53a2624886a4a098723896a, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 15fa07ac87febe542b6c5db372d30bb1, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e27128c3c53a2624886a4a098723896a, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 15fa07ac87febe542b6c5db372d30bb1, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[7]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e27128c3c53a2624886a4a098723896a, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e27128c3c53a2624886a4a098723896a, type: 2}
+    m_RemovedComponents:
+    - {fileID: 1333408216175951146, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6212,6 +6298,14 @@ PrefabInstance:
       propertyPath: itemID
       value: hall_boxes
       objectReference: {fileID: 0}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f74d3b933f6f1f47a78300eb919f56b, type: 2}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f74d3b933f6f1f47a78300eb919f56b, type: 2}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3613153
@@ -6264,14 +6358,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.36862746
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1425736612035570046, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1710087270}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
 --- !u!4 &1010161706 stripped
 Transform:
@@ -6950,6 +7040,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenuUI
   PauseMenuPanel: {fileID: 1646667370}
   HUDPanel: {fileID: 1086749066}
+  cameraButton: {fileID: 2030960553}
+  journalButton: {fileID: 2064299425}
 --- !u!114 &1156202283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9195,13 +9287,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6703939815850888318}
   - {fileID: 824637255}
   - {fileID: 1547869721}
   - {fileID: 6703939816085198580}
   - {fileID: 6703939816294556877}
   - {fileID: 1301549998}
   - {fileID: 576113038}
-  - {fileID: 6703939815850888318}
   - {fileID: 349212169}
   m_Father: {fileID: 1375512255}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9897,39 +9989,6 @@ RectTransform:
   m_AnchoredPosition: {x: 11.784, y: -2.4000053}
   m_SizeDelta: {x: -16.854, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1710087266 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1425736612035570046, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
-  m_PrefabInstance: {fileID: 1010161705}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1710087270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710087266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74bb9312a4196ed4a9b0a192d23487f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CameraBoxInteractable
-  objectToActivateGO: {fileID: 0}
-  wasInteractedInThisPhase: 0
-  phasesData:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 11400000, guid: 8f74d3b933f6f1f47a78300eb919f56b, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  sRenderer: {fileID: 0}
-  interactableAnimation: {fileID: 0}
-  audioSource: {fileID: 0}
-  cameraUIButton: {fileID: 2030960553}
 --- !u!1 &1717088837
 GameObject:
   m_ObjectHideFlags: 0
@@ -10109,7 +10168,7 @@ MonoBehaviour:
   - {fileID: 1096121367}
   - {fileID: 2011928506}
   journalManager: {fileID: 1718060462}
-  journalUI: {fileID: 0}
+  journalUI: {fileID: 1156202283}
   isExitLock: 1
 --- !u!114 &1718060462
 MonoBehaviour:
@@ -10406,6 +10465,10 @@ PrefabInstance:
       value: bathroom_light
       objectReference: {fileID: 0}
     - target: {fileID: 1333408216175951146, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: objectToActivateGO
+      value: 
+      objectReference: {fileID: 1894324764}
+    - target: {fileID: 1333408216175951146, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
       propertyPath: 'phasesData.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: 64b58a33474353d4d94f9d3bfe695d73, type: 2}
@@ -10501,7 +10564,52 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: itemID
+      value: bathroom_light
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: objectToActivateGO
+      value: 
+      objectReference: {fileID: 1894324764}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 64b58a33474353d4d94f9d3bfe695d73, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 431ba06c5d100294faae49bfe3487312, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 64b58a33474353d4d94f9d3bfe695d73, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 431ba06c5d100294faae49bfe3487312, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 64b58a33474353d4d94f9d3bfe695d73, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 431ba06c5d100294faae49bfe3487312, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 64b58a33474353d4d94f9d3bfe695d73, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[7]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 431ba06c5d100294faae49bfe3487312, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 431ba06c5d100294faae49bfe3487312, type: 2}
+    m_RemovedComponents:
+    - {fileID: 1333408216175951146, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11582,6 +11690,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a919682e05eae46a90a507c9341c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomLightGlitch
+--- !u!1 &1895657169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6930853183304552387, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+  m_PrefabInstance: {fileID: 784841095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1895657173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895657169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ef27dbd49e0ae4cbcaf005d3b653d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
+  itemID: hall_light
+  objectToActivateGO: {fileID: 3591912}
+  wasInteractedInThisPhase: 0
+  phasesData:
+  - {fileID: 11400000, guid: 80084c2e0e1b4e8449e987d96c4a5a36, type: 2}
+  - {fileID: 11400000, guid: ede8707a35c1b99468c9ffc508abf579, type: 2}
+  - {fileID: 11400000, guid: 80084c2e0e1b4e8449e987d96c4a5a36, type: 2}
+  - {fileID: 11400000, guid: ede8707a35c1b99468c9ffc508abf579, type: 2}
+  - {fileID: 11400000, guid: 80084c2e0e1b4e8449e987d96c4a5a36, type: 2}
+  - {fileID: 11400000, guid: ede8707a35c1b99468c9ffc508abf579, type: 2}
+  - {fileID: 11400000, guid: 80084c2e0e1b4e8449e987d96c4a5a36, type: 2}
+  - {fileID: 11400000, guid: ede8707a35c1b99468c9ffc508abf579, type: 2}
+  - {fileID: 11400000, guid: ede8707a35c1b99468c9ffc508abf579, type: 2}
+  audioSource: {fileID: 0}
 --- !u!1001 &1899368542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12804,7 +12943,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2064299428}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1156202283}
+        m_TargetAssemblyTypeName: JournalUI, Assembly-CSharp
+        m_MethodName: OpenJournal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2064299428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13278,7 +13429,7 @@ GameObject:
   - component: {fileID: 6703939814465627070}
   - component: {fileID: 7147980464505837990}
   - component: {fileID: 8354663151714300781}
-  - component: {fileID: 8354663151714300782}
+  - component: {fileID: 8354663151714300783}
   m_Layer: 0
   m_Name: journal
   m_TagString: Untagged
@@ -13297,7 +13448,7 @@ GameObject:
   - component: {fileID: 6703939816294556877}
   - component: {fileID: 7147980463247367893}
   - component: {fileID: 8354663152972870686}
-  - component: {fileID: 8354663152972870687}
+  - component: {fileID: 8354663152972870689}
   m_Layer: 0
   m_Name: recordPlayer
   m_TagString: Untagged
@@ -13622,6 +13773,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 198f8f4c38d61914eacc3aff72d6e2d8, type: 3}
     - target: {fileID: 1333408216175951146, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: objectToActivateGO
+      value: 
+      objectReference: {fileID: 1598618644}
+    - target: {fileID: 1333408216175951146, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
       propertyPath: 'phasesData.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: f04efee230fe8dd44a154db47f8e233c, type: 2}
@@ -13645,6 +13800,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: living_lamp
       objectReference: {fileID: 0}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: itemID
+      value: living_lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: objectToActivateGO
+      value: 
+      objectReference: {fileID: 1598618644}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f04efee230fe8dd44a154db47f8e233c, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f04efee230fe8dd44a154db47f8e233c, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f04efee230fe8dd44a154db47f8e233c, type: 2}
+    - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
+      propertyPath: 'phasesData.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f04efee230fe8dd44a154db47f8e233c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14105,7 +14284,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.0481787, y: 0.51942205}
   m_EdgeRadius: 0
---- !u!114 &8354663151714300782
+--- !u!114 &8354663151714300783
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14114,13 +14293,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1425736612612600389}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7284383e98413e4cb8ff19677f59b12, type: 3}
+  m_Script: {fileID: 11500000, guid: 71ef27dbd49e0ae4cbcaf005d3b653d9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractableJournal
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
+  itemID: journal
   objectToActivateGO: {fileID: 2064299425}
   wasInteractedInThisPhase: 0
   phasesData:
-  - {fileID: 11400000, guid: c0ac47aaf56ac674a9826849862e9382, type: 2}
+  - {fileID: 11400000, guid: 4e7805ca6fb715848b015ecc2f26c603, type: 2}
   - {fileID: 11400000, guid: b5c2d2bdf02924b40b225e93e2b9981d, type: 2}
   - {fileID: 11400000, guid: c0ac47aaf56ac674a9826849862e9382, type: 2}
   - {fileID: 11400000, guid: b5c2d2bdf02924b40b225e93e2b9981d, type: 2}
@@ -14129,10 +14309,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  sRenderer: {fileID: 0}
-  interactableAnimation: {fileID: 0}
   audioSource: {fileID: 0}
-  journal: {fileID: 1156202283}
 --- !u!61 &8354663151825582689
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14191,6 +14368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ef27dbd49e0ae4cbcaf005d3b653d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
+  itemID: 
   objectToActivateGO: {fileID: 0}
   wasInteractedInThisPhase: 0
   phasesData:
@@ -14203,8 +14381,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8ab97df7f4b306f43943204bd7be95dd, type: 2}
   - {fileID: 0}
   - {fileID: 0}
-  sRenderer: {fileID: 0}
-  interactableAnimation: {fileID: 0}
   audioSource: {fileID: 0}
 --- !u!61 &8354663152395240134
 BoxCollider2D:
@@ -14264,6 +14440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ef27dbd49e0ae4cbcaf005d3b653d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
+  itemID: 
   objectToActivateGO: {fileID: 0}
   wasInteractedInThisPhase: 0
   phasesData:
@@ -14276,8 +14453,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 11400000, guid: 4233cf6c2fa57254db994cec641e5f8b, type: 2}
-  sRenderer: {fileID: 0}
-  interactableAnimation: {fileID: 0}
   audioSource: {fileID: 0}
 --- !u!61 &8354663152972870686
 BoxCollider2D:
@@ -14325,7 +14500,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8354663152972870687
+--- !u!114 &8354663152972870689
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14334,9 +14509,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1425736612965070134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83a5f5c30329c9a468271ad0f56e2ac2, type: 3}
+  m_Script: {fileID: 11500000, guid: 71ef27dbd49e0ae4cbcaf005d3b653d9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractableMusic
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
+  itemID: record_player
   objectToActivateGO: {fileID: 0}
   wasInteractedInThisPhase: 0
   phasesData:
@@ -14349,8 +14525,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ee656962fa346eb42877c5141501f19a, type: 2}
   - {fileID: 11400000, guid: ee656962fa346eb42877c5141501f19a, type: 2}
   - {fileID: 11400000, guid: ee656962fa346eb42877c5141501f19a, type: 2}
-  sRenderer: {fileID: 0}
-  interactableAnimation: {fileID: 0}
   audioSource: {fileID: 728983573}
 --- !u!61 &8354663153299129895
 BoxCollider2D:

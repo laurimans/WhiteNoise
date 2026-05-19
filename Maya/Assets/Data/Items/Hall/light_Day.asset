@@ -16,6 +16,7 @@ MonoBehaviour:
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
+  actions: []
   sound: {fileID: 0}
   dialoguesList:
   - 

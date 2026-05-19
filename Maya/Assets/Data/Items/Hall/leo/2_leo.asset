@@ -16,6 +16,8 @@ MonoBehaviour:
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
+  actions:
+  - {fileID: 11400000, guid: d074e42394cf44145a3c523edcf95c96, type: 2}
   sound: {fileID: 0}
   dialoguesList:
   - La verdad es que sales muy bien en esta foto.

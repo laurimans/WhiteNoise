@@ -8,9 +8,9 @@ public class GiveClueAction : InteractableAction
 
     public override bool Execute(InteractableObject owner)
     {
-        if (owner.wasInteractedInThisPhase == true) return true;
+        if (owner.GetInteractionData() == true) return true;
 
-        owner.wasInteractedInThisPhase = true;
+        owner.MarkAsInteracted();
         OnClueFound?.Invoke(owner.itemID);
         return true;
     }

@@ -16,6 +16,8 @@ MonoBehaviour:
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
+  actions:
+  - {fileID: 11400000, guid: 611d0bb4cd652ae49932e7045acad593, type: 2}
   sound: {fileID: 0}
   dialoguesList:
   - "Ojal\xE1 pudiera traerte conmigo."

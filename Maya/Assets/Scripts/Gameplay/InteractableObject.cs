@@ -10,22 +10,19 @@ public class InteractableObject : MonoBehaviour
 
     [Header("Ordering System")]
     [SerializeField] private GameObject objectToActivateGO;
-    public bool wasInteractedInThisPhase = false;
+    [SerializeField] private bool wasInteractedInThisPhase = false;
 
     [Header("Phases")]
     [SerializeField] private InteractableData[] phasesData;
 
-    public SpriteRenderer sRenderer;
+    private SpriteRenderer sRenderer;
+    
+
+    [Header("Audio Source")]
+    [SerializeField] protected AudioSource audioSource;
+
     private GamePhase currentPhase = 0;
     private GamePhase lastPhase;
-    private int currentDialogueIndex = 0;
-    [Header("Animator")]
-    [SerializeField] protected InteractableAnimation interactableAnimation;
-
-    public static event Action<string> OnDialogueSaid; //
-
-    [Header("Sound")]
-    [SerializeField] protected AudioSource audioSource;
 
 
     protected virtual void Awake()
@@ -42,6 +39,11 @@ public class InteractableObject : MonoBehaviour
         if (this.GetComponent<BoxCollider2D>() == null) Debug.LogError($"El item {itemID} no tiene Collider");
 
         if (phasesData.Length != Enum.GetValues(typeof(GamePhase)).Length) Debug.LogWarning($"El item {itemID} no tiene todos los comportamientos");
+        if(audioSource != null)
+        {
+            audioSource.loop = true;
+            audioSource.playOnAwake = false;
+        }
     }
 
     protected virtual void OnEnable()
@@ -57,20 +59,20 @@ public class InteractableObject : MonoBehaviour
 
     public GameObject GetTargetObject() => objectToActivateGO;
 
+    public bool GetInteractionData() => wasInteractedInThisPhase;
     public void MarkAsInteracted() => wasInteractedInThisPhase = true;
+    public AudioSource GetAudioSource() => audioSource;
 
     private void RefreshObject (GamePhase _currentPhase)
     {
         if (_currentPhase != lastPhase) // Cambio de fase
         {
-            currentDialogueIndex = 0;
             lastPhase = _currentPhase;
             currentPhase = _currentPhase;
 
             wasInteractedInThisPhase = false;
 
             if (audioSource != null) audioSource.clip = null;
-            if (interactableAnimation != null) interactableAnimation.SetActive(false); // Apagar animaciones
         }
 
         if (phasesData == null || (int)currentPhase >= phasesData.Length || phasesData[(int)currentPhase] == null)
@@ -123,96 +125,6 @@ public class InteractableObject : MonoBehaviour
                 bool shouldContinue = action.Execute(this);
                 if (!shouldContinue) break;
             }
-        }
-
-        ////////////////////////////////// Dialogues
-        if (data.dialoguesList.Count > 0)
-        {
-            //HandleDialogue(data);
-        }
-
-        //////////////////////////////// Sound
-        if (data.sound != null)
-        {
-            //HandleSoundEffect(data);
-        }
-
-        /////////////////////////////// Sprite change
-        if (data.otherSprite != null)
-        {
-            //HandleSpriteChange(data);
-        }
-
-        //////////////////////////////// Clue or Task
-        if (data.isTask && !wasInteractedInThisPhase)
-        {
-            //wasInteractedInThisPhase = true;
-            //GameManager.Instance.AddTaskDone(itemID);
-        }
-           
-        if (data.isClue && !wasInteractedInThisPhase)
-        {
-            //wasInteractedInThisPhase = true;
-            //GameManager.Instance.AddClue(itemID);
-        }
-
-        /*
-        if (data.activateOtherItem)
-        {
-            this.RefreshObject(currentPhase);
-            wasInteractedInThisPhase = true;
-
-            if (objectToActivateGO != null)
-            {
-                objectToActivateGO.SetActive(true);
-                InteractableObject nextScript = objectToActivateGO.GetComponent<InteractableObject>();
-                if (nextScript != null)
-                {
-                    nextScript.wasInteractedInThisPhase = true;
-                    nextScript.RefreshObject(currentPhase);
-                }
-            }
-        }*/
-
-        //if (interactableAnimation != null) interactableAnimation.ToggleAnimation();
-
-    }
-
-    private void HandleDialogue(InteractableData data)
-    {
-        string textToSay = "";
-        if (currentDialogueIndex < data.dialoguesList.Count)
-        {
-            textToSay = data.dialoguesList[currentDialogueIndex];
-            currentDialogueIndex++;
-        }
-        else
-        {
-            textToSay = data.dialoguesList[data.dialoguesList.Count - 1];
-        }
-
-        OnDialogueSaid?.Invoke(textToSay);
-    }
-
-    private void HandleSoundEffect(InteractableData data)
-    {
-        if(audioSource == null)
-        {
-            AudioManager.Instance.PlaySFX(data.sound);
-        } else
-        {
-            AudioManager.Instance.Play3DSFX(data.sound, audioSource);
-        }
-    }
-
-    private void HandleSpriteChange(InteractableData data)
-    {
-        if(sRenderer.sprite != data.otherSprite)
-        {
-            sRenderer.sprite = data.otherSprite;
-        } else
-        {
-            sRenderer.sprite = data.initialSprite;
         }
     }
 

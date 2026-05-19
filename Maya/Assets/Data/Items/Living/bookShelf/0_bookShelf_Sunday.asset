@@ -16,6 +16,7 @@ MonoBehaviour:
   otherSprite: {fileID: 0}
   startDisable: 1
   activateOtherItem: 0
+  actions: []
   sound: {fileID: 0}
   dialoguesList:
   - "Ah\xED est\xE1s mejor, ordenado junto a los de Interna. Un trasto menos por

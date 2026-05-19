@@ -5,10 +5,12 @@ public class Room : MonoBehaviour
 {
     [SerializeField] private string roomID;
     [SerializeField] private RoomData[] phasesData;
-    private SpriteRenderer sRenderer;
 
+    private SpriteRenderer sRenderer;
     private GamePhase currentPhase = 0;
     private GamePhase lastPhase = GamePhase.FinalDay;
+    private bool lightIsOn = true;
+    private RoomData currentRoomData;
 
     public bool dialogueDone = false;
 
@@ -28,6 +30,7 @@ public class Room : MonoBehaviour
     }
 
     public string GetID() => roomID;
+    public bool GetLightData() => lightIsOn;
     public RoomData GetPhaseData() => phasesData[(int)currentPhase];
 
     public RoomData GetRoomDataAt(int index)
@@ -47,15 +50,28 @@ public class Room : MonoBehaviour
             lastPhase = _currentPhase;
             currentPhase = _currentPhase;
             dialogueDone = false;
+            currentRoomData = phasesData[(int)currentPhase];
 
-            if (phasesData == null || (int)currentPhase >= phasesData.Length || phasesData[(int)currentPhase] == null)
+            if (phasesData == null || currentRoomData == null)
             {
                 Debug.LogError($"La habitacion {roomID} no tiene comportamiento para la fase {currentPhase.ToString()}");
                 gameObject.SetActive(false);
                 return;
             }
 
+            lightIsOn = currentRoomData.lightsStartsOn;
             sRenderer.sprite = phasesData[(int)currentPhase].defaultBackground;
+        }
+    }
+
+    public void ToggleLight()
+    {
+        lightIsOn = !lightIsOn;
+
+        if (currentRoomData.defaultBackground != null && currentRoomData.otherBackground)
+        {
+            Sprite sprite = lightIsOn ? currentRoomData.defaultBackground : currentRoomData.otherBackground;
+            sRenderer.sprite = sprite;
         }
     }
 

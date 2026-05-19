@@ -77,6 +77,7 @@ public class GameManager : MonoBehaviour
         CompleteTaskAction.OnTaskComplete += AddTaskDone;
 
         TryExitAction.OnExitSucess += NextPhase;
+        PickUpJournalAction.OnPickUpJournal += PickUpJournal;
     }
 
     private void OnDisable()
@@ -88,15 +89,16 @@ public class GameManager : MonoBehaviour
         CompleteTaskAction.OnTaskComplete -= AddTaskDone;
 
         TryExitAction.OnExitSucess -= NextPhase;
+        PickUpJournalAction.OnPickUpJournal -= PickUpJournal;
     }
 
     public GamePhase GetCurrentPhase() => currentPhase;
     public bool IsExitLocked() => isExitLock;
     public DayPhaseData GetCurrentPhaseData() => daysList[(int)currentPhase];
 
-    public void PickUpJournal(bool isPicked)
+    public void PickUpJournal()
     {
-        isJournalPickedUp = isPicked;
+        isJournalPickedUp = true;
     }
 
     public void HandleExitLock()

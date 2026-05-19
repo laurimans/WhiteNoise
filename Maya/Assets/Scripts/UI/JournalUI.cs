@@ -39,6 +39,15 @@ public class JournalUI : MonoBehaviour
         HUDPanel.SetActive(true);
     }
 
+    private void OnEnable()
+    {
+        OpenJournalAction.OnJournalClicked += OpenJournal;
+    }
+
+    private void OnDisable()
+    {
+        OpenJournalAction.OnJournalClicked -= OpenJournal;
+    }
 
     public void QuitJournal()
     {
