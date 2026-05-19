@@ -47,6 +47,8 @@ public class JournalManager : MonoBehaviour
     {
         JournalEntry newEntry = new JournalEntry(_date, _body);
         journalEntries.Add(newEntry);
+
+        Debug.Log($"Entrada añadida al diario: {_date}. Total entradas: {journalEntries.Count}");
     }
 
     public void AddClue(int index, string clue)

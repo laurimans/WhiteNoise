@@ -1,6 +1,7 @@
-using UnityEngine;
-using System.Collections;
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class PhoneManager : MonoBehaviour
 {
@@ -10,27 +11,27 @@ public class PhoneManager : MonoBehaviour
     // Eventos
     public event Action OnConversationFinished;
 
-    public void StartCall()
+    public void StartCall(string callKey)
     {
         phoneUI.gameObject.SetActive(true);
         phoneUI.SetCloseButton(false);
 
+        var conversation = LocalizationManager.Instance.GetPhoneCall(callKey);
+
         StopAllCoroutines();
-        StartCoroutine(PlayConversation());
+        StartCoroutine(PlayConversation(conversation));
     }
 
-    IEnumerator PlayConversation()
+    IEnumerator PlayConversation(List<PhoneMessageEntry> conversation)
     {
-        var conversation = GameManager.Instance.GetCurrentPhaseData().conversation;
-
         foreach (var msg in conversation)
         {
-            phoneUI.AddMessage(msg.messageContent, msg.isMaya);
-            yield return new WaitForSeconds(2f); 
+            bool isMaya = msg.speaker.ToLower() == "maya";
+            phoneUI.AddMessage(msg.text, isMaya);
+            yield return new WaitForSeconds(2.5f); 
         }
 
         phoneUI.SetCloseButton(true);
-        GameManager.Instance.AddTaskDone("living_call");
     }
 
     public void FinishCall()

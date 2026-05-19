@@ -60,8 +60,8 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion
-    
-    
+
+
     void Start()
     {
         Initialize();
@@ -167,7 +167,20 @@ public class GameManager : MonoBehaviour
             if (camBtn != null) camBtn.SetActive(false);
         }
 
-        journalManager.AddEntry(currentPhaseData.dateText, currentPhaseData.bodyText);
+        UpdateJournalForNewPhase();
+    }
+
+    private void UpdateJournalForNewPhase()
+    {
+        string journalKey = $"JOURNAL_P{(int)currentPhase}";
+        var entryData = LocalizationManager.Instance.GetJournalEntry(journalKey);
+
+        if (entryData != null)
+        {
+            journalManager.AddEntry(entryData.date, entryData.content);
+            Debug.Log(entryData.title);
+        }
+        Debug.Log(journalKey);
     }
 
 

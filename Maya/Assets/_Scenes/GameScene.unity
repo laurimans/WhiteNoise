@@ -457,7 +457,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1156202283}
         m_TargetAssemblyTypeName: JournalUI, Assembly-CSharp
         m_MethodName: NextPage
         m_Mode: 1
@@ -7059,7 +7059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JournalUI
   HUDPanel: {fileID: 1086749066}
-  journal: {fileID: 1691500285}
+  journal: {fileID: 1718060462}
   journalCanvas: {fileID: 753051298}
   dateText: {fileID: 840093912}
   bodyText: {fileID: 968126987}
@@ -9366,7 +9366,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f90f309623c0724fa9ce1c23a7201d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LocalizationManager
-  jsonFile: {fileID: 4900000, guid: ca6ae16b2c8c54f4082da3cec27e7682, type: 3}
+  dialoguesJsonFile: {fileID: 4900000, guid: ca6ae16b2c8c54f4082da3cec27e7682, type: 3}
+  phonecallsJsonFile: {fileID: 4900000, guid: 8522c47240feb9f4babe447480a56ca4, type: 3}
+  journalJsonFile: {fileID: 4900000, guid: 642ea61d6f834524db289e62cbf8321d, type: 3}
 --- !u!4 &1599081713
 Transform:
   m_ObjectHideFlags: 0
@@ -9543,7 +9545,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1156202283}
         m_TargetAssemblyTypeName: JournalUI, Assembly-CSharp
         m_MethodName: PreviousPage
         m_Mode: 1
@@ -9949,59 +9951,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690529507}
   m_CullTransparentMesh: 1
---- !u!1 &1691500284
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1691500286}
-  - component: {fileID: 1691500285}
-  m_Layer: 0
-  m_Name: JournalManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1691500285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691500284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 312671b4423ce2b40970a4f20fc23b3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::JournalManager
-  journalEntries:
-  - date: 13 de abril de 1994
-    body: Estoy muy agradecida con mi nuevo trabajo. Es una buena oportunidad. Aunque
-      me da miedo mudarme a una ciudad nueva.
-    clues: []
-  - date: 14 de abril de 1994
-    body: "Este trabajo nuevo me esta consumiendo. Entre el estres y la falta de
-      sue\xF1o. Blip blup blop"
-    clues: []
---- !u!4 &1691500286
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691500284}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 850.90027, y: 490.97, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1700480967
 GameObject:
   m_ObjectHideFlags: 0
@@ -10231,88 +10180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312671b4423ce2b40970a4f20fc23b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JournalManager
-  journalEntries:
-  - date: 13 de abril de 1994
-    body: Estoy muy agradecida con mi nuevo trabajo. Es una buena oportunidad. Aunque
-      me da miedo mudarme a una ciudad nueva.
-    clues: []
-  - date: 14 de abril de 1994
-    body: "Este trabajo nuevo me esta consumiendo. Entre el estres y la falta de
-      sue\xF1o. Blip blup blop"
-    clues: []
---- !u!1 &1724327935
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1724327937}
-  - component: {fileID: 1724327936}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1724327936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724327935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa93ddd896300fd4a9b8c9f85f97862a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  currentPhase: 0
-  cluesFound: 0
-  tasksDone: 0
-  daysList:
-  - {fileID: 11400000, guid: 98f6d04c12542bb4dab93cb3968523a1, type: 2}
-  - {fileID: 11400000, guid: dcdb73467e763794d9887d81a7ca0c38, type: 2}
-  - {fileID: 11400000, guid: 2577c44f5d7e56e47a5262643453ad04, type: 2}
-  - {fileID: 11400000, guid: baf9eb672879fe64ea614ffd217caa20, type: 2}
-  - {fileID: 11400000, guid: 89b132e8e02bac94f834b93d63a0781c, type: 2}
-  - {fileID: 11400000, guid: cd1e871b9a40e344c86a4d635275cfd2, type: 2}
-  - {fileID: 11400000, guid: b927ecd5bdbf33a49954084c4f6850bf, type: 2}
-  - {fileID: 11400000, guid: abc194b7abc4beb41ad5f8a353fd97c8, type: 2}
-  - {fileID: 11400000, guid: 8185f71fdce0a0e4c82a48446dc09c54, type: 2}
-  roomList:
-  - {fileID: 1894324767}
-  - {fileID: 332685262}
-  - {fileID: 3591915}
-  - {fileID: 684289910}
-  - {fileID: 1598618647}
-  transitionPanel: {fileID: 605556827}
-  roomAudioSources:
-  - {fileID: 720389696}
-  - {fileID: 2142386707}
-  - {fileID: 1765544889}
-  - {fileID: 1096121367}
-  - {fileID: 2011928506}
-  journalManager: {fileID: 1691500285}
-  journalUI: {fileID: 0}
-  isExitLock: 1
---- !u!4 &1724327937
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724327935}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.49047, y: 3.92056, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  journalEntries: []
 --- !u!1 &1732153752
 GameObject:
   m_ObjectHideFlags: 0
@@ -14633,6 +14501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16efcd02079089249a2725298e761a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractablePhone
+  phoneID: CALL_MOM
   phoneVisual: {fileID: 1133235967}
   phoneManager: {fileID: 1718060458}
   phoneTone: {fileID: 8300000, guid: 829b4e049a46d5f41aaf4d243dc4b6de, type: 3}
@@ -14641,11 +14510,10 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1724327937}
-  - {fileID: 1691500286}
   - {fileID: 1747753126}
   - {fileID: 1156202281}
   - {fileID: 212395}
+  - {fileID: 1599081713}
   - {fileID: 2043548572}
   - {fileID: 256601696}
   - {fileID: 1718060459}
@@ -14664,4 +14532,3 @@ SceneRoots:
   - {fileID: 629416121}
   - {fileID: 894289664}
   - {fileID: 1732153755}
-  - {fileID: 1599081713}

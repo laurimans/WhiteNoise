@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 public class InteractablePhone : MonoBehaviour
 {
     [Header("Phone")]
+    [SerializeField] private string phoneID = "CALL_MOM";
     [SerializeField] private GameObject phoneVisual;
     [SerializeField] private PhoneManager phoneManager;
     [SerializeField] private AudioClip phoneTone;
@@ -26,8 +27,11 @@ public class InteractablePhone : MonoBehaviour
 
     private void CheckPhase(GamePhase phase)
     {
-        var data = GameManager.Instance.GetCurrentPhaseData();
-        if (data != null && data.hasPhoneCall)
+        string callKey = $"{phoneID}_P{(int)phase}";
+
+        var callData = LocalizationManager.Instance.GetPhoneCall(callKey);
+
+        if (callData != null && callData.Count>0)
         {
             ShowAndRing();
         }
@@ -69,7 +73,9 @@ public class InteractablePhone : MonoBehaviour
 
             if (phoneManager != null)
             {
-                phoneManager.StartCall();
+                string callKey = $"{phoneID}_P{(int)GameManager.Instance.GetCurrentPhase()}";
+
+                phoneManager.StartCall(callKey);
                 phoneManager.OnConversationFinished += StopAndHide;
             }
         }
