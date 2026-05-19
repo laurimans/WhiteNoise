@@ -1,0 +1,34 @@
+{
+  "entries": [
+    {
+      "key": "JOURNAL_P0",
+      "date": "Domingo",
+      "title": "Mudanza terminada",
+      "content": "Por fin he terminado de traer las cajas de casa de mis padres. El piso es viejo, pero me gusta. Aunque admito que he llorado un poco al despedirme. Voy a echar mucho de menos los cantos de Leo al despertarme."
+    },
+    {
+      "key": "JOURNAL_P1",
+      "date": "Lunes",
+      "title": "Silencio",
+      "content": "Hoy me he dado cuenta de lo silencioso que es este piso. Me he sentado en el sofá y se me ha hecho enorme. Supongo que es normal sentirse un poco sola al principio, pero ojalá me acostumbre rápido."
+    },
+    {
+      "key": "JOURNAL_P2",
+      "date": "Lunes",
+      "title": "Primer día",
+      "content": "Estoy reventada, y solo estamos a lunes. Me está costando acostumbrarme a este ritmo de trabajo, pero supongo que será solo eso, acostumbrarme."
+    },
+    {
+      "key": "JOURNAL_P3",
+      "date": "Martes",
+      "title": "Haciendo hogar",
+      "content": "Me he pasado el día entero limpiando y ordenando. He colgado los cuadros de la entrada y, para ser mi primera vez, no han quedado nada mal. Creo que puedo acostumbrarme a esto."
+    },
+    {
+      "key": "JOURNAL_P4",
+      "date": "Martes",
+      "title": "Rutina",
+      "content": "Hoy me he puesto un vinilo, he dejado la cocina impoluta y me he preparado el uniforme para mañana. Espero no estar tan perdida esta semana."
+    }
+  ]
+}

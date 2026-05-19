@@ -1,0 +1,26 @@
+{
+  "calls": [
+    {
+      "key": "CALL_MOM_P2",
+      "description": "Llamada de mamá Lunes Noche",
+      "dialogue": [
+        { "speaker": "Mamá", "text": "¡Hola cariño! ¿Cómo ha ido el primer día?" },
+        { "speaker": "Maya", "text": "Cansado mamá, pero bien. El hospital es enorme y me he perdido tres veces buscando rayos." },
+        { "speaker": "Mamá", "text": "Es normal, ya verás como en una semana te conoces los pasillos mejor que tu habitación. ¿Has comido algo?" },
+        { "speaker": "Maya", "text": "Un sándwich rápido... no he tenido tiempo para más." },
+        { "speaker": "Mamá", "text": "Ay Maya... prométeme que cenarás algo caliente. Te quiero, descansa." },
+        { "speaker": "Maya", "text": "Lo intentaré. Te quiero mamá, adiós." }
+      ]
+    },
+    {
+      "key": "CALL_MOM_P6",
+      "description": "Llamada de mamá Miércoles Noche (Preocupación)",
+      "dialogue": [
+        { "speaker": "Mamá", "text": "¿Cariño? Te noto la voz rara... ¿estás bien?" },
+        { "speaker": "Maya", "text": "No sé mamá... pasan cosas raras en el piso. Creo que es el estrés, pero juraría que dejo cosas en un sitio y aparecen en otro." },
+        { "speaker": "Mamá", "text": "Escúchame, es el cansancio. A tu padre le pasaba igual cuando doblaba turnos. No te obsesiones, descansa." },
+        { "speaker": "Maya", "text": "Tienes razón... será eso. Muchas gracias, espero que estéis todos bien. Te quiero. Adiós." }
+      ]
+    }
+  ]
+}

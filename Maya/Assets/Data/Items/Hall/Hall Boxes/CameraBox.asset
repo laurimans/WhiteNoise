@@ -18,6 +18,7 @@ MonoBehaviour:
   activateOtherItem: 0
   actions:
   - {fileID: 11400000, guid: 4f0663d394b346f4e9310199b5b2ea3e, type: 2}
+  - {fileID: 11400000, guid: c2f6ca80a96cba04cbb99d5741074d0d, type: 2}
   sound: {fileID: 0}
   dialoguesList:
   - "\xA1Aqu\xED est\xE1s! Espero que no se haya estropeado con la mudanza"

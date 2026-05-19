@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce8ed3ef529ce2b46b8a9e49aa7d33c5, type: 3}
-  m_Name: dialogue0_bed
+  m_Name: d0_leo
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAction
   dialoguesList:
-  - "A\xFAn no me puedo acostar, tengo que terminar de recoger."
+  - "Te echo much\xEDsimo de menos, Leo."
+  - "La casa se me hace enorme sin t\xED."

@@ -16,8 +16,9 @@ MonoBehaviour:
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
+  actions: []
   sound: {fileID: 0}
   dialoguesList:
-  - "No me falles ma\xF1ana."
+  - Ahora lo llevare siempre encima
   isTask: 0
   isClue: 0
