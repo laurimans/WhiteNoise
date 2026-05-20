@@ -12,7 +12,7 @@ public class ToggleMusicAction : InteractableAction
         InteractableData data = owner.GetPhaseData();
         AudioSource audioSource = owner.GetAudioSource();
 
-        if (audioSource == null || data.sound != null)
+        if (audioSource == null || music == null)
         {
             Debug.Log($"El objeto {owner.GetID()} no tiene AudioSource o AudioClip");
             return true;
@@ -25,7 +25,7 @@ public class ToggleMusicAction : InteractableAction
         }
         else
         {
-            audioSource.clip = data.sound;
+            audioSource.clip = music;
             audioSource.Play();
             isPlaying = true;
         }

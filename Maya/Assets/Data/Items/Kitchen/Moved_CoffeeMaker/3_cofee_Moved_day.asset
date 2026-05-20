@@ -19,9 +19,4 @@ MonoBehaviour:
   actions:
   - {fileID: 11400000, guid: 1f32e9ba22c520c46ae635a9aa97b4ce, type: 2}
   - {fileID: 11400000, guid: 4c8c90fc69f36aa45b2377a5d4472a2a, type: 2}
-  sound: {fileID: 0}
-  dialoguesList:
-  - "\xBFQu\xE9 hace la cafetera ah\xED? Alguien la ha movido. Estoy completamente
-    segura."
-  isTask: 1
-  isClue: 0
+  - {fileID: 11400000, guid: 00d5adbfbf8259b4c91b483a95420f62, type: 2}

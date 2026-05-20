@@ -13,14 +13,4 @@ public class InteractableData : ScriptableObject
 
     [Header("Phase Actions")]
     public List<InteractableAction> actions;
-
-    [Header("Old System")]
-    public AudioClip sound;
-
-    [Header("Dialogues")]
-    [TextArea] public List<string> dialoguesList;
-
-    [Header("Object Type")]
-    public bool isTask;
-    public bool isClue;
 }

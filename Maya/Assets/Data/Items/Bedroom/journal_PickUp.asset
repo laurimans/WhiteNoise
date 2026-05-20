@@ -17,10 +17,7 @@ MonoBehaviour:
   startDisable: 0
   activateOtherItem: 1
   actions:
+  - {fileID: 11400000, guid: 00d5adbfbf8259b4c91b483a95420f62, type: 2}
   - {fileID: 11400000, guid: 17aa2f64d4da3d346bde4e872abd4c6b, type: 2}
   - {fileID: 11400000, guid: 4a7752fd5cf4d4049ab2110032bc5d6e, type: 2}
-  sound: {fileID: 0}
-  dialoguesList:
-  - Ahora lo llevare siempre encima
-  isTask: 1
-  isClue: 0
+  - {fileID: 11400000, guid: d0da478d99f803642ad2fe7a82930e19, type: 2}

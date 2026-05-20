@@ -18,9 +18,3 @@ MonoBehaviour:
   activateOtherItem: 0
   actions:
   - {fileID: 11400000, guid: c2f6ca80a96cba04cbb99d5741074d0d, type: 2}
-  sound: {fileID: 0}
-  dialoguesList:
-  - "Te echo much\xEDsimo de menos, Leo."
-  - "La casa se me hace enorme sin t\xED."
-  isTask: 0
-  isClue: 0
