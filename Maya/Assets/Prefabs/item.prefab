@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   itemID: 
+  objectToActivateGO: {fileID: 0}
+  wasInteractedInThisPhase: 0
   phasesData:
   - {fileID: 0}
   - {fileID: 0}
@@ -162,3 +164,4 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  audioSource: {fileID: 0}

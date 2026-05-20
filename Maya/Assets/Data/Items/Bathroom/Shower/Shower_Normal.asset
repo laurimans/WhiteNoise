@@ -16,10 +16,5 @@ MonoBehaviour:
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
-  sound: {fileID: 0}
-  dialoguesList:
-  - "Ojal\xE1 tuviera una ba\xF1era para darme un buen ba\xF1o."
-  - "A ver si el champ\xFA de manzana me quita el olor a desinfectante."
-  - Una ducha rapidita.
-  isTask: 0
-  isClue: 0
+  actions:
+  - {fileID: 0}

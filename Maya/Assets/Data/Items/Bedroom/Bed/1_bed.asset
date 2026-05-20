@@ -17,8 +17,5 @@ MonoBehaviour:
   startDisable: 0
   activateOtherItem: 0
   actions:
-  - {fileID: 11400000, guid: 4227267ae11401242ad41599c2256b5d, type: 2}
-  sound: {fileID: 0}
-  dialoguesList: []
-  isTask: 0
-  isClue: 0
+  - {fileID: 11400000, guid: 863b5e07a7a943f49a299208018e8061, type: 2}
+  - {fileID: 11400000, guid: c2f6ca80a96cba04cbb99d5741074d0d, type: 2}

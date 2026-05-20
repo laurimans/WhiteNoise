@@ -2276,7 +2276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &332685260
 SpriteRenderer:
   serializedVersion: 2
@@ -6305,7 +6305,7 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: 8f74d3b933f6f1f47a78300eb919f56b, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[6]'
       value: 
@@ -9218,7 +9218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1598618645
 SpriteRenderer:
   serializedVersion: 2
@@ -10124,7 +10124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraManager
   flashObject: {fileID: 1993488577}
   cameraLense: {fileID: 1231309778}
-  journalUI: {fileID: 0}
+  journalUI: {fileID: 1156202283}
   HUDPanel: {fileID: 1086749066}
   cameraAudio: {fileID: 8300000, guid: 4166237faa6a0b6498d7c14c26fae472, type: 3}
 --- !u!114 &1718060461
@@ -10797,19 +10797,19 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: b179d651d0aeaf54b868cdba582a6ea4, type: 2}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.63518906
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6384976
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.227
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0700002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10842,6 +10842,34 @@ PrefabInstance:
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147980464465216157, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b3425e94bdfab7f4fb82888186122d59, type: 3}
+    - target: {fileID: 8354663151753832534, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: m_Size.x
+      value: 0.7452135
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354663151753832534, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: m_Size.y
+      value: 0.79491407
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354663151753832534, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: m_Offset.x
+      value: 4.2257314
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354663151753832534, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: m_Offset.y
+      value: -1.0760235
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354663151753832534, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 19.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354663151753832534, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 10.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14217,7 +14245,7 @@ MonoBehaviour:
   objectToActivateGO: {fileID: 2064299425}
   wasInteractedInThisPhase: 0
   phasesData:
-  - {fileID: 11400000, guid: 4e7805ca6fb715848b015ecc2f26c603, type: 2}
+  - {fileID: 11400000, guid: c0ac47aaf56ac674a9826849862e9382, type: 2}
   - {fileID: 11400000, guid: b5c2d2bdf02924b40b225e93e2b9981d, type: 2}
   - {fileID: 11400000, guid: c0ac47aaf56ac674a9826849862e9382, type: 2}
   - {fileID: 11400000, guid: b5c2d2bdf02924b40b225e93e2b9981d, type: 2}

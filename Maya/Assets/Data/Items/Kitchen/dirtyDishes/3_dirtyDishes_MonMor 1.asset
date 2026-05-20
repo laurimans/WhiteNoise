@@ -17,9 +17,5 @@ MonoBehaviour:
   startDisable: 0
   activateOtherItem: 0
   actions:
-  - {fileID: 0}
-  sound: {fileID: 0}
-  dialoguesList:
-  - "De verdad que este estr\xE9s me est\xE1 afectando."
-  isTask: 0
-  isClue: 0
+  - {fileID: 11400000, guid: c2f6ca80a96cba04cbb99d5741074d0d, type: 2}
+  - {fileID: 11400000, guid: 00d5adbfbf8259b4c91b483a95420f62, type: 2}

@@ -17,10 +17,4 @@ MonoBehaviour:
   startDisable: 0
   activateOtherItem: 0
   actions:
-  - {fileID: 11400000, guid: 611d0bb4cd652ae49932e7045acad593, type: 2}
-  sound: {fileID: 0}
-  dialoguesList:
-  - "\xA1Ay, mi chiquit\xEDn! Qu\xE9 silencioso est\xE1 todo sin tus silbidos por
-    la ma\xF1ana."
-  isTask: 0
-  isClue: 0
+  - {fileID: 11400000, guid: c2f6ca80a96cba04cbb99d5741074d0d, type: 2}

@@ -16,8 +16,5 @@ MonoBehaviour:
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
-  sound: {fileID: 0}
-  dialoguesList:
-  - "No recordaba que esto estuviera as\xED."
-  isTask: 0
-  isClue: 0
+  actions:
+  - {fileID: 11400000, guid: c2f6ca80a96cba04cbb99d5741074d0d, type: 2}

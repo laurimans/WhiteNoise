@@ -18,9 +18,5 @@ MonoBehaviour:
   activateOtherItem: 1
   actions:
   - {fileID: 11400000, guid: 00d5adbfbf8259b4c91b483a95420f62, type: 2}
-  sound: {fileID: 8300000, guid: 4166237faa6a0b6498d7c14c26fae472, type: 3}
-  dialoguesList:
-  - "Cuatrocientas p\xE1ginas sobre el coraz\xF3n. Mejor lo guardo antes de mancharlo
-    de caf\xE9."
-  isTask: 1
-  isClue: 0
+  - {fileID: 11400000, guid: 4a7752fd5cf4d4049ab2110032bc5d6e, type: 2}
+  - {fileID: 11400000, guid: de60c9bd2f3387d45a3e7a2a2cfe263e, type: 2}

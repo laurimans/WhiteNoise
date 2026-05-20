@@ -18,7 +18,4 @@ MonoBehaviour:
   activateOtherItem: 0
   actions:
   - {fileID: 11400000, guid: e3a404347e139454ebb2d98e20187399, type: 2}
-  sound: {fileID: 0}
-  dialoguesList: []
-  isTask: 0
-  isClue: 0
+  - {fileID: 11400000, guid: d1b98aff486675b4f834038b18548d12, type: 2}
