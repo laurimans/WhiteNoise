@@ -1,0 +1,5941 @@
+fileFormatVersion: 2
+guid: c9075bf6e0889574c96a7e1d4a20b62e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 332554980779873816
+    second: motas_polvo_salon_052_0
+  - first:
+      213: -2186831707997337579
+    second: motas_polvo_salon_052_1
+  - first:
+      213: 883180324368641454
+    second: motas_polvo_salon_052_2
+  - first:
+      213: 7774608246212306647
+    second: motas_polvo_salon_052_3
+  - first:
+      213: 5911825802599529058
+    second: motas_polvo_salon_052_4
+  - first:
+      213: 6538039519390261207
+    second: motas_polvo_salon_052_5
+  - first:
+      213: 5013003477979903238
+    second: motas_polvo_salon_052_6
+  - first:
+      213: -97284122380855235
+    second: motas_polvo_salon_052_7
+  - first:
+      213: 3913640058994686995
+    second: motas_polvo_salon_052_8
+  - first:
+      213: 1361740343221319804
+    second: motas_polvo_salon_052_9
+  - first:
+      213: 6286475075849515426
+    second: motas_polvo_salon_052_10
+  - first:
+      213: 3415818930234745681
+    second: motas_polvo_salon_052_11
+  - first:
+      213: 4357776683374949637
+    second: motas_polvo_salon_052_12
+  - first:
+      213: 8056667047186258651
+    second: motas_polvo_salon_052_13
+  - first:
+      213: -5061383273159767650
+    second: motas_polvo_salon_052_14
+  - first:
+      213: 2782004687542906265
+    second: motas_polvo_salon_052_15
+  - first:
+      213: 8396898952285632248
+    second: motas_polvo_salon_052_16
+  - first:
+      213: -2343396267805762629
+    second: motas_polvo_salon_052_17
+  - first:
+      213: 4777638960400175084
+    second: motas_polvo_salon_052_18
+  - first:
+      213: 1355184870233654812
+    second: motas_polvo_salon_052_19
+  - first:
+      213: -1121190870989186939
+    second: motas_polvo_salon_052_20
+  - first:
+      213: -1859986340789604391
+    second: motas_polvo_salon_052_21
+  - first:
+      213: -2118561947330132811
+    second: motas_polvo_salon_052_22
+  - first:
+      213: -4013772301326982766
+    second: motas_polvo_salon_052_23
+  - first:
+      213: -4960445229625944418
+    second: motas_polvo_salon_052_24
+  - first:
+      213: -2557780888923369996
+    second: motas_polvo_salon_052_25
+  - first:
+      213: 8456659006341591152
+    second: motas_polvo_salon_052_26
+  - first:
+      213: -3398199082220420156
+    second: motas_polvo_salon_052_27
+  - first:
+      213: 8284065947946703624
+    second: motas_polvo_salon_052_28
+  - first:
+      213: -2693223298032930270
+    second: motas_polvo_salon_052_29
+  - first:
+      213: -7692178256403635095
+    second: motas_polvo_salon_052_30
+  - first:
+      213: -8307258005631304808
+    second: motas_polvo_salon_052_31
+  - first:
+      213: 2376432397007382087
+    second: motas_polvo_salon_052_32
+  - first:
+      213: 4983343324825032163
+    second: motas_polvo_salon_052_33
+  - first:
+      213: 685416531318244466
+    second: motas_polvo_salon_052_34
+  - first:
+      213: -2967809137476661620
+    second: motas_polvo_salon_052_35
+  - first:
+      213: 7345429386053254798
+    second: motas_polvo_salon_052_36
+  - first:
+      213: -4632334592459007519
+    second: motas_polvo_salon_052_37
+  - first:
+      213: 2117998085325071049
+    second: motas_polvo_salon_052_38
+  - first:
+      213: -9075659345897096965
+    second: motas_polvo_salon_052_39
+  - first:
+      213: -2259694519167229404
+    second: motas_polvo_salon_052_40
+  - first:
+      213: -2065435842326871448
+    second: motas_polvo_salon_052_41
+  - first:
+      213: 3457639525684928735
+    second: motas_polvo_salon_052_42
+  - first:
+      213: 2474126429180889229
+    second: motas_polvo_salon_052_43
+  - first:
+      213: 6453634790678521727
+    second: motas_polvo_salon_052_44
+  - first:
+      213: 1196568240466305826
+    second: motas_polvo_salon_052_45
+  - first:
+      213: -7567536064939337250
+    second: motas_polvo_salon_052_46
+  - first:
+      213: 7155586137242322608
+    second: motas_polvo_salon_052_47
+  - first:
+      213: -871976739472509019
+    second: motas_polvo_salon_052_48
+  - first:
+      213: 6735770015772396850
+    second: motas_polvo_salon_052_49
+  - first:
+      213: 4223323605880678565
+    second: motas_polvo_salon_052_50
+  - first:
+      213: -7666643832838166635
+    second: motas_polvo_salon_052_51
+  - first:
+      213: 6003835069235256020
+    second: motas_polvo_salon_052_52
+  - first:
+      213: 8933687428695990901
+    second: motas_polvo_salon_052_53
+  - first:
+      213: 3312263083864041585
+    second: motas_polvo_salon_052_54
+  - first:
+      213: 5621743307381157876
+    second: motas_polvo_salon_052_55
+  - first:
+      213: -8780591759161086685
+    second: motas_polvo_salon_052_56
+  - first:
+      213: -3894892032695230680
+    second: motas_polvo_salon_052_57
+  - first:
+      213: -3658775014664129677
+    second: motas_polvo_salon_052_58
+  - first:
+      213: -713021639946288348
+    second: motas_polvo_salon_052_59
+  - first:
+      213: 2127249042264566088
+    second: motas_polvo_salon_052_60
+  - first:
+      213: -9073735331615680055
+    second: motas_polvo_salon_052_61
+  - first:
+      213: -8648772306761111897
+    second: motas_polvo_salon_052_62
+  - first:
+      213: -7409903663611754865
+    second: motas_polvo_salon_052_63
+  - first:
+      213: 8596921999818993495
+    second: motas_polvo_salon_052_64
+  - first:
+      213: 7691364027008872946
+    second: motas_polvo_salon_052_65
+  - first:
+      213: -3548907332213023876
+    second: motas_polvo_salon_052_66
+  - first:
+      213: 1080497676229521771
+    second: motas_polvo_salon_052_67
+  - first:
+      213: -4214456822839414388
+    second: motas_polvo_salon_052_68
+  - first:
+      213: -4326826176673669471
+    second: motas_polvo_salon_052_69
+  - first:
+      213: 1785583812309152828
+    second: motas_polvo_salon_052_70
+  - first:
+      213: -7472205991838053615
+    second: motas_polvo_salon_052_71
+  - first:
+      213: 8999474511552362824
+    second: motas_polvo_salon_052_72
+  - first:
+      213: 8532055051146335159
+    second: motas_polvo_salon_052_73
+  - first:
+      213: 8520524113361427291
+    second: motas_polvo_salon_052_74
+  - first:
+      213: -1278769055476125616
+    second: motas_polvo_salon_052_75
+  - first:
+      213: -2637925041766217144
+    second: motas_polvo_salon_052_76
+  - first:
+      213: 3197148933452206306
+    second: motas_polvo_salon_052_77
+  - first:
+      213: -2811517286856647306
+    second: motas_polvo_salon_052_78
+  - first:
+      213: 7968291098272805065
+    second: motas_polvo_salon_052_79
+  - first:
+      213: -3702800394366687201
+    second: motas_polvo_salon_052_80
+  - first:
+      213: -7684550411437497066
+    second: motas_polvo_salon_052_81
+  - first:
+      213: 9076476396459273790
+    second: motas_polvo_salon_052_82
+  - first:
+      213: 5460507849044149379
+    second: motas_polvo_salon_052_83
+  - first:
+      213: -5940533500780888346
+    second: motas_polvo_salon_052_84
+  - first:
+      213: 3817106852737544206
+    second: motas_polvo_salon_052_85
+  - first:
+      213: 1614738644121124866
+    second: motas_polvo_salon_052_86
+  - first:
+      213: -4153140303494068152
+    second: motas_polvo_salon_052_87
+  - first:
+      213: 5960624927262915203
+    second: motas_polvo_salon_052_88
+  - first:
+      213: -8072721818900831381
+    second: motas_polvo_salon_052_89
+  - first:
+      213: -9081913949064726248
+    second: motas_polvo_salon_052_90
+  - first:
+      213: 880290594146773370
+    second: motas_polvo_salon_052_91
+  - first:
+      213: 3598101063857967192
+    second: motas_polvo_salon_052_92
+  - first:
+      213: -6931816298160166322
+    second: motas_polvo_salon_052_93
+  - first:
+      213: -3834531248545867821
+    second: motas_polvo_salon_052_94
+  - first:
+      213: 5270826668066801997
+    second: motas_polvo_salon_052_95
+  - first:
+      213: -7147628335676985966
+    second: motas_polvo_salon_052_96
+  - first:
+      213: -3196304711570348050
+    second: motas_polvo_salon_052_97
+  - first:
+      213: 7441999662935864115
+    second: motas_polvo_salon_052_98
+  - first:
+      213: 8531292270275405974
+    second: motas_polvo_salon_052_99
+  - first:
+      213: -5940490232239199532
+    second: motas_polvo_salon_052_100
+  - first:
+      213: 4424658824402365060
+    second: motas_polvo_salon_052_101
+  - first:
+      213: 5939698900206409233
+    second: motas_polvo_salon_052_102
+  - first:
+      213: -4297945966294686483
+    second: motas_polvo_salon_052_103
+  - first:
+      213: -727452634665836810
+    second: motas_polvo_salon_052_104
+  - first:
+      213: -2072801568557986654
+    second: motas_polvo_salon_052_105
+  - first:
+      213: 6304233787618481812
+    second: motas_polvo_salon_052_106
+  - first:
+      213: 37999888731561210
+    second: motas_polvo_salon_052_107
+  - first:
+      213: 3740135290424348110
+    second: motas_polvo_salon_052_108
+  - first:
+      213: 6193069470974641779
+    second: motas_polvo_salon_052_109
+  - first:
+      213: 7619882730336794360
+    second: motas_polvo_salon_052_110
+  - first:
+      213: -4846420808059772848
+    second: motas_polvo_salon_052_111
+  - first:
+      213: -1893730290903262653
+    second: motas_polvo_salon_052_112
+  - first:
+      213: -8920746138427340211
+    second: motas_polvo_salon_052_113
+  - first:
+      213: -6036308171462794198
+    second: motas_polvo_salon_052_114
+  - first:
+      213: -8454425428945978209
+    second: motas_polvo_salon_052_115
+  - first:
+      213: -3649331630771850161
+    second: motas_polvo_salon_052_116
+  - first:
+      213: 2560702022648207250
+    second: motas_polvo_salon_052_117
+  - first:
+      213: 4557216770951203755
+    second: motas_polvo_salon_052_118
+  - first:
+      213: 27597684608795967
+    second: motas_polvo_salon_052_119
+  - first:
+      213: -7417948232034796726
+    second: motas_polvo_salon_052_120
+  - first:
+      213: -1125626373575210635
+    second: motas_polvo_salon_052_121
+  - first:
+      213: 878514320488185014
+    second: motas_polvo_salon_052_122
+  - first:
+      213: 6572474197943026909
+    second: motas_polvo_salon_052_123
+  - first:
+      213: -6234650905935063817
+    second: motas_polvo_salon_052_124
+  - first:
+      213: -8858916131841735184
+    second: motas_polvo_salon_052_125
+  - first:
+      213: 8258220313454955560
+    second: motas_polvo_salon_052_126
+  - first:
+      213: 5928969708050129831
+    second: motas_polvo_salon_052_127
+  - first:
+      213: 7286745052375005138
+    second: motas_polvo_salon_052_128
+  - first:
+      213: -7870669544360804757
+    second: motas_polvo_salon_052_129
+  - first:
+      213: -2242588894783582583
+    second: motas_polvo_salon_052_130
+  - first:
+      213: 6963955204573516211
+    second: motas_polvo_salon_052_131
+  - first:
+      213: 5656397732467692312
+    second: motas_polvo_salon_052_132
+  - first:
+      213: -4034116425470501876
+    second: motas_polvo_salon_052_133
+  - first:
+      213: -8093631837106955124
+    second: motas_polvo_salon_052_134
+  - first:
+      213: -2722188369135467298
+    second: motas_polvo_salon_052_135
+  - first:
+      213: 3667852833227943962
+    second: motas_polvo_salon_052_136
+  - first:
+      213: 2410510490071069100
+    second: motas_polvo_salon_052_137
+  - first:
+      213: -2078951537628233572
+    second: motas_polvo_salon_052_138
+  - first:
+      213: -4637897613426948621
+    second: motas_polvo_salon_052_139
+  - first:
+      213: 3044007181135139174
+    second: motas_polvo_salon_052_140
+  - first:
+      213: -8489753016913688379
+    second: motas_polvo_salon_052_141
+  - first:
+      213: -4886249210319440938
+    second: motas_polvo_salon_052_142
+  - first:
+      213: -7647563707749169619
+    second: motas_polvo_salon_052_143
+  - first:
+      213: 1887457614657700978
+    second: motas_polvo_salon_052_144
+  - first:
+      213: -2843784582724244919
+    second: motas_polvo_salon_052_145
+  - first:
+      213: 6485702901710422549
+    second: motas_polvo_salon_052_146
+  - first:
+      213: 2456742217674492646
+    second: motas_polvo_salon_052_147
+  - first:
+      213: -6817066034180364507
+    second: motas_polvo_salon_052_148
+  - first:
+      213: 6769256197494846085
+    second: motas_polvo_salon_052_149
+  - first:
+      213: 2551539106324638792
+    second: motas_polvo_salon_052_150
+  - first:
+      213: 5659040873373216363
+    second: motas_polvo_salon_052_151
+  - first:
+      213: 7334365617774898408
+    second: motas_polvo_salon_052_152
+  - first:
+      213: 1362636620975607231
+    second: motas_polvo_salon_052_153
+  - first:
+      213: -4381056235965292508
+    second: motas_polvo_salon_052_154
+  - first:
+      213: -3836340089155539825
+    second: motas_polvo_salon_052_155
+  - first:
+      213: 5446029139547054372
+    second: motas_polvo_salon_052_156
+  - first:
+      213: -929635291989055744
+    second: motas_polvo_salon_052_157
+  - first:
+      213: 4161410253128936821
+    second: motas_polvo_salon_052_158
+  - first:
+      213: 6098330647455069439
+    second: motas_polvo_salon_052_159
+  - first:
+      213: -6351846417224772919
+    second: motas_polvo_salon_052_160
+  - first:
+      213: 1559369046017681592
+    second: motas_polvo_salon_052_161
+  - first:
+      213: -6329620269615777048
+    second: motas_polvo_salon_052_162
+  - first:
+      213: -2150044047423335843
+    second: motas_polvo_salon_052_163
+  - first:
+      213: -2452133145475907322
+    second: motas_polvo_salon_052_164
+  - first:
+      213: -4321992884841666135
+    second: motas_polvo_salon_052_165
+  - first:
+      213: -479164438956405915
+    second: motas_polvo_salon_052_166
+  - first:
+      213: -2549375335676951028
+    second: motas_polvo_salon_052_167
+  - first:
+      213: -5042995508055429436
+    second: motas_polvo_salon_052_168
+  - first:
+      213: -1148531000411408668
+    second: motas_polvo_salon_052_169
+  - first:
+      213: 1614618988900584320
+    second: motas_polvo_salon_052_170
+  - first:
+      213: 8611133499871049536
+    second: motas_polvo_salon_052_171
+  - first:
+      213: -3881284267110401596
+    second: motas_polvo_salon_052_172
+  - first:
+      213: -8320525059606406516
+    second: motas_polvo_salon_052_173
+  - first:
+      213: 3982374205651324463
+    second: motas_polvo_salon_052_174
+  - first:
+      213: -127735482592901501
+    second: motas_polvo_salon_052_175
+  - first:
+      213: 2061217839266011068
+    second: motas_polvo_salon_052_176
+  - first:
+      213: 1255711861684622621
+    second: motas_polvo_salon_052_177
+  - first:
+      213: 1158787408703543788
+    second: motas_polvo_salon_052_178
+  - first:
+      213: -9153503307743457697
+    second: motas_polvo_salon_052_179
+  - first:
+      213: -925709103413479358
+    second: motas_polvo_salon_052_180
+  - first:
+      213: 1826295545936111392
+    second: motas_polvo_salon_052_181
+  - first:
+      213: -4120744879478399396
+    second: motas_polvo_salon_052_182
+  - first:
+      213: 7173974229082076695
+    second: motas_polvo_salon_052_183
+  - first:
+      213: -13060576538439329
+    second: motas_polvo_salon_052_184
+  - first:
+      213: 4250083858356497848
+    second: motas_polvo_salon_052_185
+  - first:
+      213: -3180865888097978161
+    second: motas_polvo_salon_052_186
+  - first:
+      213: -4736607255764217512
+    second: motas_polvo_salon_052_187
+  - first:
+      213: 2764583473604042604
+    second: motas_polvo_salon_052_188
+  - first:
+      213: 7674007371888914169
+    second: motas_polvo_salon_052_189
+  - first:
+      213: -5326343793661310525
+    second: motas_polvo_salon_052_190
+  - first:
+      213: 2573754724503288418
+    second: motas_polvo_salon_052_191
+  - first:
+      213: 2669537317983938747
+    second: motas_polvo_salon_052_192
+  - first:
+      213: -482440451893739852
+    second: motas_polvo_salon_052_193
+  - first:
+      213: -3077500124239240441
+    second: motas_polvo_salon_052_194
+  - first:
+      213: -326283888352576190
+    second: motas_polvo_salon_052_195
+  - first:
+      213: -5779031961880319633
+    second: motas_polvo_salon_052_196
+  - first:
+      213: 8912411761625346481
+    second: motas_polvo_salon_052_197
+  - first:
+      213: -2364386292430307450
+    second: motas_polvo_salon_052_198
+  - first:
+      213: -7047886455550423452
+    second: motas_polvo_salon_052_199
+  - first:
+      213: -8019360195484477651
+    second: motas_polvo_salon_052_200
+  - first:
+      213: -4297309209561736828
+    second: motas_polvo_salon_052_201
+  - first:
+      213: 1608147875005474433
+    second: motas_polvo_salon_052_202
+  - first:
+      213: 5849759520999673160
+    second: motas_polvo_salon_052_203
+  - first:
+      213: -8621383810550011755
+    second: motas_polvo_salon_052_204
+  - first:
+      213: 4647448219291769252
+    second: motas_polvo_salon_052_205
+  - first:
+      213: 1003505862625134887
+    second: motas_polvo_salon_052_206
+  - first:
+      213: 164004093439088457
+    second: motas_polvo_salon_052_207
+  - first:
+      213: 3184321262418315404
+    second: motas_polvo_salon_052_208
+  - first:
+      213: 8350775950139551741
+    second: motas_polvo_salon_052_209
+  - first:
+      213: 4406425818387899752
+    second: motas_polvo_salon_052_210
+  - first:
+      213: 869591307559787444
+    second: motas_polvo_salon_052_211
+  - first:
+      213: 4323589569353694259
+    second: motas_polvo_salon_052_212
+  - first:
+      213: -2742544134664790370
+    second: motas_polvo_salon_052_213
+  - first:
+      213: 1322736388320344013
+    second: motas_polvo_salon_052_214
+  - first:
+      213: -2738837517185303556
+    second: motas_polvo_salon_052_215
+  - first:
+      213: -1959297967527812336
+    second: motas_polvo_salon_052_216
+  - first:
+      213: -4177186650598752880
+    second: motas_polvo_salon_052_217
+  - first:
+      213: -3387593978312330856
+    second: motas_polvo_salon_052_218
+  - first:
+      213: 7918040131797196921
+    second: motas_polvo_salon_052_219
+  - first:
+      213: -4603851164749436690
+    second: motas_polvo_salon_052_220
+  - first:
+      213: -139877119446412718
+    second: motas_polvo_salon_052_221
+  - first:
+      213: 1242601280610920577
+    second: motas_polvo_salon_052_222
+  - first:
+      213: -1517531622262347275
+    second: motas_polvo_salon_052_223
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_0
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1068
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 816dba93ef87d9400800000000000000
+      internalID: 332554980779873816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_1
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 1060
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 518024dd520d6a1e0800000000000000
+      internalID: -2186831707997337579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_2
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 1056
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead6b9263dfa14c00800000000000000
+      internalID: 883180324368641454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_3
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 1070
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6ae4f1205f4eb60800000000000000
+      internalID: 7774608246212306647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_4
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1070
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26afee9ce360b0250800000000000000
+      internalID: 5911825802599529058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_5
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 1061
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dfd8b88d48cbba50800000000000000
+      internalID: 6538039519390261207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_6
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 1067
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6053aca6a14c19540800000000000000
+      internalID: 5013003477979903238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_7
+      rect:
+        serializedVersion: 2
+        x: 1808
+        y: 1063
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38143b2b9066aef0800000000000000
+      internalID: -97284122380855235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_8
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 1055
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31cfd17f5ea005630800000000000000
+      internalID: 3913640058994686995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_9
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1056
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78760a90afd5e210800000000000000
+      internalID: 1361740343221319804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_10
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1058
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a17b5936cb0e3750800000000000000
+      internalID: 6286475075849515426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_11
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 1052
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15362b1283d676f20800000000000000
+      internalID: 3415818930234745681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_12
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 1056
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5053b071ecee97c30800000000000000
+      internalID: 4357776683374949637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_13
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 1045
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdad12d4ef70fcf60800000000000000
+      internalID: 8056667047186258651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_14
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 1048
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99453bbaba52c9b0800000000000000
+      internalID: -5061383273159767650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_15
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1041
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d677c068aab9620800000000000000
+      internalID: 2782004687542906265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_16
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1039
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6b5d1cb17c78470800000000000000
+      internalID: 8396898952285632248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_17
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 1044
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb1671a2859a7fd0800000000000000
+      internalID: -2343396267805762629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_18
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1036
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef08bb42559d4240800000000000000
+      internalID: 4777638960400175084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_19
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 1039
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16c24b95759ec210800000000000000
+      internalID: 1355184870233654812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_20
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1005
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5885749d7dab070f0800000000000000
+      internalID: -1121190870989186939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_21
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 1020
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df282617400036e0800000000000000
+      internalID: -1859986340789604391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_22
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 1005
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b44abe222b5992e0800000000000000
+      internalID: -2118561947330132811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_23
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 1019
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2916a1a9b573c48c0800000000000000
+      internalID: -4013772301326982766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_24
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 1029
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e965d506855f82bb0800000000000000
+      internalID: -4960445229625944418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_25
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 1008
+        width: 40
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd807e45dfe08cd0800000000000000
+      internalID: -2557780888923369996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_26
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 1003
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070399b9f861c5570800000000000000
+      internalID: 8456659006341591152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_27
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 1018
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3813c60fb27d0d0800000000000000
+      internalID: -3398199082220420156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_28
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 1017
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80bd54bb61ae6f270800000000000000
+      internalID: 8284065947946703624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_29
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 1011
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222f0f30eafbf9ad0800000000000000
+      internalID: -2693223298032930270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_30
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1003
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964e31671a4ef3590800000000000000
+      internalID: -7692178256403635095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_31
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 983
+        width: 61
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b73dc8bd0b6bc80800000000000000
+      internalID: -8307258005631304808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_32
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 1013
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746ea589ca8caf020800000000000000
+      internalID: 2376432397007382087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_33
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 987
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5920ed954682540800000000000000
+      internalID: 4983343324825032163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_34
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 1018
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 274876824b6138900800000000000000
+      internalID: 685416531318244466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_35
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 1006
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e8b87405930d6d0800000000000000
+      internalID: -2967809137476661620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_36
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 972
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e7b6edb1530f560800000000000000
+      internalID: 7345429386053254798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_37
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 1000
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e91ab73b34a6bfb0800000000000000
+      internalID: -4632334592459007519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_38
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 971
+        width: 9
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c222c67904a46d10800000000000000
+      internalID: 2117998085325071049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_39
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 987
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf87959e8e7cc0280800000000000000
+      internalID: -9075659345897096965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_40
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 982
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422e324aec3f3a0e0800000000000000
+      internalID: -2259694519167229404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_41
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 975
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8624fb76b091653e0800000000000000
+      internalID: -2065435842326871448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_42
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 969
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd0ecc944d00cff20800000000000000
+      internalID: 3457639525684928735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_43
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 962
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d888bbcf0ecd55220800000000000000
+      internalID: 2474126429180889229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_44
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 939
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77ee7836aaef8950800000000000000
+      internalID: 6453634790678521727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_45
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 959
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 223228a99701b9010800000000000000
+      internalID: 1196568240466305826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_46
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 956
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed955502b06baf690800000000000000
+      internalID: -7567536064939337250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_47
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 969
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b6c90e0eafbd4360800000000000000
+      internalID: 7155586137242322608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_48
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 954
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a7765f76cd16e3f0800000000000000
+      internalID: -871976739472509019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_49
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 960
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d47d644234a7d50800000000000000
+      internalID: 6735770015772396850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_50
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 953
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a82a0481724c9a30800000000000000
+      internalID: 4223323605880678565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_51
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 954
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 597ed3cbd0c9a9590800000000000000
+      internalID: -7666643832838166635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_52
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 950
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dadccf8f28e15350800000000000000
+      internalID: 6003835069235256020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_53
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 946
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5722cc93265dafb70800000000000000
+      internalID: 8933687428695990901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_54
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 943
+        width: 33
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1782b54c9b587fd20800000000000000
+      internalID: 3312263083864041585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_55
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 940
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff22e6b0c1740e40800000000000000
+      internalID: 5621743307381157876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_56
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 930
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d2b7d0152152680800000000000000
+      internalID: -8780591759161086685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_57
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 933
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f93b0155092f9c0800000000000000
+      internalID: -3894892032695230680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_58
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 930
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373bed9528b693dc0800000000000000
+      internalID: -3658775014664129677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_59
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 920
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423c5d1a896da16f0800000000000000
+      internalID: -713021639946288348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_60
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 912
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84928f8bbb1858d10800000000000000
+      internalID: 2127249042264566088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_61
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 922
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9d2256acd931280800000000000000
+      internalID: -9073735331615680055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_62
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 922
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6a440096369f780800000000000000
+      internalID: -8648772306761111897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_63
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 912
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f864e8690ebba2990800000000000000
+      internalID: -7409903663611754865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_64
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 919
+        width: 46
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75fa3f8a2076e4770800000000000000
+      internalID: 8596921999818993495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_65
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 916
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f1f41cf4d63dba60800000000000000
+      internalID: 7691364027008872946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_66
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 920
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bd9a2959fbfbec0800000000000000
+      internalID: -3548907332213023876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_67
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 911
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b61bb4c69e2befe00800000000000000
+      internalID: 1080497676229521771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_68
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 911
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c817f6949dd3385c0800000000000000
+      internalID: -4214456822839414388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_69
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 913
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae118e448604f3c0800000000000000
+      internalID: -4326826176673669471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_70
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 918
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34ff51540ba7c810800000000000000
+      internalID: 1785583812309152828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_71
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 907
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b82f76d346d4890800000000000000
+      internalID: -7472205991838053615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_72
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 905
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 849b242136e84ec70800000000000000
+      internalID: 8999474511552362824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_73
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 912
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b397af3dd2f76670800000000000000
+      internalID: 8532055051146335159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_74
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 913
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bde05998bfe3670800000000000000
+      internalID: 8520524113361427291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_75
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 909
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050759ab156e04ee0800000000000000
+      internalID: -1278769055476125616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_76
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 910
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84aca6d9625346bd0800000000000000
+      internalID: -2637925041766217144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_77
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 882
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e01078040e8e5c20800000000000000
+      internalID: 3197148933452206306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_78
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 900
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d1a057ceb7bf8d0800000000000000
+      internalID: -2811517286856647306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_79
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 899
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0357b398e059e60800000000000000
+      internalID: 7968291098272805065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_80
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 894
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18e89bd8a20d9cc0800000000000000
+      internalID: -3702800394366687201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_81
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 903
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615afa38d1efa5590800000000000000
+      internalID: -7684550411437497066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_82
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 873
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e2c2f713f16fd70800000000000000
+      internalID: 9076476396459273790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_83
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 866
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384428b25fe97cb40800000000000000
+      internalID: 5460507849044149379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_84
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 881
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eeb5ad514cfe8da0800000000000000
+      internalID: -5940533500780888346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_85
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 889
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00712b657619f430800000000000000
+      internalID: 3817106852737544206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_86
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 893
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2008fe7dd34b86610800000000000000
+      internalID: 1614738644121124866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_87
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 886
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848c0e3f5e41d56c0800000000000000
+      internalID: -4153140303494068152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_88
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 874
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a38d46ac468b250800000000000000
+      internalID: 5960624927262915203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_89
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 880
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b63eeddd64ee7ff80800000000000000
+      internalID: -8072721818900831381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_90
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 881
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819f451a16f86f180800000000000000
+      internalID: -9081913949064726248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_91
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 865
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a796c33a1ab673c00800000000000000
+      internalID: 880290594146773370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_92
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 867
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8509531aad50fe130800000000000000
+      internalID: 3598101063857967192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_93
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 868
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a66eb9dcd3dcf90800000000000000
+      internalID: -6931816298160166322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_94
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 855
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7d94a452209cac0800000000000000
+      internalID: -3834531248545867821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_95
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 868
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4907c6bdecb52940800000000000000
+      internalID: 5270826668066801997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_96
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 864
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29de47106e58ecc90800000000000000
+      internalID: -7147628335676985966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_97
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 852
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee721f0bcc174a3d0800000000000000
+      internalID: -3196304711570348050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_98
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 848
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3337ed7934b474760800000000000000
+      internalID: 7441999662935864115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_99
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 816
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6982dcc7e1d356670800000000000000
+      internalID: 8531292270275405974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_100
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 852
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da64bb9b932f8da0800000000000000
+      internalID: -5940490232239199532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_101
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 825
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48aecc802cb876d30800000000000000
+      internalID: 4424658824402365060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_102
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 812
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116d49b0eac0e6250800000000000000
+      internalID: 5939698900206409233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_103
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 825
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4ae274ae0aa54c0800000000000000
+      internalID: -4297945966294686483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_104
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 806
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe12d7dea197e5f0800000000000000
+      internalID: -727452634665836810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_105
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 802
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac8a30a4fdeb33e0800000000000000
+      internalID: -2072801568557986654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_106
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 804
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496d3048a332d7750800000000000000
+      internalID: 6304233787618481812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_107
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 840
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc595d82b0078000800000000000000
+      internalID: 37999888731561210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_108
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 819
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd45a50b31a7e330800000000000000
+      internalID: 3740135290424348110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_109
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 813
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37682ce1fd332f550800000000000000
+      internalID: 6193069470974641779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_110
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 840
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6bbdba8f24fb960800000000000000
+      internalID: 7619882730336794360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_111
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 831
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0502987d3fd0ebcb0800000000000000
+      internalID: -4846420808059772848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_112
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 819
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a5056755e18b5e0800000000000000
+      internalID: -1893730290903262653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_113
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 817
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ac997b6a4233480800000000000000
+      internalID: -8920746138427340211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_114
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 810
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a242c2523b9ba3ca0800000000000000
+      internalID: -6036308171462794198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_115
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 803
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c35a7add8dbaa80800000000000000
+      internalID: -8454425428945978209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_116
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 788
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f443f308738fa5dc0800000000000000
+      internalID: -3649331630771850161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_117
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 761
+        width: 16
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29712932ce0798320800000000000000
+      internalID: 2560702022648207250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_118
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 781
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: babcffc028c7e3f30800000000000000
+      internalID: 4557216770951203755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_119
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 776
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f350bbba2fb026000800000000000000
+      internalID: 27597684608795967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_120
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 772
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b345b82672e0990800000000000000
+      internalID: -7417948232034796726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_121
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 775
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5790d3de6c8f060f0800000000000000
+      internalID: -1125626373575210635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_122
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 772
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bcbac2be1c113c00800000000000000
+      internalID: 878514320488185014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_123
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 775
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd480d7e57e163b50800000000000000
+      internalID: 6572474197943026909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_124
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 766
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f45c2d98021a79a0800000000000000
+      internalID: -6234650905935063817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_125
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 771
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f58892f6bece0580800000000000000
+      internalID: -8858916131841735184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_126
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 757
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82cc5640f971b9270800000000000000
+      internalID: 8258220313454955560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_127
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 761
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a32164598ee74250800000000000000
+      internalID: 5928969708050129831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_128
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 753
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7b5afa408bf1560800000000000000
+      internalID: 7286745052375005138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_129
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 749
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e73efffb3c5c290800000000000000
+      internalID: -7870669544360804757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_130
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 727
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e403d2849b0e0e0800000000000000
+      internalID: -2242588894783582583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_131
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 744
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b15658ac50f4a060800000000000000
+      internalID: 6963955204573516211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_132
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 729
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813df00d4cf8f7e40800000000000000
+      internalID: 5656397732467692312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_133
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 739
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c13451c70f308c0800000000000000
+      internalID: -4034116425470501876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_134
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 718
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c927ed9b4adaf80800000000000000
+      internalID: -8093631837106955124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_135
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 736
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed40bfdd918d83ad0800000000000000
+      internalID: -2722188369135467298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_136
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 733
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1036fcf7b4d6e230800000000000000
+      internalID: 3667852833227943962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_137
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 712
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1f900f48ad37120800000000000000
+      internalID: 2410510490071069100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_138
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 736
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90ca6e57941623e0800000000000000
+      internalID: -2078951537628233572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_139
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 740
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f50e0771b0e2afb0800000000000000
+      internalID: -4637897613426948621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_140
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 728
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6615c45476c7e3a20800000000000000
+      internalID: 3044007181135139174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_141
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 712
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c80f0c9c965e2a80800000000000000
+      internalID: -8489753016913688379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_142
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 718
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d370ee4b3e803cb0800000000000000
+      internalID: -4886249210319440938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_143
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 694
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26017a83556ed590800000000000000
+      internalID: -7647563707749169619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_144
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 704
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 274474a43b8913a10800000000000000
+      internalID: 1887457614657700978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_145
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 707
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a2df03df8d888d0800000000000000
+      internalID: -2843784582724244919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_146
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 699
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5128b272d68d10a50800000000000000
+      internalID: 6485702901710422549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_147
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 697
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea8135d70a181220800000000000000
+      internalID: 2456742217674492646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_148
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 682
+        width: 42
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5276c4e6f8ae461a0800000000000000
+      internalID: -6817066034180364507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_149
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 686
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582ba4585aa31fd50800000000000000
+      internalID: 6769256197494846085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_150
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 663
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c6ffe6c43e86320800000000000000
+      internalID: 2551539106324638792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_151
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 676
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ea3d201b3f88e40800000000000000
+      internalID: 5659040873373216363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_152
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 667
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ecaf449ba6e8c560800000000000000
+      internalID: 7334365617774898408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_153
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 661
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd803789ce09e210800000000000000
+      internalID: 1362636620975607231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_154
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 686
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4206742b09c5333c0800000000000000
+      internalID: -4381056235965292508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_155
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 678
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c2b44c30592cac0800000000000000
+      internalID: -3836340089155539825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_156
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 666
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421e02be5ae249b40800000000000000
+      internalID: 5446029139547054372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_157
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 668
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007635a90a54913f0800000000000000
+      internalID: -929635291989055744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_158
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 658
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d2b6eb39c40c930800000000000000
+      internalID: 4161410253128936821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_159
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 621
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4ff6cd96f91a450800000000000000
+      internalID: 6098330647455069439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_160
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 665
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2da794655b9d7a0800000000000000
+      internalID: -6351846417224772919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_161
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 656
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b8af9da2edf3a510800000000000000
+      internalID: 1559369046017681592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_162
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 654
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea707a86eba828a0800000000000000
+      internalID: -6329620269615777048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_163
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 647
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5293ed84528922e0800000000000000
+      internalID: -2150044047423335843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_164
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 657
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60182f965e548fdd0800000000000000
+      internalID: -2452133145475907322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_165
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 646
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a92f31ce523504c0800000000000000
+      internalID: -4321992884841666135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_166
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 646
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b01034b7aa959f0800000000000000
+      internalID: -479164438956405915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_167
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 641
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0645dda3acce9cd0800000000000000
+      internalID: -2549375335676951028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_168
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 640
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce277aed4ea30ab0800000000000000
+      internalID: -5042995508055429436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_169
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 640
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e634fae3299f00f0800000000000000
+      internalID: -1148531000411408668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_170
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 614
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b05017a67486610800000000000000
+      internalID: 1614618988900584320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_171
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 626
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047b74d5b44e08770800000000000000
+      internalID: 8611133499871049536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_172
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 620
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c97292e588e22ac0800000000000000
+      internalID: -3881284267110401596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_173
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 624
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8a9c65da8e878c80800000000000000
+      internalID: -8320525059606406516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_174
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 617
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e86829d3c344730800000000000000
+      internalID: 3982374205651324463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_175
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 604
+        width: 57
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38646de51413a3ef0800000000000000
+      internalID: -127735482592901501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_176
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 596
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7162a34baea9c10800000000000000
+      internalID: 2061217839266011068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_177
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 592
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15d4fff84f2d6110800000000000000
+      internalID: 1255711861684622621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_178
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 572
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce958f93207d41010800000000000000
+      internalID: 1158787408703543788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_179
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 561
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e869b2d3938f080800000000000000
+      internalID: -9153503307743457697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_180
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 575
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 248b1bd99783723f0800000000000000
+      internalID: -925709103413479358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_181
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 563
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02766667f1e485910800000000000000
+      internalID: 1826295545936111392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_182
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 521
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e1ea06d5c20d6c0800000000000000
+      internalID: -4120744879478399396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_183
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 545
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7167e305d831f8360800000000000000
+      internalID: 7173974229082076695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_184
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 549
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f515dde897991dff0800000000000000
+      internalID: -13060576538439329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_185
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 531
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bde5f250c45bfa30800000000000000
+      internalID: 4250083858356497848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_186
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 538
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc833c5e35b4bd3d0800000000000000
+      internalID: -3180865888097978161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_187
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 536
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851d2a7ebc0344eb0800000000000000
+      internalID: -4736607255764217512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_188
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 523
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f95189506cd5620800000000000000
+      internalID: 2764583473604042604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_189
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 534
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9feea2dcb0d8f7a60800000000000000
+      internalID: 7674007371888914169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_190
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 536
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c906333a860516b0800000000000000
+      internalID: -5326343793661310525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_191
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 519
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26a700d1940d7b320800000000000000
+      internalID: 2573754724503288418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_192
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 526
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8e4110c0a1c0520800000000000000
+      internalID: 2669537317983938747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_193
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 497
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be389f07f60e49f0800000000000000
+      internalID: -482440451893739852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_194
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 511
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703ef7a31f58a45d0800000000000000
+      internalID: -3077500124239240441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_195
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 506
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24dbfc2488ec87bf0800000000000000
+      internalID: -326283888352576190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_196
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 499
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69ae7e9c01cccfa0800000000000000
+      internalID: -5779031961880319633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_197
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 484
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b131b7f64f3fab70800000000000000
+      internalID: 8912411761625346481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_198
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 498
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f73efa133003fd0800000000000000
+      internalID: -2364386292430307450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_199
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 500
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e41a72c90e03e90800000000000000
+      internalID: -7047886455550423452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_200
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 501
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d279d3ef36285b090800000000000000
+      internalID: -8019360195484477651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_201
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 478
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489de02ca04ec54c0800000000000000
+      internalID: -4297309209561736828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_202
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 476
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1862004d8f9415610800000000000000
+      internalID: 1608147875005474433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_203
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 468
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d05ae7a458e2150800000000000000
+      internalID: 5849759520999673160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_204
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 474
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598ecd33a11ba5880800000000000000
+      internalID: -8621383810550011755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_205
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 417
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a958ee388d0f7040800000000000000
+      internalID: 4647448219291769252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_206
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 457
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7290bc7e34b2ded00800000000000000
+      internalID: 1003505862625134887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_207
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 466
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9479523aad8a64200800000000000000
+      internalID: 164004093439088457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_208
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 457
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88ca21215bf03c20800000000000000
+      internalID: 3184321262418315404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_209
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 457
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff61fa7b7ae3e370800000000000000
+      internalID: 8350775950139551741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_210
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 360
+        width: 16
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865ee128fe4c62d30800000000000000
+      internalID: 4406425818387899752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_211
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 438
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb5edadfa8611c00800000000000000
+      internalID: 869591307559787444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_212
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 416
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c39e35ec9700c30800000000000000
+      internalID: 4323589569353694259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_213
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 379
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e5970e3a680f9d0800000000000000
+      internalID: -2742544134664790370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_214
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 357
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7315dacbd4b5210800000000000000
+      internalID: 1322736388320344013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_215
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 338
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb38a20ac1bdf9d0800000000000000
+      internalID: -2738837517185303556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_216
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 357
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0132c5c11ec2fc4e0800000000000000
+      internalID: -1959297967527812336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_217
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 345
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09dbe8a7fd6a706c0800000000000000
+      internalID: -4177186650598752880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_218
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 386
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891f0779939dcf0d0800000000000000
+      internalID: -3387593978312330856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_219
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 329
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9702f0d5c8782ed60800000000000000
+      internalID: 7918040131797196921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_220
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 393
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee8675602c5db10c0800000000000000
+      internalID: -4603851164749436690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_221
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 389
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 252113f308e0f0ef0800000000000000
+      internalID: -139877119446412718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_222
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 330
+        width: 52
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1886248f74b9e3110800000000000000
+      internalID: 1242601280610920577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motas_polvo_salon_052_223
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 329
+        width: 9
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f961af9705a0fae0800000000000000
+      internalID: -1517531622262347275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      motas_polvo_salon_052_0: 332554980779873816
+      motas_polvo_salon_052_1: -2186831707997337579
+      motas_polvo_salon_052_10: 6286475075849515426
+      motas_polvo_salon_052_100: -5940490232239199532
+      motas_polvo_salon_052_101: 4424658824402365060
+      motas_polvo_salon_052_102: 5939698900206409233
+      motas_polvo_salon_052_103: -4297945966294686483
+      motas_polvo_salon_052_104: -727452634665836810
+      motas_polvo_salon_052_105: -2072801568557986654
+      motas_polvo_salon_052_106: 6304233787618481812
+      motas_polvo_salon_052_107: 37999888731561210
+      motas_polvo_salon_052_108: 3740135290424348110
+      motas_polvo_salon_052_109: 6193069470974641779
+      motas_polvo_salon_052_11: 3415818930234745681
+      motas_polvo_salon_052_110: 7619882730336794360
+      motas_polvo_salon_052_111: -4846420808059772848
+      motas_polvo_salon_052_112: -1893730290903262653
+      motas_polvo_salon_052_113: -8920746138427340211
+      motas_polvo_salon_052_114: -6036308171462794198
+      motas_polvo_salon_052_115: -8454425428945978209
+      motas_polvo_salon_052_116: -3649331630771850161
+      motas_polvo_salon_052_117: 2560702022648207250
+      motas_polvo_salon_052_118: 4557216770951203755
+      motas_polvo_salon_052_119: 27597684608795967
+      motas_polvo_salon_052_12: 4357776683374949637
+      motas_polvo_salon_052_120: -7417948232034796726
+      motas_polvo_salon_052_121: -1125626373575210635
+      motas_polvo_salon_052_122: 878514320488185014
+      motas_polvo_salon_052_123: 6572474197943026909
+      motas_polvo_salon_052_124: -6234650905935063817
+      motas_polvo_salon_052_125: -8858916131841735184
+      motas_polvo_salon_052_126: 8258220313454955560
+      motas_polvo_salon_052_127: 5928969708050129831
+      motas_polvo_salon_052_128: 7286745052375005138
+      motas_polvo_salon_052_129: -7870669544360804757
+      motas_polvo_salon_052_13: 8056667047186258651
+      motas_polvo_salon_052_130: -2242588894783582583
+      motas_polvo_salon_052_131: 6963955204573516211
+      motas_polvo_salon_052_132: 5656397732467692312
+      motas_polvo_salon_052_133: -4034116425470501876
+      motas_polvo_salon_052_134: -8093631837106955124
+      motas_polvo_salon_052_135: -2722188369135467298
+      motas_polvo_salon_052_136: 3667852833227943962
+      motas_polvo_salon_052_137: 2410510490071069100
+      motas_polvo_salon_052_138: -2078951537628233572
+      motas_polvo_salon_052_139: -4637897613426948621
+      motas_polvo_salon_052_14: -5061383273159767650
+      motas_polvo_salon_052_140: 3044007181135139174
+      motas_polvo_salon_052_141: -8489753016913688379
+      motas_polvo_salon_052_142: -4886249210319440938
+      motas_polvo_salon_052_143: -7647563707749169619
+      motas_polvo_salon_052_144: 1887457614657700978
+      motas_polvo_salon_052_145: -2843784582724244919
+      motas_polvo_salon_052_146: 6485702901710422549
+      motas_polvo_salon_052_147: 2456742217674492646
+      motas_polvo_salon_052_148: -6817066034180364507
+      motas_polvo_salon_052_149: 6769256197494846085
+      motas_polvo_salon_052_15: 2782004687542906265
+      motas_polvo_salon_052_150: 2551539106324638792
+      motas_polvo_salon_052_151: 5659040873373216363
+      motas_polvo_salon_052_152: 7334365617774898408
+      motas_polvo_salon_052_153: 1362636620975607231
+      motas_polvo_salon_052_154: -4381056235965292508
+      motas_polvo_salon_052_155: -3836340089155539825
+      motas_polvo_salon_052_156: 5446029139547054372
+      motas_polvo_salon_052_157: -929635291989055744
+      motas_polvo_salon_052_158: 4161410253128936821
+      motas_polvo_salon_052_159: 6098330647455069439
+      motas_polvo_salon_052_16: 8396898952285632248
+      motas_polvo_salon_052_160: -6351846417224772919
+      motas_polvo_salon_052_161: 1559369046017681592
+      motas_polvo_salon_052_162: -6329620269615777048
+      motas_polvo_salon_052_163: -2150044047423335843
+      motas_polvo_salon_052_164: -2452133145475907322
+      motas_polvo_salon_052_165: -4321992884841666135
+      motas_polvo_salon_052_166: -479164438956405915
+      motas_polvo_salon_052_167: -2549375335676951028
+      motas_polvo_salon_052_168: -5042995508055429436
+      motas_polvo_salon_052_169: -1148531000411408668
+      motas_polvo_salon_052_17: -2343396267805762629
+      motas_polvo_salon_052_170: 1614618988900584320
+      motas_polvo_salon_052_171: 8611133499871049536
+      motas_polvo_salon_052_172: -3881284267110401596
+      motas_polvo_salon_052_173: -8320525059606406516
+      motas_polvo_salon_052_174: 3982374205651324463
+      motas_polvo_salon_052_175: -127735482592901501
+      motas_polvo_salon_052_176: 2061217839266011068
+      motas_polvo_salon_052_177: 1255711861684622621
+      motas_polvo_salon_052_178: 1158787408703543788
+      motas_polvo_salon_052_179: -9153503307743457697
+      motas_polvo_salon_052_18: 4777638960400175084
+      motas_polvo_salon_052_180: -925709103413479358
+      motas_polvo_salon_052_181: 1826295545936111392
+      motas_polvo_salon_052_182: -4120744879478399396
+      motas_polvo_salon_052_183: 7173974229082076695
+      motas_polvo_salon_052_184: -13060576538439329
+      motas_polvo_salon_052_185: 4250083858356497848
+      motas_polvo_salon_052_186: -3180865888097978161
+      motas_polvo_salon_052_187: -4736607255764217512
+      motas_polvo_salon_052_188: 2764583473604042604
+      motas_polvo_salon_052_189: 7674007371888914169
+      motas_polvo_salon_052_19: 1355184870233654812
+      motas_polvo_salon_052_190: -5326343793661310525
+      motas_polvo_salon_052_191: 2573754724503288418
+      motas_polvo_salon_052_192: 2669537317983938747
+      motas_polvo_salon_052_193: -482440451893739852
+      motas_polvo_salon_052_194: -3077500124239240441
+      motas_polvo_salon_052_195: -326283888352576190
+      motas_polvo_salon_052_196: -5779031961880319633
+      motas_polvo_salon_052_197: 8912411761625346481
+      motas_polvo_salon_052_198: -2364386292430307450
+      motas_polvo_salon_052_199: -7047886455550423452
+      motas_polvo_salon_052_2: 883180324368641454
+      motas_polvo_salon_052_20: -1121190870989186939
+      motas_polvo_salon_052_200: -8019360195484477651
+      motas_polvo_salon_052_201: -4297309209561736828
+      motas_polvo_salon_052_202: 1608147875005474433
+      motas_polvo_salon_052_203: 5849759520999673160
+      motas_polvo_salon_052_204: -8621383810550011755
+      motas_polvo_salon_052_205: 4647448219291769252
+      motas_polvo_salon_052_206: 1003505862625134887
+      motas_polvo_salon_052_207: 164004093439088457
+      motas_polvo_salon_052_208: 3184321262418315404
+      motas_polvo_salon_052_209: 8350775950139551741
+      motas_polvo_salon_052_21: -1859986340789604391
+      motas_polvo_salon_052_210: 4406425818387899752
+      motas_polvo_salon_052_211: 869591307559787444
+      motas_polvo_salon_052_212: 4323589569353694259
+      motas_polvo_salon_052_213: -2742544134664790370
+      motas_polvo_salon_052_214: 1322736388320344013
+      motas_polvo_salon_052_215: -2738837517185303556
+      motas_polvo_salon_052_216: -1959297967527812336
+      motas_polvo_salon_052_217: -4177186650598752880
+      motas_polvo_salon_052_218: -3387593978312330856
+      motas_polvo_salon_052_219: 7918040131797196921
+      motas_polvo_salon_052_22: -2118561947330132811
+      motas_polvo_salon_052_220: -4603851164749436690
+      motas_polvo_salon_052_221: -139877119446412718
+      motas_polvo_salon_052_222: 1242601280610920577
+      motas_polvo_salon_052_223: -1517531622262347275
+      motas_polvo_salon_052_23: -4013772301326982766
+      motas_polvo_salon_052_24: -4960445229625944418
+      motas_polvo_salon_052_25: -2557780888923369996
+      motas_polvo_salon_052_26: 8456659006341591152
+      motas_polvo_salon_052_27: -3398199082220420156
+      motas_polvo_salon_052_28: 8284065947946703624
+      motas_polvo_salon_052_29: -2693223298032930270
+      motas_polvo_salon_052_3: 7774608246212306647
+      motas_polvo_salon_052_30: -7692178256403635095
+      motas_polvo_salon_052_31: -8307258005631304808
+      motas_polvo_salon_052_32: 2376432397007382087
+      motas_polvo_salon_052_33: 4983343324825032163
+      motas_polvo_salon_052_34: 685416531318244466
+      motas_polvo_salon_052_35: -2967809137476661620
+      motas_polvo_salon_052_36: 7345429386053254798
+      motas_polvo_salon_052_37: -4632334592459007519
+      motas_polvo_salon_052_38: 2117998085325071049
+      motas_polvo_salon_052_39: -9075659345897096965
+      motas_polvo_salon_052_4: 5911825802599529058
+      motas_polvo_salon_052_40: -2259694519167229404
+      motas_polvo_salon_052_41: -2065435842326871448
+      motas_polvo_salon_052_42: 3457639525684928735
+      motas_polvo_salon_052_43: 2474126429180889229
+      motas_polvo_salon_052_44: 6453634790678521727
+      motas_polvo_salon_052_45: 1196568240466305826
+      motas_polvo_salon_052_46: -7567536064939337250
+      motas_polvo_salon_052_47: 7155586137242322608
+      motas_polvo_salon_052_48: -871976739472509019
+      motas_polvo_salon_052_49: 6735770015772396850
+      motas_polvo_salon_052_5: 6538039519390261207
+      motas_polvo_salon_052_50: 4223323605880678565
+      motas_polvo_salon_052_51: -7666643832838166635
+      motas_polvo_salon_052_52: 6003835069235256020
+      motas_polvo_salon_052_53: 8933687428695990901
+      motas_polvo_salon_052_54: 3312263083864041585
+      motas_polvo_salon_052_55: 5621743307381157876
+      motas_polvo_salon_052_56: -8780591759161086685
+      motas_polvo_salon_052_57: -3894892032695230680
+      motas_polvo_salon_052_58: -3658775014664129677
+      motas_polvo_salon_052_59: -713021639946288348
+      motas_polvo_salon_052_6: 5013003477979903238
+      motas_polvo_salon_052_60: 2127249042264566088
+      motas_polvo_salon_052_61: -9073735331615680055
+      motas_polvo_salon_052_62: -8648772306761111897
+      motas_polvo_salon_052_63: -7409903663611754865
+      motas_polvo_salon_052_64: 8596921999818993495
+      motas_polvo_salon_052_65: 7691364027008872946
+      motas_polvo_salon_052_66: -3548907332213023876
+      motas_polvo_salon_052_67: 1080497676229521771
+      motas_polvo_salon_052_68: -4214456822839414388
+      motas_polvo_salon_052_69: -4326826176673669471
+      motas_polvo_salon_052_7: -97284122380855235
+      motas_polvo_salon_052_70: 1785583812309152828
+      motas_polvo_salon_052_71: -7472205991838053615
+      motas_polvo_salon_052_72: 8999474511552362824
+      motas_polvo_salon_052_73: 8532055051146335159
+      motas_polvo_salon_052_74: 8520524113361427291
+      motas_polvo_salon_052_75: -1278769055476125616
+      motas_polvo_salon_052_76: -2637925041766217144
+      motas_polvo_salon_052_77: 3197148933452206306
+      motas_polvo_salon_052_78: -2811517286856647306
+      motas_polvo_salon_052_79: 7968291098272805065
+      motas_polvo_salon_052_8: 3913640058994686995
+      motas_polvo_salon_052_80: -3702800394366687201
+      motas_polvo_salon_052_81: -7684550411437497066
+      motas_polvo_salon_052_82: 9076476396459273790
+      motas_polvo_salon_052_83: 5460507849044149379
+      motas_polvo_salon_052_84: -5940533500780888346
+      motas_polvo_salon_052_85: 3817106852737544206
+      motas_polvo_salon_052_86: 1614738644121124866
+      motas_polvo_salon_052_87: -4153140303494068152
+      motas_polvo_salon_052_88: 5960624927262915203
+      motas_polvo_salon_052_89: -8072721818900831381
+      motas_polvo_salon_052_9: 1361740343221319804
+      motas_polvo_salon_052_90: -9081913949064726248
+      motas_polvo_salon_052_91: 880290594146773370
+      motas_polvo_salon_052_92: 3598101063857967192
+      motas_polvo_salon_052_93: -6931816298160166322
+      motas_polvo_salon_052_94: -3834531248545867821
+      motas_polvo_salon_052_95: 5270826668066801997
+      motas_polvo_salon_052_96: -7147628335676985966
+      motas_polvo_salon_052_97: -3196304711570348050
+      motas_polvo_salon_052_98: 7441999662935864115
+      motas_polvo_salon_052_99: 8531292270275405974
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

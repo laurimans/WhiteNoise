@@ -17,4 +17,4 @@ MonoBehaviour:
   startDisable: 0
   activateOtherItem: 0
   actions:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 4c8c90fc69f36aa45b2377a5d4472a2a, type: 2}

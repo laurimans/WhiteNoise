@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 3322e21e5de02a3408542512a420fb5d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 769022695927143171
+    second: "Animacio\u0301n-tocadiscos-3_0"
+  - first:
+      213: -1892633327388456581
+    second: "Animacio\u0301n-tocadiscos-3_1"
+  - first:
+      213: 9213034811345971929
+    second: "Animacio\u0301n-tocadiscos-3_2"
+  - first:
+      213: 8857278037909990328
+    second: "Animacio\u0301n-tocadiscos-3_3"
+  - first:
+      213: -1816163837317353454
+    second: "Animacio\u0301n-tocadiscos-3_4"
+  - first:
+      213: 7327220923365435421
+    second: "Animacio\u0301n-tocadiscos-3_5"
+  - first:
+      213: 4281024222127514859
+    second: "Animacio\u0301n-tocadiscos-3_6"
+  - first:
+      213: 4425236530337793614
+    second: "Animacio\u0301n-tocadiscos-3_7"
+  - first:
+      213: -9118015405438616833
+    second: "Animacio\u0301n-tocadiscos-3_8"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Animacio\u0301n-tocadiscos-3_0"
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 584
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b53f6411e1caa00800000000000000
+      internalID: 769022695927143171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animacio\u0301n-tocadiscos-3_1"
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 618
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7902fe24040cb5e0800000000000000
+      internalID: -1892633327388456581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animacio\u0301n-tocadiscos-3_2"
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 615
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9daa59129564bdf70800000000000000
+      internalID: 9213034811345971929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animacio\u0301n-tocadiscos-3_3"
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 609
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb6e76927f5bea70800000000000000
+      internalID: 8857278037909990328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animacio\u0301n-tocadiscos-3_4"
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 579
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210f9c6cc90bbc6e0800000000000000
+      internalID: -1816163837317353454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animacio\u0301n-tocadiscos-3_5"
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 577
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18a108cb948fa560800000000000000
+      internalID: 7327220923365435421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animacio\u0301n-tocadiscos-3_6"
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 555
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4e0c229d0496b30800000000000000
+      internalID: 4281024222127514859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animacio\u0301n-tocadiscos-3_7"
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 569
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46cdddad29996d30800000000000000
+      internalID: 4425236530337793614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animacio\u0301n-tocadiscos-3_8"
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 430
+        width: 265
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffaba4e4c4d467180800000000000000
+      internalID: -9118015405438616833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Animacio\u0301n-tocadiscos-3_0": 769022695927143171
+      "Animacio\u0301n-tocadiscos-3_1": -1892633327388456581
+      "Animacio\u0301n-tocadiscos-3_2": 9213034811345971929
+      "Animacio\u0301n-tocadiscos-3_3": 8857278037909990328
+      "Animacio\u0301n-tocadiscos-3_4": -1816163837317353454
+      "Animacio\u0301n-tocadiscos-3_5": 7327220923365435421
+      "Animacio\u0301n-tocadiscos-3_6": 4281024222127514859
+      "Animacio\u0301n-tocadiscos-3_7": 4425236530337793614
+      "Animacio\u0301n-tocadiscos-3_8": -9118015405438616833
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -18,9 +18,4 @@ MonoBehaviour:
   activateOtherItem: 0
   actions:
   - {fileID: 11400000, guid: 26687039d8a74c148bf24d25fd366d84, type: 2}
-  sound: {fileID: 8300000, guid: 5e235e517db3be546bb1af99d5a8a0c0, type: 3}
-  dialoguesList:
-  - Ole un poquito de musica
-  - suficiente por hoy
-  isTask: 0
-  isClue: 0
+  - {fileID: 11400000, guid: 4c8c90fc69f36aa45b2377a5d4472a2a, type: 2}
