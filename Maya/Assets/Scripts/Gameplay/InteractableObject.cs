@@ -24,6 +24,9 @@ public class InteractableObject : MonoBehaviour
     private GamePhase currentPhase = 0;
     private GamePhase lastPhase;
 
+    // Dialogue
+    private int currentDialogueIndex = 0;
+
 
     protected virtual void Awake()
     {
@@ -58,10 +61,16 @@ public class InteractableObject : MonoBehaviour
     public InteractableData GetPhaseData() => phasesData[(int)currentPhase];
 
     public GameObject GetTargetObject() => objectToActivateGO;
+    public int GetDialogueIndex() => currentDialogueIndex;
 
     public bool GetInteractionData() => wasInteractedInThisPhase;
     public void MarkAsInteracted() => wasInteractedInThisPhase = true;
     public AudioSource GetAudioSource() => audioSource;
+
+    public void IncrementDialogueCounter()
+    {
+        currentDialogueIndex++;
+    }
 
     private void RefreshObject (GamePhase _currentPhase)
     {
@@ -71,6 +80,7 @@ public class InteractableObject : MonoBehaviour
             currentPhase = _currentPhase;
 
             wasInteractedInThisPhase = false;
+            currentDialogueIndex = 0;
 
             if (audioSource != null) audioSource.clip = null;
         }

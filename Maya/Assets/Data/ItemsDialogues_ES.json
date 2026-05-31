@@ -2,250 +2,390 @@
   "items": [
     {
       "key": "OBJ_BATHROOM_MIRROR_P0",
-      "lines": ["Cómo se nota que hoy no he currado."]
-    },
-    {
-      "key": "OBJ_BATHROOM_MIRROR_P1",
-      "lines": ["No me da tiempo a maquillarme, me lavo la cara y listo."]
+      "lines": [
+        "Cómo se nota que hoy no he currado"
+      ]
     },
     {
       "key": "OBJ_BATHROOM_MIRROR_P2",
-      "lines": ["Ha sido un día muy largo."]
+      "lines": [
+        "Ha sido un día muy largo"
+      ]
     },
     {
       "key": "OBJ_BATHROOM_MIRROR_P3",
-      "lines": ["Menudas ojeras."]
-    },
-    {
-      "key": "OBJ_BATHROOM_MIRROR_P4",
-      "lines": ["Madre mía, ya me ha salido otro grano por el estrés."]
-    },
-    {
-      "key": "OBJ_BATHROOM_MIRROR_P5",
-      "lines": ["Anoche no pegué ojo."]
-    },
-    {
-      "key": "OBJ_BATHROOM_MIRROR_P6",
-      "lines": ["Creo que ya me va tocando lavarme el pelo."]
-    },
-    {
-      "key": "OBJ_BATHROOM_MIRROR_P7",
-      "lines": ["Juraría que había visto algo pero solo era mi sombra."]
+      "lines": [
+        "Menudas ojeras"
+      ]
     },
     {
       "key": "OBJ_BATHROOM_MIRROR_P8",
-      "lines": ["Cada día más guapa."]
+      "lines": [
+        "Cada día más guapa"
+      ]
     },
     {
       "key": "OBJ_BATHROOM_SHOWER_P0",
       "lines": [
-        "Una duchita rápida para quitarme el olor a desinfectante y directa a la cama."
+        "Nada como una ducha caliente para terminar el día"
       ]
     },
     {
       "key": "OBJ_BATHROOM_SHOWER_P2",
-      "lines": ["Nada como una ducha caliente para terminar el día."]
-    },
-    {
-      "key": "OBJ_BATHROOM_SHOWER_P4",
-      "lines": ["Ojalá tuviera una bañera para darme un buen baño."]
-    },
-    {
-      "key": "OBJ_BATHROOM_SHOWER_P6",
       "lines": [
-        "A ver si el champú de manzana me quita el olor a desinfectante."
+        "Ojalá tuviera una bañera para darme un buen baño"
+      ]
+    },
+    {
+      "key": "OBJ_BATHROOM_SHOWER_P3",
+      "lines": [
+        "A ver si el champú de manzana me quita el olor a desinfectante",
+        "Una ducha rapidita"
       ]
     },
     {
       "key": "OBJ_BATHROOM_PAPER_P3",
-      "lines": ["¿Pero qué…? ¿Cómo ha podido pasar esto?"]
-    },
-    {
-      "key": "OBJ_BEDROOM_DIPLOMA_P0",
-      "lines": ["¡Ahí está! El papel más caro de mi vida cogiendo polvo."]
-    },
-    {
-      "key": "OBJ_BEDROOM_DIPLOMA_P1",
-      "lines": ["Mi madre está muy orgullosa de mí."]
-    },
-    {
-      "key": "OBJ_BEDROOM_DIPLOMA_P3",
       "lines": [
-        "Seis años de carrera, cafés y ojeras, pero ha merecido la pena."
+        "¿Pero qué…? ¿Cómo ha podido pasar esto?"
       ]
-    },
-    {
-      "key": "OBJ_BEDROOM_DIPLOMA_P5",
-      "lines": [
-        "Tanto estudiar para doctora y voy a acabar perdiendo la cabeza."
-      ]
-    },
-    {
-      "key": "OBJ_BEDROOM_DIPLOMA_P8",
-      "lines": ["Tengo que limpiar el cristal, está lleno de polvo."]
     },
     {
       "key": "OBJ_BEDROOM_BOARD_P0",
-      "lines": ["A ver, ruta del metro al hospital…"]
+      "lines": [
+        "A ver, ruta del metro al hospital…"
+      ]
     },
     {
       "key": "OBJ_BEDROOM_BOARD_P1",
       "lines": [
-        "Esa postal del Taj Mahal me recuerda que hay mundo más allá de los pijamas de quirófano."
+        "Ahí está mi hermanito, me pregunto si me echará de menos"
       ]
     },
     {
-      "key": "OBJ_BEDROOM_BOARD_P3",
+      "key": "OBJ_BEDROOM_BOARD_P2",
       "lines": [
-        "El lóbulo frontal me quedó clavado en este esquema. Hola doctora Maya."
+        "Esa postal del Taj Mahal me recuerda que hay mundo más allá de los pijamas de quirófano"
+      ]
+    },
+    {
+      "key": "OBJ_BEDROOM_BOARD_P4",
+      "lines": [
+        "Hola Doctora Maya"
       ]
     },
     {
       "key": "OBJ_BEDROOM_BOARD_P5",
-      "lines": ["Ahí está el enano, ¿me pregunto si me echará de menos?"]
+      "lines": [
+        "No recordaba que esto estuviera así"
+      ]
     },
     {
       "key": "OBJ_BEDROOM_CALENDAR_P0",
-      "lines": ["Puff, aún me quedan muchos turnos este mes."]
+      "lines": [
+        "Puff, aún me quedan muchos turnos este mes"
+      ]
     },
     {
       "key": "OBJ_BEDROOM_CALENDAR_P1",
       "lines": [
-        "Aún no le he preguntado a mi hermano que quiere para su cumple."
+        "Cada día es un día menos para el finde"
       ]
     },
     {
-      "key": "OBJ_BEDROOM_CALENDAR_P3",
-      "lines": ["Cada día es un día menos para el finde."]
+      "key": "OBJ_BEDROOM_DIPLOMA_P0",
+      "lines": [
+        "¡Ahí está! El papel más caro de mi vida cogiendo polvo"
+      ]
     },
     {
-      "key": "OBJ_BEDROOM_CALENDAR_P5",
-      "lines": ["Qué ganas de volver a casa y ver a mi familia."]
+      "key": "OBJ_BEDROOM_DIPLOMA_P1",
+      "lines": [
+        "Mi madre está muy orgullosa de mí"
+      ]
+    },
+    {
+      "key": "OBJ_BEDROOM_DIPLOMA_P3",
+      "lines": [
+        "Seis años de carrera, cafés y ojeras, pero ha merecido la pena"
+      ]
+    },
+    {
+      "key": "OBJ_BEDROOM_DIPLOMA_P4",
+      "lines": [
+        "Tanto estudiar para doctora y voy a acabar perdiendo la cabeza"
+      ]
     },
     {
       "key": "OBJ_BEDROOM_SOFTTOY_P0",
-      "lines": ["Es suave, pero estorba un poco para hacer la cama."]
+      "lines": [
+        "Desde los 5 años ya sabía que esto era lo mío"
+      ]
     },
     {
       "key": "OBJ_BEDROOM_SOFTTOY_P2",
-      "lines": ["Aún me acuerdo cuando mamá te cosió el traje."]
+      "lines": [
+        "Aún me acuerdo cuando mamá te cosió el traje"
+      ]
     },
     {
-      "key": "OBJ_BEDROOM_SOFTTOY_P4",
-      "lines": ["Desde los 5 años ya sabía que esto era lo mío."]
+      "key": "OBJ_BEDROOM_BED_P0",
+      "lines": [
+        "Aún no me puedo acostar, tengo que terminar de recoger"
+      ]
+    },
+    {
+      "key": "OBJ_BEDROOM_BED_P2",
+      "lines": [
+        "Si me tumbo ahora ya no me levanto. Mejor acabo de recoger primero"
+      ]
+    },
+    {
+      "key": "OBJ_BEDROOM_BED_P4",
+      "lines": [
+        "Me muero de sueño pero quiero dejar todo bien apuntado"
+      ]
+    },
+    {
+      "key": "OBJ_BEDROOM_BED_P6",
+      "lines": [
+        "Aun no Maya, tienes que hacer fotos a todas las habitaciones."
+      ]
+    },
+    {
+      "key": "OBJ_BEDROOM_ALARM_P0",
+      "lines": [
+        "No me falles mañana"
+      ]
+    },
+    {
+      "key": "OBJ_BEDROOM_ALARM_P1",
+      "lines": [
+        "Ojalá poder apagarlo y dormir 12 horas seguidas"
+      ]
+    },
+    {
+      "key": "OBJ_BEDROOM_JOURNAL_P4",
+      "lines": [
+        "Ahora lo llevaré siempre encima."
+      ]
+    },
+    {
+      "key": "OBJ_HALL_OPENDOOR_P5",
+      "lines": [
+        "¡Qué hace la puerta abierta! Eso sí que no, estoy segura de que anoche cerré con llave"
+      ]
+    },
+    {
+      "key": "OBJ_HALL_DOOR_P1",
+      "lines": [
+        "Espera, aún no me he tomado el café"
+      ]
+    },
+    {
+      "key": "OBJ_HALL_BOXES_P6",
+      "lines": [
+        "¡Aquí estás! Espero que no se haya estropeado con la mudanza"
+      ]
     },
     {
       "key": "OBJ_HALL_LEO_P0",
       "lines": [
-        "¡Ay, mi chiquitín! Qué silencioso está todo sin tus silbidos por la mañana."
+        "Te echo muchísimo de menos, Leo",
+        "La casa se me hace enorme sin tí"
+      ]
+    },
+    {
+      "key": "OBJ_HALL_LEO_P1",
+      "lines": [
+        "¡Ay, mi chiquitín! Qué silencioso está todo sin tus silbidos por la mañana"
       ]
     },
     {
       "key": "OBJ_HALL_LEO_P2",
-      "lines": ["Te echo muchísimo de menos, Leo."]
+      "lines": [
+        "La verdad es que sales muy bien en esta foto"
+      ]
+    },
+    {
+      "key": "OBJ_HALL_LEO_P3",
+      "lines": [
+        "Ojalá pudiera traerte conmigo"
+      ]
     },
     {
       "key": "OBJ_HALL_LEO_P4",
-      "lines": ["La casa se me hace enorme sin tí."]
-    },
-    {
-      "key": "OBJ_HALL_LEO_P6",
-      "lines": ["Ojalá pudiera traerte conmigo."]
-    },
-    {
-      "key": "OBJ_HALL_LEO_P8",
-      "lines": ["La verdad es que sales muy bien en esta foto."]
-    },
-    {
-      "key": "OBJ_HALL_CROCS_P0",
       "lines": [
-        "Debería lavarlas de vez en cuando, empiezan a tener un color dudoso."
+        "Te echo muchísimo de menos, Leo"
       ]
     },
     {
-      "key": "OBJ_HALL_CROCS_P2",
+      "key": "OBJ_HALL_CROCS_P1",
       "lines": [
-        "Si en la facultad me dicen que iba a vivir metida en unos zuecos azules, no me lo creo."
+        "Debería lavarlas de vez en cuando, empiezan a tener un color dudoso"
       ]
     },
     {
-      "key": "OBJ_HALL_CROCS_P4",
-      "lines": ["Mi uniforme oficial."]
-    },
-    {
-      "key": "OBJ_HALL_CROCS_P6",
-      "lines": ["Mis salvavidas de goma."]
-    },
-    {
-      "key": "OBJ_KITCHEN_DISHES_P0",
+      "key": "OBJ_KITCHEN_MAGNETS_P0",
       "lines": [
-        "Un poco de Fairy y estropajo. Soy incapaz de irme a dormir sabiendo que hay platos en la pila."
+        "Necesito viajar más y aumentar mi colección de imanes"
       ]
     },
     {
-      "key": "OBJ_KITCHEN_DISHES_P2",
-      "lines": ["No he estudiado anatomía para convivir con bacterias."]
+      "key": "OBJ_KITCHEN_LIST_P0",
+      "lines": [
+        "Leche, huevos, pan… lo básico para sobrevivir a la semana"
+      ]
+    },
+    {
+      "key": "OBJ_KITCHEN_COFFEMAKER_P0",
+      "lines": [
+        "La verdad que no son horas de hacerme un café, pero nadie se va a enterar."
+      ]
     },
     {
       "key": "OBJ_KITCHEN_COFFEMAKER_P1",
-      "lines": ["La única relación tóxica de la que me niego a salir."]
+      "lines": [
+        "La única relación tóxica de la que me niego a salir"
+      ]
     },
     {
-      "key": "OBJ_KITCHEN_COFFEMAKER_P3",
-      "lines": ["Mi salvación para aguantar la guardia de mañana."]
-    },
-    {
-      "key": "OBJ_KITCHEN_COFFEMAKER_P5",
-      "lines": ["Ya tengo que rellenar el depósito de agua otra vez."]
-    },
-    {
-      "key": "OBJ_KITCHEN_COFFEMAKER_P8",
-      "lines": ["Necesito cafeína para empezar a funcionar."]
+      "key": "OBJ_KITCHEN_COFFEMAKER_P2",
+      "lines": [
+        "La verdad que no son horas de hacerme un café, pero nadie se va a enterar."
+      ]
     },
     {
       "key": "OBJ_KITCHEN_MOVEDCOFFEMAKER_P3",
-      "lines": ["Alguien la ha movido. Estoy completamente segura."]
+      "lines": [
+        "¿Qué hace la cafetera ahí? Alguien la ha movido. Estoy completamente segura"
+      ]
+    },
+    {
+      "key": "OBJ_KITCHEN_MOVEDCOFFEMAKER_P4",
+      "lines": [
+        "La verdad que no son horas de hacerme un café, pero nadie se va a enterar."
+      ]
+    },
+    {
+      "key": "OBJ_KITCHEN_MOVEDCOFFEMAKER_P5",
+      "lines": [
+        "Necesito cafeína para empezar a funcionar"
+      ]
+    },
+    {
+      "key": "OBJ_KITCHEN_DIRTYDISHES_P0",
+      "lines": [
+        "Soy incapaz de irme a dormir sabiendo que hay platos en la pila."
+      ]
+    },
+    {
+      "key": "OBJ_KITCHEN_DIRTYDISHES_P1",
+      "lines": [
+        "No he estudiado medicina para convivir con bacterias. Tengo que empezar a dejar más limpia la casa.",
+        "Luego los limpio, tengo que irme al trabajo."
+      ]
+    },
+    {
+      "key": "OBJ_KITCHEN_DIRTYDISHES_P2",
+      "lines": [
+        "Soy incapaz de irme a dormir sabiendo que hay platos en la pila."
+      ]
+    },
+    {
+      "key": "OBJ_KITCHEN_DIRTYDISHES_P3",
+      "lines": [
+        "De verdad que este estrés me está afectando"
+      ]
+    },
+    {
+      "key": "OBJ_KITCHEN_CLEANDISHES_P0",
+      "lines": [
+        "Lo mejor de vivir sola es que si ordenas algo, sabes que se va a quedar así"
+      ]
+    },
+    {
+      "key": "OBJ_KITCHEN_CLEANDISHES_P2",
+      "lines": [
+        "Qué paz mental da ver la pila reluciente",
+        "Así sí, mucho mejor"
+      ]
     },
     {
       "key": "OBJ_LIVING_BOOK_P0",
       "lines": [
-        "El Harrison de Cardiología. Me salvó el examen, pero pesa un quintal y aquí solo estorba."
+        "Ya he repasado suficiente por hoy, hora de guardarlo en su sitio"
+      ]
+    },
+    {
+      "key": "OBJ_LIVING_BOOK_P1",
+      "lines": [
+        "Juraría que lo recogí anoche. Que malo es el estrés."
       ]
     },
     {
       "key": "OBJ_LIVING_BOOK_P2",
       "lines": [
-        "Cuatrocientas páginas sobre el corazón. Mejor lo guardo antes de mancharlo de café."
+        "Cuatrocientas páginas sobre el corazón. Mejor lo guardo antes de mancharlo de café"
       ]
     },
     {
-      "key": "OBJ_LIVING_BOOK_P4",
+      "key": "OBJ_LIVING_ORDERERBOOK_P0",
       "lines": [
-        "Ya he repasado suficiente por hoy, hora de guardarlo en su sitio."
+        "Ahí estás mejor, ordenado junto a los de Interna. Un trasto menos por el medio"
+      ]
+    },
+    {
+      "key": "OBJ_LIVING_ORDERERBOOK_P2",
+      "lines": [
+        "Todo vuelve a estar en equilibrio"
+      ]
+    },
+    {
+      "key": "OBJ_LIVING_ORDERERBOOK_P4",
+      "lines": [
+        "Mucho mejor, ahí colocadito"
       ]
     },
     {
       "key": "OBJ_LIVING_FLOWERS_P0",
-      "lines": ["Qué bonitas se ven con la luz que entra por la ventana."]
-    },
-    {
-      "key": "OBJ_LIVING_FLOWERS_P2",
-      "lines": ["Gracias mamá por darle un poco de vida a la casa."]
-    },
-    {
-      "key": "OBJ_LIVING_FLOWERS_P4",
       "lines": [
-        "Tengo que comprar fertilizante o se me van a pochar en dos días."
+        "Gracias mamá por darle un poco de vida a la casa, aunque sea en la distancia"
       ]
     },
     {
-      "key": "OBJ_LIVING_FLOWERS_P6",
-      "lines": ["Creo que hoy tenía que regarlas."]
+      "key": "OBJ_LIVING_FLOWERS_P1",
+      "lines": [
+        "Qué bonitos se ven los tulipanes con la luz que entra por la ventana"
+      ]
     },
     {
       "key": "OBJ_LIVING_FLOWERS_P5",
       "lines": [
-        "Juraría que ayer estos eran tulipanes... Es imposible que haya cambiado las flores siendo sonámbula. Esto no tiene sentido."
+        "Juraría que mi madre me regaló tulipanes"
+      ]
+    },
+    {
+      "key": "OBJ_LIVING_PICTURES_P0",
+      "lines": [
+        "Ese viaje a la India me cambió la vida"
+      ]
+    },
+    {
+      "key": "OBJ_LIVING_PICTURES_P2",
+      "lines": [
+        "Qué ganas de volver"
+      ]
+    },
+    {
+      "key": "OBJ_LIVING_PICTURES_P4",
+      "lines": [
+        "Quería traerme un poquito de la paz de la India a mi casa. Creo que no está funcionando"
+      ]
+    },
+    {
+      "key": "OBJ_LIVING_TV_P2",
+      "lines": [
+        "Sigue sin coger señal de la antena. Mañana llamo al técnico"
       ]
     }
   ]

@@ -2,24 +2,46 @@
   "calls": [
     {
       "key": "CALL_MOM_P2",
-      "description": "Llamada de mamá Lunes Noche",
+      "description": "Conversación Telefónica 1",
       "dialogue": [
-        { "speaker": "Mamá", "text": "¡Hola cariño! ¿Cómo ha ido el primer día?" },
-        { "speaker": "Maya", "text": "Cansado mamá, pero bien. El hospital es enorme y me he perdido tres veces buscando rayos." },
-        { "speaker": "Mamá", "text": "Es normal, ya verás como en una semana te conoces los pasillos mejor que tu habitación. ¿Has comido algo?" },
-        { "speaker": "Maya", "text": "Un sándwich rápido... no he tenido tiempo para más." },
-        { "speaker": "Mamá", "text": "Ay Maya... prométeme que cenarás algo caliente. Te quiero, descansa." },
-        { "speaker": "Maya", "text": "Lo intentaré. Te quiero mamá, adiós." }
+        {
+          "speaker": "Mamá",
+          "text": "¡Hola cariño! ¿Qué tal te estás adaptando en el piso nuevo? ¿Se te están haciendo muy pesados los turnos?"
+        },
+        {
+          "speaker": "Maya",
+          "text": "Hola mamá. Todo bien, de verdad. Ya tengo todo más o menos organizado y en el hospital… bueno, echando muchas horas, pero bien. Me voy haciendo a la rutina."
+        },
+        {
+          "speaker": "Mamá",
+          "text": "Ay, me dejas más tranquila. Ya sabes que los principios siempre cuestan. Bueno, te dejo que descanses que mañana madrugas."
+        }
       ]
     },
     {
-      "key": "CALL_MOM_P6",
-      "description": "Llamada de mamá Miércoles Noche (Preocupación)",
+      "key": "CALL_MOM_P4",
+      "description": "Conversación telefónica 2",
       "dialogue": [
-        { "speaker": "Mamá", "text": "¿Cariño? Te noto la voz rara... ¿estás bien?" },
-        { "speaker": "Maya", "text": "No sé mamá... pasan cosas raras en el piso. Creo que es el estrés, pero juraría que dejo cosas en un sitio y aparecen en otro." },
-        { "speaker": "Mamá", "text": "Escúchame, es el cansancio. A tu padre le pasaba igual cuando doblaba turnos. No te obsesiones, descansa." },
-        { "speaker": "Maya", "text": "Tienes razón... será eso. Muchas gracias, espero que estéis todos bien. Te quiero. Adiós." }
+        {
+          "speaker": "Maya",
+          "text": "Mamá, estoy durmiendo fatal. Encuentro cosas movidas de sitio por las mañanas y siento que puede que haya entrado alguien a casa."
+        },
+        {
+          "speaker": "Mamá",
+          "text": "Cariño, respira, seguro que es el estrés por el nuevo trabajo. ¿No te acuerdas de que de pequeña, cuando estabas nerviosa, te levantabas sonámbula por las noches?"
+        },
+        {
+          "speaker": "Maya",
+          "text": "¿Sonámbula? Buf, hace mil años que no me pasa… pero supongo que explicaría por qué me encuentro todo descolocado."
+        },
+        {
+          "speaker": "Mamá",
+          "text": "Haz una cosa, apunta en tu libreta todo lo que te parezca raro y coméntaselo a algún compañero de tu planta, a ver qué te aconsejan."
+        },
+        {
+          "speaker": "Maya",
+          "text": "Tienes razón mamá. Muchas gracias, espero que estéis todos bien. Te quiero. Adiós."
+        }
       ]
     }
   ]

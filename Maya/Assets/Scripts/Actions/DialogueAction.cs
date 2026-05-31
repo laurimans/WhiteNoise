@@ -6,7 +6,7 @@ using UnityEngine;
 public class DialogueAction : InteractableAction
 {
     private string lastItemID;
-    private int currentIndex = 0;
+    private int currentIndex;
     private GamePhase lastRecordedPhase;
 
     public static event Action<string> OnDialogueSaid;
@@ -14,6 +14,8 @@ public class DialogueAction : InteractableAction
 
     public override bool Execute(InteractableObject owner)
     {
+        currentIndex = owner.GetDialogueIndex();
+
         string id = owner.GetID();
         int phaseIndex = (int)GameManager.Instance.GetCurrentPhase();
 
@@ -21,7 +23,6 @@ public class DialogueAction : InteractableAction
 
         if (id != lastItemID || GameManager.Instance.GetCurrentPhase() != lastRecordedPhase)
         {
-            currentIndex = 0;
             lastItemID = id;
             lastRecordedPhase = GameManager.Instance.GetCurrentPhase();
         }
@@ -38,7 +39,7 @@ public class DialogueAction : InteractableAction
             ? lines[currentIndex]
             : lines[lines.Count - 1];
 
-        currentIndex++;
+        owner.IncrementDialogueCounter();
 
         OnDialogueSaid?.Invoke(textToSay);
 
