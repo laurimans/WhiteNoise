@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 [System.Serializable]
 public struct Photo
@@ -40,11 +41,14 @@ public class JournalUI : MonoBehaviour
     private int currentIndex = 0;
     private Coroutine typewriterCoroutine;
     private Coroutine animationCoroutine;
+    public Action OnJournalButtonAction;
 
     private void Start()
     {
         journalCanvas.SetActive(false);
         HUDPanel.SetActive(true);
+
+        OnJournalButtonAction = OpenJournal;
     }
 
     private void OnEnable()
@@ -57,6 +61,11 @@ public class JournalUI : MonoBehaviour
     {
         CloseAnimation();
         OpenJournalAction.OnJournalClicked -= OpenJournal;
+    }
+
+    public void OnJournalButtonClicked()
+    {
+        OnJournalButtonAction?.Invoke();
     }
 
     public void QuitJournal()
@@ -202,7 +211,7 @@ public class JournalUI : MonoBehaviour
         {
             if (GameManager.Instance.GetCurrentPhase() == GamePhase.WednesdayMorning && i > sentence.Length / 2)
             {
-                bodyText.text += characters[Random.Range(0, characters.Length)];
+                bodyText.text += characters[UnityEngine.Random.Range(0, characters.Length)];
             }
             else
             {

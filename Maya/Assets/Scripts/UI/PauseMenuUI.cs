@@ -1,17 +1,29 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.VFX;
+using System;
 
 public class PauseMenuUI : MonoBehaviour
 {
     [SerializeField] private GameObject PauseMenuPanel;
     [SerializeField] private GameObject HUDPanel;
+    [SerializeField] private GameObject journalUI;
     [SerializeField] private GameObject cameraButton;
     [SerializeField] private GameObject journalButton;
 
+    public Action OnPauseButtonAction;
+
+    private void Start()
+    {
+        if (cameraButton != null) cameraButton.SetActive(false);
+        if (journalButton != null) journalButton.SetActive(false);
+
+        PauseMenuPanel.SetActive(false);
+        OnPauseButtonAction = OnPauseButtonPressed;
+    }
+
     private void OnEnable()
     {
-        cameraButton.SetActive(false);
         PickUpCameraAction.OnCameraPicked += ActivateCameraButton;
         PickUpJournalAction.OnPickUpJournal += ActivateJournalButton;
         GameStateManager.OnGamePause += ShowPauseMenu;
@@ -36,7 +48,20 @@ public class PauseMenuUI : MonoBehaviour
     private void HidePauseMenu()
     {
         PauseMenuPanel.SetActive(false);
-        HUDPanel.SetActive(true);
+
+        if (journalUI != null && !journalUI.gameObject.activeInHierarchy)
+        {
+            HUDPanel.SetActive(true);
+        }
+        else if (journalUI == null)
+        {
+            HUDPanel.SetActive(true);
+        }
+    }
+
+    public void OnPauseButtonClicked()
+    {
+        OnPauseButtonAction?.Invoke();
     }
 
     public void OnPauseButtonPressed()

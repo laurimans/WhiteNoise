@@ -4,10 +4,6 @@ using System.Collections;
 
 public class UISaboteur : MonoBehaviour
 {
-    [Header("Buttons to Swap")]
-    [SerializeField] private Button journalButton;
-    [SerializeField] private Button pauseButton;
-
     [Header("Visual Effects")]
     [SerializeField] private CanvasGroup mainHUD;
     [SerializeField] private RectTransform journalIcon;
@@ -19,19 +15,14 @@ public class UISaboteur : MonoBehaviour
     private bool isGlitched = false;
 
 
-    private void Start()
-    {
-        journalButton.onClick.RemoveAllListeners();
-        pauseButton.onClick.RemoveAllListeners();
-
-        journalButton.onClick.AddListener(OnJournalClick);
-        pauseButton.onClick.AddListener(OnPauseClick);
-    }
-
     public void EnableUISabotage()
     {
         isGlitched = true;
         journalIcon.localRotation = Quaternion.Euler(0, 0, 180f);
+
+        journalUI.OnJournalButtonAction = pauseMenu.OnPauseButtonPressed;
+        pauseMenu.OnPauseButtonAction = journalUI.OpenJournal;
+
     }
 
     public void DisableUISabotage()
@@ -39,6 +30,9 @@ public class UISaboteur : MonoBehaviour
         isGlitched = false;
         journalIcon.localRotation = Quaternion.Euler(0, 0, 0f);
         mainHUD.alpha = 1f;
+
+        journalUI.OnJournalButtonAction = journalUI.OpenJournal;
+        pauseMenu.OnPauseButtonAction = pauseMenu.OnPauseButtonPressed;
     }
 
     void OnJournalClick()

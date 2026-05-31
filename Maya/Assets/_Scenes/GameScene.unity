@@ -3804,8 +3804,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7962dba8f56c19b46b0fc34516217fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UISaboteur
-  journalButton: {fileID: 2064299427}
-  pauseButton: {fileID: 1525747897979829814}
   mainHUD: {fileID: 1086749072}
   journalIcon: {fileID: 2064299426}
   pauseMenu: {fileID: 1156202282}
@@ -7939,6 +7937,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenuUI
   PauseMenuPanel: {fileID: 1646667370}
   HUDPanel: {fileID: 1086749066}
+  journalUI: {fileID: 753051298}
   cameraButton: {fileID: 2030960553}
   journalButton: {fileID: 2064299425}
 --- !u!114 &1156202283
@@ -14702,7 +14701,7 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[2]'
       value: 
-      objectReference: {fileID: 11400000, guid: 60205aceb5366834887aca9bc8d304da, type: 2}
+      objectReference: {fileID: 11400000, guid: 14c11f0d1f3363f4da713e80e8b244e2, type: 2}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[3]'
       value: 
@@ -14710,7 +14709,7 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[4]'
       value: 
-      objectReference: {fileID: 11400000, guid: 60205aceb5366834887aca9bc8d304da, type: 2}
+      objectReference: {fileID: 11400000, guid: 3df35acc35c39ef4ba2e60d38cd27662, type: 2}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[5]'
       value: 
@@ -14718,7 +14717,7 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[6]'
       value: 
-      objectReference: {fileID: 11400000, guid: 60205aceb5366834887aca9bc8d304da, type: 2}
+      objectReference: {fileID: 11400000, guid: 08b24f5437f66784eaf14c390ef1362e, type: 2}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[7]'
       value: 
@@ -14914,7 +14913,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1156202283}
         m_TargetAssemblyTypeName: JournalUI, Assembly-CSharp
-        m_MethodName: OpenJournal
+        m_MethodName: OnJournalButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15251,6 +15250,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 92a46b8dc31dd714c83608c317f04554, type: 2}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e6785aa6a858c1e42b7db93b27a783ca, type: 2}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[4]'
       value: 
       objectReference: {fileID: 11400000, guid: c679f4977151cfe458fdbc830b830c26, type: 2}
@@ -15261,15 +15264,15 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[6]'
       value: 
-      objectReference: {fileID: 11400000, guid: 6b272b669d73d394aa6cedd3ec34ea84, type: 2}
+      objectReference: {fileID: 11400000, guid: e3fac94c15f1ea74e96450fa975d882f, type: 2}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[7]'
       value: 
-      objectReference: {fileID: 11400000, guid: e3fac94c15f1ea74e96450fa975d882f, type: 2}
+      objectReference: {fileID: 11400000, guid: 6b272b669d73d394aa6cedd3ec34ea84, type: 2}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[8]'
       value: 
-      objectReference: {fileID: 11400000, guid: 51d5ff28f22a79945aaedab522be7136, type: 2}
+      objectReference: {fileID: 11400000, guid: 0d35530acf56cff449b063d13a1b65b3, type: 2}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15628,7 +15631,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1156202282}
         m_TargetAssemblyTypeName: PauseMenuUI, Assembly-CSharp
-        m_MethodName: OnPauseButtonPressed
+        m_MethodName: OnPauseButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15654,6 +15657,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3533747195794811705, guid: f0ce6444936e79943a73547cc3443bf9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 4.486328
+      objectReference: {fileID: 0}
     - target: {fileID: 7323547725843123040, guid: f0ce6444936e79943a73547cc3443bf9, type: 3}
       propertyPath: m_Name
       value: CreditsCanvas
@@ -15661,6 +15668,22 @@ PrefabInstance:
     - target: {fileID: 7323547725843123040, guid: f0ce6444936e79943a73547cc3443bf9, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117991960018220505, guid: f0ce6444936e79943a73547cc3443bf9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1156202280}
+    - target: {fileID: 8117991960018220505, guid: f0ce6444936e79943a73547cc3443bf9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnReturnToMenuClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117991960018220505, guid: f0ce6444936e79943a73547cc3443bf9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CreditsUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117991960018220505, guid: f0ce6444936e79943a73547cc3443bf9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8779732702580324757, guid: f0ce6444936e79943a73547cc3443bf9, type: 3}
       propertyPath: m_Pivot.x
