@@ -48,6 +48,8 @@ public class GameManager : MonoBehaviour
     public static event Action OnGameEnd;
     public static event Action<bool> OnExitLockChange;
     public static event Action OnTaskDone;
+    public static event Action OnTransitionStart;
+    public static event Action OnTransitionEnd;
 
     #region Singleton
     public static GameManager Instance { get; private set; }
@@ -133,13 +135,16 @@ public class GameManager : MonoBehaviour
         }
 
         int nextPhase = (int)currentPhase + 1;
-
+   
+        OnTransitionStart?.Invoke();
         // Transition
         StartCoroutine(transitionPanel.PhaseTransition(() =>
         {
             LoadDayPhase((GamePhase)nextPhase);
+            OnTransitionEnd?.Invoke();
         }, daysList[nextPhase].transitionAudio));
 
+        
         CursorManager.Instance.SetDefaultCursor();
     }
 

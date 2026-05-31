@@ -15,26 +15,29 @@ public class LightGlitch : MonoBehaviour
 
     private bool isSOSActive = false;
 
-    void OnEnable() => GameManager.OnPhaseChanged += StartSOSIfThursday;
-    void OnDisable() => GameManager.OnPhaseChanged -= StartSOSIfThursday;
-
     private void Update()
     {
         if (Keyboard.current.qKey.wasPressedThisFrame)
         {
             isSOSActive = false;
-            StartSOSIfThursday(GamePhase.WednesdayNight);
+            StartSOS();
             Debug.Log("Debugueando luces");
         }
     }
 
-    void StartSOSIfThursday(GamePhase phase)
+    public void StartSOS()
     {
-        if (phase == GamePhase.WednesdayNight && !isSOSActive)
+        if (!isSOSActive)
         {
             StartCoroutine(SOSRoutine());
-
         }
+    }
+
+    public void StopSOS()
+    {
+        StopAllCoroutines();
+        isSOSActive = false;
+        OnSOSLightPulse?.Invoke(true);
     }
 
     IEnumerator SOSRoutine()

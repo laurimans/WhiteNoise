@@ -5,6 +5,12 @@ using UnityEngine.InputSystem;
 
 public class GlitchManager : MonoBehaviour
 {
+    public static GlitchManager Instance { get; private set; }
+
+    [Header("Controllers")]
+    [SerializeField] private LightGlitch lightGlitch;
+    [SerializeField] private UISaboteur uiSaboteur;
+
     [Header("References")]
     [SerializeField] private RectTransform fakeCursor;
     [SerializeField] private GameObject errorScreen;
@@ -12,6 +18,51 @@ public class GlitchManager : MonoBehaviour
     [SerializeField] private GameObject glitchScreen;
 
     private bool isLagging = false;
+
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+    }
+
+    private void OnEnable()
+    {
+        GameManager.OnPhaseChanged += HandlePhaseGlitches;
+    }
+
+    private void OnDisable()
+    {
+        GameManager.OnPhaseChanged -= HandlePhaseGlitches;
+    }
+
+    private void HandlePhaseGlitches(GamePhase currentPhase)
+    {
+        StopAllGlitches();
+
+        switch (currentPhase)
+        {
+            case GamePhase.WednesdayNight:
+                if (lightGlitch != null) lightGlitch.StartSOS();
+                break;
+
+            case GamePhase.ThursdayMorning:
+                if (uiSaboteur != null) uiSaboteur.EnableUISabotage();
+                StartCoroutine(RandomScreenGlitches());
+                break;
+        }
+    }
+
+    public void StopAllGlitches()
+    {
+        StopAllCoroutines();
+
+        if (lightGlitch != null) lightGlitch.StopSOS();
+        if (uiSaboteur != null) uiSaboteur.DisableUISabotage();
+
+        if (glitchScreen != null) glitchScreen.SetActive(false);
+        if (errorScreen != null) errorScreen.SetActive(false);
+    }
+
 
     public void StartFinalSequence()
     {
@@ -46,10 +97,9 @@ public class GlitchManager : MonoBehaviour
 
        if(isLagging)
         {
-
             Vector2 currentMousePos = Mouse.current.position.ReadValue();
-
             Vector2 localMousePos;
+
             RectTransformUtility.ScreenPointToLocalPointInRectangle(
                 fakeCursor.parent as RectTransform,
                 currentMousePos,
@@ -138,16 +188,11 @@ public class GlitchManager : MonoBehaviour
     {
         while (true)
         {
-            if (GameManager.Instance.GetCurrentPhase() == GamePhase.ThursdayMorning)
-            {
-                yield return new WaitForSeconds(Random.Range(5f, 15f));
+            yield return new WaitForSeconds(Random.Range(5f, 15f));
+            glitchScreen.SetActive(true);
 
-                glitchScreen.SetActive(true);
-
-                yield return new WaitForSeconds(Random.Range(0.05f, 0.2f));
-                glitchScreen.SetActive(false);
-            }
-            yield return null;
+            yield return new WaitForSeconds(Random.Range(0.05f, 0.2f));
+            glitchScreen.SetActive(false);
         }
     }
 
@@ -159,24 +204,13 @@ public class GlitchManager : MonoBehaviour
 
     void ResetToDayOne()
     {
-        StopAllCoroutines();
-
-        errorScreen.SetActive(false);
-        glitchScreen.SetActive(false);
+        StopAllGlitches();
 
         fakeCursor.gameObject.SetActive(false);
         Cursor.visible = true;
-        CursorManager.Instance.SetDefaultCursor(); // Si tienes un manager de cursor, lo restauramos
+        if (CursorManager.Instance != null) CursorManager.Instance.SetDefaultCursor();
 
         GameManager.Instance.NextPhase();
-    }
-
-    public void StopAllGlitches()
-    {
-        StopAllCoroutines();
-
-        if (glitchScreen != null) glitchScreen.SetActive(false);
-        if (errorScreen != null) errorScreen.SetActive(false);
     }
 
 }

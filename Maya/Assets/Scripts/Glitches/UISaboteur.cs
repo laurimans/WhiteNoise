@@ -18,15 +18,27 @@ public class UISaboteur : MonoBehaviour
 
     private bool isGlitched = false;
 
-    void Awake()
-    {
-        GameManager.OnPhaseChanged += CheckForGlitchPhase;
-    }
 
     private void Start()
     {
+        journalButton.onClick.RemoveAllListeners();
+        pauseButton.onClick.RemoveAllListeners();
+
         journalButton.onClick.AddListener(OnJournalClick);
         pauseButton.onClick.AddListener(OnPauseClick);
+    }
+
+    public void EnableUISabotage()
+    {
+        isGlitched = true;
+        journalIcon.localRotation = Quaternion.Euler(0, 0, 180f);
+    }
+
+    public void DisableUISabotage()
+    {
+        isGlitched = false;
+        journalIcon.localRotation = Quaternion.Euler(0, 0, 0f);
+        mainHUD.alpha = 1f;
     }
 
     void OnJournalClick()
@@ -40,21 +52,6 @@ public class UISaboteur : MonoBehaviour
         if (isGlitched) journalUI.OpenJournal();
         else pauseMenu.OnPauseButtonPressed();
     }
-
-    void CheckForGlitchPhase(GamePhase currentPhase)
-    {
-        if (currentPhase == GamePhase.ThursdayMorning)
-        {
-            ApplyUISwap();
-        }
-    }
-
-    void ApplyUISwap()
-    {
-        isGlitched = true;
-        journalIcon.localRotation = Quaternion.Euler(0, 0, 180f);
-    }
-
 
     void Update()
     {

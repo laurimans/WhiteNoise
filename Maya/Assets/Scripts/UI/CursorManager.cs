@@ -24,6 +24,29 @@ public class CursorManager : MonoBehaviour
 
     #endregion
 
+    private void OnEnable()
+    {
+        GameManager.OnTransitionStart += HideCursor;
+        GameManager.OnTransitionEnd += ShowCursor;
+    }
+
+    private void OnDisable()
+    {
+        GameManager.OnTransitionStart -= HideCursor;
+        GameManager.OnTransitionEnd -= ShowCursor;
+    }
+
+    private void HideCursor()
+    {
+        Cursor.visible = false;
+    }
+
+    private void ShowCursor()
+    {
+        Cursor.visible = true;
+        SetDefaultCursor();
+    }
+
     public void SetInteractableCursor()
     {
         Cursor.SetCursor(interactableCursor, hotSpot, CursorMode.Auto);

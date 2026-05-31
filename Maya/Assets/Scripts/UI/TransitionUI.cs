@@ -6,6 +6,7 @@ public class TransitionUI : MonoBehaviour
     
     [SerializeField] private CanvasGroup canvas;
     [SerializeField] private float fadeDuration = 1.0f;
+    [SerializeField] private GameObject HUDPanel;
 
     private void Awake()
     {
@@ -17,6 +18,8 @@ public class TransitionUI : MonoBehaviour
 
     public IEnumerator PhaseTransition(System.Action changeLogic, AudioClip audioClip)
     {
+        HideHUDForTransition();
+
         // Fade In
         canvas.blocksRaycasts = true; 
         float timer = 0;
@@ -44,6 +47,20 @@ public class TransitionUI : MonoBehaviour
 
         canvas.alpha = 0;
         canvas.blocksRaycasts = false;
+
+        ShowHUDAfterTransition();
     }
-   
+
+    private void HideHUDForTransition()
+    {
+        HUDPanel.SetActive(false);
+    }
+
+    private void ShowHUDAfterTransition()
+    {
+
+       HUDPanel.SetActive(true);
+
+    }
+
 }

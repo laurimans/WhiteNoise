@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0546ed498f1d5ae49b165140270459f1, type: 3}
   m_Name: 1_Calendar 1
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
-  initialSprite: {fileID: 1755565261270460612, guid: 23879bc1674eae44aacbcaedf88b787e, type: 3}
+  initialSprite: {fileID: 8264238717982501934, guid: e29b60d86bb0892418d2ec4ee1926cd7, type: 3}
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
