@@ -28,10 +28,18 @@ public class JournalUI : MonoBehaviour
 
     [Header("Photo System")]
     [SerializeField] private Image photoContainer; 
-    [SerializeField] private List<Photo> roomPhotos; 
+    [SerializeField] private List<Photo> roomPhotos;
+
+    [Header("Animation Settings")]
+    [SerializeField] private RectTransform journalPanelRect;
+    [SerializeField] private float animationDuration = 0.4f;
+    [SerializeField] private Vector2 hiddenPosition = new Vector2(0, -1500f); 
+    [SerializeField] private Vector2 visiblePosition = Vector2.zero;
+    [SerializeField] private AnimationCurve animationCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
     private int currentIndex = 0;
     private Coroutine typewriterCoroutine;
+    private Coroutine animationCoroutine;
 
     private void Start()
     {
@@ -41,18 +49,19 @@ public class JournalUI : MonoBehaviour
 
     private void OnEnable()
     {
+        OpenAnimation();
         OpenJournalAction.OnJournalClicked += OpenJournal;
     }
 
     private void OnDisable()
     {
+        CloseAnimation();
         OpenJournalAction.OnJournalClicked -= OpenJournal;
     }
 
     public void QuitJournal()
     {
-        journalCanvas.SetActive(false);
-        HUDPanel.SetActive(true);
+        CloseAnimation();
 
         if (CursorManager.Instance != null) CursorManager.Instance.SetDefaultCursor();
     }
@@ -63,6 +72,51 @@ public class JournalUI : MonoBehaviour
         {
             currentIndex++;
             UpdateJournalUI();
+        }
+    }
+
+    private void OpenAnimation()
+    {
+        if (animationCoroutine != null) StopCoroutine(animationCoroutine);
+
+        if (!journalCanvas.activeSelf)
+        {
+            journalPanelRect.anchoredPosition = hiddenPosition;
+        }
+
+        animationCoroutine = StartCoroutine(SlidePanel(visiblePosition, false));
+    }
+
+    private void CloseAnimation()
+    {
+        if (animationCoroutine != null) StopCoroutine(animationCoroutine);
+
+        animationCoroutine = StartCoroutine(SlidePanel(hiddenPosition, true));
+    }
+
+    private IEnumerator SlidePanel(Vector2 targetPosition, bool isClosing)
+    {
+        float elapsedTime = 0;
+        Vector2 startPosition = journalPanelRect.anchoredPosition;
+
+        while (elapsedTime < animationDuration)
+        {
+            float t = elapsedTime / animationDuration;
+
+            float curveValue = animationCurve.Evaluate(t);
+
+            journalPanelRect.anchoredPosition = Vector2.LerpUnclamped(startPosition, targetPosition, curveValue);
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        journalPanelRect.anchoredPosition = targetPosition;
+
+        if (isClosing)
+        {
+            journalCanvas.SetActive(false);
+            HUDPanel.SetActive(true);
         }
     }
 
@@ -79,6 +133,8 @@ public class JournalUI : MonoBehaviour
     {
         journalCanvas.SetActive(true);
         HUDPanel.SetActive(false);
+
+        OpenAnimation();
 
         if (journal.GetEntriesCount() > 0)
         {

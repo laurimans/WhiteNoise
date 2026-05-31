@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 9_bathroom_final
   m_EditorClassIdentifier: Assembly-CSharp::RoomData_SO
   ambientClip: {fileID: 0}
-  defaultBackground: {fileID: 21300000, guid: b4b5c145b5a80af4a886fe9e64f0ffd7, type: 3}
-  otherBackgroung: {fileID: 0}
+  defaultBackground: {fileID: 21300000, guid: 16316af6562014e46ad87089188bb9ae, type: 3}
+  otherBackground: {fileID: 0}
+  lightsStartsOn: 1
   initialDialogue: 

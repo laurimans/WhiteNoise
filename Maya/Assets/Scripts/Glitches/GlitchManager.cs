@@ -79,11 +79,11 @@ public class GlitchManager : MonoBehaviour
 
         // O
         Vector2[] oPath = {
-            center + new Vector2(-size, size*2),      // Arriba izq
             center + new Vector2(size, size*2),       // Arriba der
-            center + new Vector2(size, -size*2),      // Abajo der
+            center + new Vector2(-size, size*2),      // Arriba izq
             center + new Vector2(-size, -size*2),     // Abajo izq
-            center + new Vector2(-size, size*2)       // Arriba izq
+            center + new Vector2(size, -size*2),      // Abajo der
+            center + new Vector2(size, size*2)        // Arriba der
         };
 
         // S
@@ -159,11 +159,24 @@ public class GlitchManager : MonoBehaviour
 
     void ResetToDayOne()
     {
-        Cursor.visible = false;
-        fakeCursor.gameObject.SetActive(true);
+        StopAllCoroutines();
+
+        errorScreen.SetActive(false);
         glitchScreen.SetActive(false);
 
+        fakeCursor.gameObject.SetActive(false);
+        Cursor.visible = true;
+        CursorManager.Instance.SetDefaultCursor(); // Si tienes un manager de cursor, lo restauramos
+
         GameManager.Instance.NextPhase();
+    }
+
+    public void StopAllGlitches()
+    {
+        StopAllCoroutines();
+
+        if (glitchScreen != null) glitchScreen.SetActive(false);
+        if (errorScreen != null) errorScreen.SetActive(false);
     }
 
 }

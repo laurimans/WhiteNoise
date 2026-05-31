@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GamePhase currentPhase = 0; 
     [SerializeField] private int cluesFound = 0;
     [SerializeField] private int tasksDone = 0;
+    [SerializeField] private bool isExitLock = true;
 
     [Header("Days and Rooms")]
     [SerializeField] private List<DayPhaseData> daysList;
@@ -33,10 +35,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private JournalManager journalManager;
     [SerializeField] private JournalUI journalUI;
 
+    [Header("Glitches")]
+    [SerializeField] private GlitchManager glitchManager;
+
     // Day Phase
     private DayPhaseData currentPhaseData;
     private bool isJournalPickedUp = false;
-    [SerializeField] private bool isExitLock = true;
+    private bool glitchTriggered = false;
 
     //Eventos
     public static event Action<GamePhase> OnPhaseChanged;
@@ -95,6 +100,7 @@ public class GameManager : MonoBehaviour
     public GamePhase GetCurrentPhase() => currentPhase;
     public bool IsExitLocked() => isExitLock;
     public DayPhaseData GetCurrentPhaseData() => daysList[(int)currentPhase];
+    public bool IsJournalPickedUp() => isJournalPickedUp;
 
     public void PickUpJournal()
     {
@@ -137,7 +143,20 @@ public class GameManager : MonoBehaviour
         CursorManager.Instance.SetDefaultCursor();
     }
 
- 
+    private IEnumerator WaitAndTriggerGlitch(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        if (!glitchTriggered && currentPhase == GamePhase.ThursdayMorning)
+        {
+            glitchTriggered = true;
+            isExitLock = true;
+
+            glitchManager.StartFinalSequence();
+        }
+    }
+
+
     private void Initialize()
     {
         if (AudioManager.Instance != null)
@@ -154,6 +173,7 @@ public class GameManager : MonoBehaviour
         // Reiniciar los contadores
         tasksDone = 0;
         cluesFound = 0;
+        isExitLock = true;
 
         OnPhaseChanged?.Invoke(currentPhase);
 
@@ -165,6 +185,18 @@ public class GameManager : MonoBehaviour
         {
             GameObject camBtn = GameObject.Find("CameraButton");
             if (camBtn != null) camBtn.SetActive(false);
+
+            if (glitchManager != null)
+            {
+                glitchManager.StartCoroutine("RandomScreenGlitches");
+            }
+
+            StartCoroutine(WaitAndTriggerGlitch(45f));
+        }
+
+        if (_currentPhase == GamePhase.FinalDay)
+        {
+            glitchManager.StopAllGlitches();
         }
 
         UpdateJournalForNewPhase();

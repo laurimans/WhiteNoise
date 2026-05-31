@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class InteractablePhone : MonoBehaviour
 {
@@ -11,17 +12,26 @@ public class InteractablePhone : MonoBehaviour
     [SerializeField] private AudioClip phoneTone;
     [SerializeField] private AudioSource phoneSource;
 
+    [Header("Timers")]
+    [SerializeField] private float delayBeforeRinging = 60f;
+
     private bool isRinging = false;
 
     void Start()
     {
         GameManager.OnPhaseChanged += CheckPhase;
+
+        if (PhoneManager.Instance != null)
+            PhoneManager.Instance.OnRingTimeReached += HandleGlobalRing;
+
         if (GameManager.Instance != null) CheckPhase(GameManager.Instance.GetCurrentPhase());
     }
 
     void OnDestroy()
     {
         GameManager.OnPhaseChanged -= CheckPhase;
+        if (PhoneManager.Instance != null)
+            PhoneManager.Instance.OnRingTimeReached -= HandleGlobalRing;
     }
 
 
@@ -33,11 +43,21 @@ public class InteractablePhone : MonoBehaviour
 
         if (callData != null && callData.Count>0)
         {
-            ShowAndRing();
+            if(PhoneManager.Instance != null)
+                PhoneManager.Instance.StartCallTimer(delayBeforeRinging);
         }
         else
         {
+            if (PhoneManager.Instance != null) PhoneManager.Instance.isPhoneRinging = false;
             StopAndHide();
+        }
+    }
+
+    private void HandleGlobalRing()
+    {
+        if (gameObject.activeInHierarchy)
+        {
+            ShowAndRing();
         }
     }
 

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 9_kitchen_final
   m_EditorClassIdentifier: Assembly-CSharp::RoomData_SO
   ambientClip: {fileID: 8300000, guid: 7a13d2eeb171d254db9cdaa468a6b3b4, type: 3}
-  defaultBackground: {fileID: 21300000, guid: b5df845a0aa4f414d82acbdabd833e88, type: 3}
-  otherBackgroung: {fileID: 0}
+  defaultBackground: {fileID: 21300000, guid: cd4e48c0b054b84429852540543d93c3, type: 3}
+  otherBackground: {fileID: 0}
+  lightsStartsOn: 1
   initialDialogue: 

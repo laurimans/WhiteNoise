@@ -89,13 +89,27 @@ public class InteractableObject : MonoBehaviour
         {
             //Debug.Log($"El objeto {itemID} esta desactivado");
             gameObject.SetActive(false);
-        } else
-        {
-            bool startsDisable = phasesData[(int)currentPhase].startDisable;
-            bool shouldBeActivate = wasInteractedInThisPhase? startsDisable : !startsDisable;
+            return;
+        }
 
-            HandleObjectActivation(!shouldBeActivate);
-        }  
+        InteractableData data = phasesData[(int)currentPhase];
+
+        bool startsDisable = data.startDisable;
+        bool shouldBeActivate = !startsDisable; 
+
+        if (wasInteractedInThisPhase)
+        {
+            if (!startsDisable)
+            {              
+                shouldBeActivate = !data.activateOtherItem;
+            }
+            else
+            {
+                shouldBeActivate = true;
+            }
+        }
+
+        HandleObjectActivation(!shouldBeActivate); // Le pasamos "shouldBeDisabled"
 
     }
 
@@ -108,11 +122,17 @@ public class InteractableObject : MonoBehaviour
             return;
         }
 
-        Sprite sprite = phasesData[(int)currentPhase].initialSprite;
+        InteractableData data = phasesData[(int)currentPhase];
+        Sprite spriteToUse = data.initialSprite;
 
-        if (sprite != null)
+        if(wasInteractedInThisPhase && data.otherSprite != null)
         {
-            sRenderer.sprite = sprite;
+            spriteToUse = data.otherSprite;
+        }
+
+        if (spriteToUse != null)
+        {
+            sRenderer.sprite = spriteToUse;
         }
         else
         {
@@ -125,11 +145,28 @@ public class InteractableObject : MonoBehaviour
 
     public virtual void OnObjectClicked()
     {
-
+        
         InteractableData data = phasesData[(int)currentPhase];
 
         if (data.actions != null)
         {
+            bool needsJournal = GameManager.Instance.GetCurrentPhase() >= GamePhase.TuesdayMorning;
+            bool hasJournal = GameManager.Instance.IsJournalPickedUp();
+
+            bool givesClue = false;
+
+            foreach (var act in data.actions)
+            {
+                if (act.GetType().Name == "GiveClueAction") givesClue = true;
+            }
+
+            if (givesClue && needsJournal && !hasJournal)
+            {
+                Debug.Log("No puedes investigar esto sin tu diario.");
+            
+                return;
+            }
+
             foreach (var action in data.actions)
             {
                 bool shouldContinue = action.Execute(this);

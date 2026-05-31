@@ -407,11 +407,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 753051302}
+  m_Father: {fileID: 1204456529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 703.5, y: -428.7}
+  m_AnchoredPosition: {x: 703.5, y: -498.2}
   m_SizeDelta: {x: 165, y: 142}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &37193834
@@ -2263,11 +2263,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 753051302}
+  m_Father: {fileID: 1204456529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 568.3, y: 256.5}
+  m_AnchoredPosition: {x: 568.3, y: 187}
   m_SizeDelta: {x: 186, y: 171}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &361401352
@@ -2663,7 +2663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4321,7 +4321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &753051299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4399,13 +4399,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1204456529}
-  - {fileID: 361401351}
-  - {fileID: 1608800216}
-  - {fileID: 37193833}
-  - {fileID: 1478524985}
-  - {fileID: 840093910}
-  - {fileID: 968126989}
-  - {fileID: 764616376}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4689,11 +4682,11 @@ RectTransform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 753051302}
+  m_Father: {fileID: 1204456529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 273, y: -97}
+  m_AnchoredPosition: {x: 273, y: -166.5}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &764616377
@@ -4710,7 +4703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5472,11 +5465,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 753051302}
+  m_Father: {fileID: 1204456529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 9.466}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23.5046, y: 318.5809}
+  m_AnchoredPosition: {x: 23.504578, y: 249.08093}
   m_SizeDelta: {x: 742.2039, y: 74.423}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &840093911
@@ -6384,11 +6377,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 753051302}
+  m_Father: {fileID: 1204456529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.02}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28, y: -97}
+  m_AnchoredPosition: {x: 28, y: -166.5}
   m_SizeDelta: {x: 875.9362, y: 690.9872}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &972773223
@@ -7221,6 +7214,34 @@ MonoBehaviour:
   - idRoom: living
     normalPhoto: {fileID: 21300000, guid: 936a0c9ab6b9efa4cb5c5d8bfa31ff83, type: 3}
     changedPhoto: {fileID: 21300000, guid: 47153457e1dc96b4a82c8bfeb0615188, type: 3}
+  journalPanelRect: {fileID: 1204456529}
+  animationDuration: 0.4
+  hiddenPosition: {x: 0, y: -1500}
+  visiblePosition: {x: 0, y: 0}
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1178761824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7450,14 +7471,21 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 361401351}
+  - {fileID: 1608800216}
+  - {fileID: 37193833}
+  - {fileID: 1478524985}
+  - {fileID: 840093910}
+  - {fileID: 968126989}
+  - {fileID: 764616376}
   m_Father: {fileID: 753051302}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -1500}
+  m_SizeDelta: {x: 1920, y: 1219}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &1204456530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7478,7 +7506,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6208977296930351583, guid: b113fc27f40780b498d7126b3e4c5674, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b113fc27f40780b498d7126b3e4c5674, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9298,11 +9326,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 753051302}
+  m_Father: {fileID: 1204456529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 856, y: 425}
+  m_AnchoredPosition: {x: 856, y: 355.5}
   m_SizeDelta: {x: 139, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1478524986
@@ -10098,11 +10126,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 753051302}
+  m_Father: {fileID: 1204456529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 679.1, y: -305.1}
+  m_AnchoredPosition: {x: 679.1, y: -374.6}
   m_SizeDelta: {x: 155, y: 142}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1608800217
@@ -10813,6 +10841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhoneManager
   phoneUI: {fileID: 430982046}
+  isPhoneRinging: 0
 --- !u!4 &1718060459
 Transform:
   m_ObjectHideFlags: 0
@@ -10857,9 +10886,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa93ddd896300fd4a9b8c9f85f97862a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  currentPhase: 0
+  currentPhase: 4
   cluesFound: 0
   tasksDone: 0
+  isExitLock: 1
   daysList:
   - {fileID: 11400000, guid: 98f6d04c12542bb4dab93cb3968523a1, type: 2}
   - {fileID: 11400000, guid: dcdb73467e763794d9887d81a7ca0c38, type: 2}
@@ -10885,7 +10915,7 @@ MonoBehaviour:
   - {fileID: 2011928506}
   journalManager: {fileID: 1718060462}
   journalUI: {fileID: 1156202283}
-  isExitLock: 1
+  glitchManager: {fileID: 671372564}
 --- !u!114 &1718060462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15973,16 +16003,17 @@ MonoBehaviour:
   phoneManager: {fileID: 1718060458}
   phoneTone: {fileID: 8300000, guid: 829b4e049a46d5f41aaf4d243dc4b6de, type: 3}
   phoneSource: {fileID: 1821013472}
+  delayBeforeRinging: 20
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1747753126}
-  - {fileID: 1156202281}
   - {fileID: 212395}
   - {fileID: 1599081713}
   - {fileID: 2043548572}
   - {fileID: 256601696}
+  - {fileID: 1156202281}
   - {fileID: 1718060459}
   - {fileID: 671372563}
   - {fileID: 1354749885}

@@ -20,12 +20,12 @@ MonoBehaviour:
   bodyText: 'Estoy notando cosas raras en mi casa... Voy a anotarlo todo, porque
     ya no se si es el estres o que pasn cosas raras de verdad:'
   cluesForThisDay:
-  - itemID: living_book
-    journalText: '- Libro en la estanteria'
-  - itemID: bathroom_paper
-    journalText: '- El papel estaba desenrrollado. Lo dejo bien'
-  - itemID: kitchen_dirtyDishes
-    journalText: '- Dejo los platos fregados'
+  - itemID: OBJ_LIVING_BOOK
+    journalText: Libro en la estanteria
+  - itemID: OBJ_BATHROOM_PAPER
+    journalText: El papel estaba desenrrollado. Lo dejo bien
+  - itemID: OBJ_KITCHEN_DIRTYDISHES
+    journalText: Dejo los platos fregados
   hasPhoneCall: 1
   conversation:
   - senderName: Maya

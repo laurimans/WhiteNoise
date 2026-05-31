@@ -10,6 +10,11 @@ public class PhoneUI : MonoBehaviour
     [SerializeField] private ScrollRect scrollRect;
     [SerializeField] private Button closeButton;
 
+    private void OnDisable()
+    {
+        ClearChat();
+    }
+
     public void AddMessage(string text, bool isMaya)
     {
         GameObject prefab = isMaya ? mayaBubblePrefab : momBubblePrefab;
@@ -21,6 +26,14 @@ public class PhoneUI : MonoBehaviour
     }
 
     public void SetCloseButton(bool active) => closeButton.gameObject.SetActive(active);
+
+    public void ClearChat()
+    {
+        foreach (Transform child in chatContent)
+        {
+            Destroy(child.gameObject);
+        }
+    }
 
 }
 
