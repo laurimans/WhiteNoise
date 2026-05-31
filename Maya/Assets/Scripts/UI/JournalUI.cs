@@ -138,14 +138,23 @@ public class JournalUI : MonoBehaviour
 
         if (journal.GetEntriesCount() > 0)
         {
-            if (currentIndex < 0) currentIndex = journal.GetEntriesCount() - 1;
+            currentIndex = journal.GetEntriesCount() - 1;
             UpdateJournalUI();
         }
     }
 
     public void TypeNewEntry(string date, string content)
     {
-        journalCanvas.SetActive(true); 
+        journalCanvas.SetActive(true);
+        HUDPanel.SetActive(false);
+        OpenAnimation();
+
+        if (journal.GetEntriesCount() > 0)
+        {
+            currentIndex = journal.GetEntriesCount() - 1;
+            UpdateJournalUI();
+        }
+
         dateText.text = date;
 
         if (typewriterCoroutine != null) StopCoroutine(typewriterCoroutine);
@@ -167,6 +176,19 @@ public class JournalUI : MonoBehaviour
     public void TypeNewClue(string newText)
     {
         journalCanvas.SetActive(true);
+        HUDPanel.SetActive(false);
+        OpenAnimation();
+
+        if (journal.GetEntriesCount() > 0)
+        {
+            currentIndex = journal.GetEntriesCount() - 1;
+
+            UpdateJournalUI();
+
+            string fullText = journal.GetEntry(currentIndex).GetBody();
+            bodyText.text = fullText.Substring(0, fullText.Length - newText.Length);
+        }
+
         if (typewriterCoroutine != null) StopCoroutine(typewriterCoroutine);
         typewriterCoroutine = StartCoroutine(AppendText(newText));
     }

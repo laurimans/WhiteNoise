@@ -7270,6 +7270,10 @@ PrefabInstance:
       value: OBJ_BATHROOM_PAPER
       objectReference: {fileID: 0}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: objectToActivateGO
+      value: 
+      objectReference: {fileID: 1548483998}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[3]'
       value: 
       objectReference: {fileID: 11400000, guid: 28c520a2762293f4b90bec68cb01fc56, type: 2}
@@ -9723,6 +9727,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
   m_PrefabInstance: {fileID: 1547869720}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1548483998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1548483999}
+  m_Layer: 0
+  m_Name: Vacio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1548483999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548483998}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1894324766}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1589681190
 GameObject:
   m_ObjectHideFlags: 0
@@ -12465,6 +12500,7 @@ Transform:
   - {fileID: 956329539}
   - {fileID: 1824823489}
   - {fileID: 1784674866}
+  - {fileID: 1548483999}
   - {fileID: 1178761825}
   - {fileID: 5412805066722367059}
   m_Father: {fileID: 1375512255}
