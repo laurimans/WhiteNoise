@@ -17,6 +17,15 @@ public enum GamePhase
     FinalDay
 }
 
+public enum RoomID
+{
+    bathroom,
+    bedroom,
+    hall,
+    kitchen,
+    living
+}
+
 public class GameManager : MonoBehaviour
 {
     [Header("Game State")]
@@ -37,6 +46,9 @@ public class GameManager : MonoBehaviour
 
     [Header("Glitches")]
     [SerializeField] private GlitchManager glitchManager;
+
+    [Header("UI Systems")]
+    [SerializeField] private ConfirmationUI confirmationUI;
 
     // Day Phase
     private DayPhaseData currentPhaseData;
@@ -83,7 +95,7 @@ public class GameManager : MonoBehaviour
         GiveClueAction.OnClueFound += AddClue;
         CompleteTaskAction.OnTaskComplete += AddTaskDone;
 
-        TryExitAction.OnExitSucess += NextPhase;
+        TryExitAction.OnExitSucess += RequestNextPhase;
         PickUpJournalAction.OnPickUpJournal += PickUpJournal;
     }
 
@@ -95,7 +107,7 @@ public class GameManager : MonoBehaviour
         GiveClueAction.OnClueFound -= AddClue;
         CompleteTaskAction.OnTaskComplete -= AddTaskDone;
 
-        TryExitAction.OnExitSucess -= NextPhase;
+        TryExitAction.OnExitSucess -= RequestNextPhase;
         PickUpJournalAction.OnPickUpJournal -= PickUpJournal;
     }
 
@@ -161,7 +173,24 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void RequestNextPhase()
+    {
+        string message = "¿Quieres irte a trabajar ya?";
 
+        if (currentPhase.ToString().Contains("Night"))
+        {
+            message = "¿Te quieres ir ya a dormir?";
+        }
+
+        if (confirmationUI != null)
+        {
+            confirmationUI.ShowPanel(message, NextPhase);
+        }
+        else
+        {
+            NextPhase();
+        }
+    }
     private void Initialize()
     {
         if (AudioManager.Instance != null)
@@ -205,6 +234,18 @@ public class GameManager : MonoBehaviour
         }
 
         UpdateJournalForNewPhase();
+
+        if (roomList != null)
+        {
+            foreach (Room room in roomList)
+            {
+                if (room != null)
+                {
+                    bool isStartingRoom = (room.GetID() == currentPhaseData.startingRoom);
+                    room.gameObject.SetActive(isStartingRoom);
+                }
+            }
+        }
     }
 
     private void UpdateJournalForNewPhase()

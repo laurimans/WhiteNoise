@@ -42,7 +42,7 @@ public class RoomNavigation : MonoBehaviour
         if (roomComponent != null)
         {
             RoomData roomData = roomComponent.GetPhaseData();
-            string roomID = roomComponent.GetID(); 
+            RoomID roomID = roomComponent.GetID(); 
 
             if (roomData != null)
             {

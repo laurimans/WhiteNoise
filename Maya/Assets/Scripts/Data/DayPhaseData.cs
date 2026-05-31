@@ -8,14 +8,6 @@ public class ClueDictionary
     [TextArea] public string journalText;
 }
 
-[System.Serializable]
-public class PhoneMessage
-{
-    public string senderName;
-    [TextArea] public string messageContent;
-    public bool isMaya;
-}
-
 [CreateAssetMenu(fileName = "DayPhaseData", menuName = "Scriptable Objects/DayPhaseData")]
 public class DayPhaseData : ScriptableObject
 {
@@ -32,7 +24,9 @@ public class DayPhaseData : ScriptableObject
 
     [Header("Phone Call")]
     public bool hasPhoneCall;
-    public List<PhoneMessage> conversation;
+
+    [Header("Room Settings")]
+    public RoomID startingRoom;
 
     public string GetClueText(string id)
     {

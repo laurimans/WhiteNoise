@@ -269,9 +269,9 @@ public class JournalUI : MonoBehaviour
         photoContainer.gameObject.SetActive(found);
     }
 
-    public void OpenWithPhoto(string roomID)
+    public void OpenWithPhoto(RoomID roomID)
     {
-        journal.AddEntry("Foto: " + roomID, "Evidencia recogida.");
+        journal.AddEntry("Foto: " + roomID.ToString(), "Evidencia recogida.");
         
         OpenJournal();
     }

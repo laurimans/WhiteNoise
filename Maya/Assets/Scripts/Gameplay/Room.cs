@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
-    [SerializeField] private string roomID;
+    [SerializeField] private RoomID roomID;
     [SerializeField] private RoomData[] phasesData;
 
     private SpriteRenderer sRenderer;
@@ -29,7 +29,7 @@ public class Room : MonoBehaviour
         }
     }
 
-    public string GetID() => roomID;
+    public RoomID GetID() => roomID;
     public bool GetLightData() => lightIsOn;
     public RoomData GetPhaseData() => phasesData[(int)currentPhase];
 

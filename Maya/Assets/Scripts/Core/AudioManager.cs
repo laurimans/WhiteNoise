@@ -159,9 +159,9 @@ public class AudioManager : MonoBehaviour
         audioSource.Play();        
     }
 
-    public void UpdateRoomContext(string roomID)
+    public void UpdateRoomContext(RoomID roomID)
     {
-        AudioMixerSnapshot s = mixer.FindSnapshot("Snapshot_" + roomID);
+        AudioMixerSnapshot s = mixer.FindSnapshot("Snapshot_" + roomID.ToString());
         if (s != null) s.TransitionTo(0f);
     }
 

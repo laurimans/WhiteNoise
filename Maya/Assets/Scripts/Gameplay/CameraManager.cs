@@ -14,7 +14,7 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private AudioClip cameraAudio;
 
     private bool isAiming = false;
-    private HashSet<string> roomsPhotographed = new HashSet<string>();
+    private HashSet<RoomID> roomsPhotographed = new HashSet<RoomID>();
     private const int TOTAL_PHOTOS_REQUIRED = 5;
 
     public void ToggleAiming()
@@ -42,7 +42,7 @@ public class CameraManager : MonoBehaviour
         if (roomObj == null) return;
 
         Room room = roomObj.GetComponent<Room>();
-        string roomID = room.GetID();
+        RoomID roomID = room.GetID();
 
         if (roomsPhotographed.Contains(roomID))
         {
@@ -55,7 +55,7 @@ public class CameraManager : MonoBehaviour
 
     }
 
-    IEnumerator TakePhotoRoutine(string roomID)
+    IEnumerator TakePhotoRoutine(RoomID roomID)
     {
         isAiming = false;
 

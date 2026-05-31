@@ -20,4 +20,4 @@ MonoBehaviour:
   bodyText: 
   cluesForThisDay: []
   hasPhoneCall: 0
-  conversation: []
+  startingRoom: 1
