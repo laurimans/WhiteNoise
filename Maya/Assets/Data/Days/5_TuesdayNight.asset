@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Day_SO
   id_day: 4
   tasksNumber: 1
-  cluesNumber: 3
+  cluesNumber: 2
   transitionAudio: {fileID: 0}
   dateText: 13 de abril
   bodyText: 'Estoy notando cosas raras en mi casa... Voy a anotarlo todo, porque

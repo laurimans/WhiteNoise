@@ -182,7 +182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &3591913
 SpriteRenderer:
   serializedVersion: 2
@@ -2252,7 +2252,7 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[1]'
       value: 
-      objectReference: {fileID: 11400000, guid: 6e0130883276ae94eac288cb0ed3a000, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[2]'
       value: 
@@ -2260,7 +2260,7 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[3]'
       value: 
-      objectReference: {fileID: 11400000, guid: 6e0130883276ae94eac288cb0ed3a000, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[4]'
       value: 
@@ -2268,11 +2268,11 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[5]'
       value: 
-      objectReference: {fileID: 11400000, guid: 6e0130883276ae94eac288cb0ed3a000, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[6]'
       value: 
-      objectReference: {fileID: 11400000, guid: 91a833e6ac0b0c549b18965e142fb551, type: 2}
+      objectReference: {fileID: 11400000, guid: e182bd7d006262842a97ff5146e7c03a, type: 2}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[7]'
       value: 
@@ -4924,6 +4924,14 @@ PrefabInstance:
       propertyPath: 'phasesData.Array.data[6]'
       value: 
       objectReference: {fileID: 11400000, guid: e8f8804333b34ca479a81d57e6bf5ff2, type: 2}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[7]'
+      value: 
+      objectReference: {fileID: 11400000, guid: c611613d0068496449573dd0435f4cf3, type: 2}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 566a855fe6316d24c85c42c3f08106d9, type: 2}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5469,15 +5477,15 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[5]'
       value: 
-      objectReference: {fileID: 11400000, guid: dfaac929de3089e41b9e2285f30922db, type: 2}
+      objectReference: {fileID: 11400000, guid: 98f3bdecd79739648a7b3e9e1c204b01, type: 2}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[6]'
       value: 
-      objectReference: {fileID: 11400000, guid: 1f661dd09868249458c02a2ade6af37c, type: 2}
+      objectReference: {fileID: 11400000, guid: dfaac929de3089e41b9e2285f30922db, type: 2}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[7]'
       value: 
-      objectReference: {fileID: 11400000, guid: dfaac929de3089e41b9e2285f30922db, type: 2}
+      objectReference: {fileID: 11400000, guid: 365c6081690eb024883db290f387c227, type: 2}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -8473,7 +8481,7 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[2]'
       value: 
-      objectReference: {fileID: 11400000, guid: 661202282fe3d0b4284efc19937b7d08, type: 2}
+      objectReference: {fileID: 11400000, guid: 1e9fd204ad9b89547a1483c84b4c813b, type: 2}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[3]'
       value: 
@@ -8493,11 +8501,11 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[7]'
       value: 
-      objectReference: {fileID: 11400000, guid: 28443af245070ab40b7ca5a2975a7d87, type: 2}
+      objectReference: {fileID: 11400000, guid: 0220f98c8ef54a049a26bd9abde7bfe0, type: 2}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[8]'
       value: 
-      objectReference: {fileID: 11400000, guid: ca1527336c422cf46bcaec55c8103e14, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -9486,6 +9494,10 @@ PrefabInstance:
       propertyPath: 'phasesData.Array.data[4]'
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
+      propertyPath: 'phasesData.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a85421ac3cd7db4f99f2135ebf1408a, type: 2}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -11025,7 +11037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1598618645
 SpriteRenderer:
   serializedVersion: 2
@@ -13797,7 +13809,7 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[8]'
       value: 
-      objectReference: {fileID: 11400000, guid: 7a85421ac3cd7db4f99f2135ebf1408a, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6703939815349336197, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: m_LocalScale.x
       value: 1

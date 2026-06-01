@@ -66,6 +66,8 @@ public class GlitchManager : MonoBehaviour
 
     public void StartFinalSequence()
     {
+        GameStateManager.Instance.SetGameplayUIBlock(true);
+
         Cursor.visible = false; 
         fakeCursor.gameObject.SetActive(true);
         StartCoroutine(FullGlitchRoutine());
@@ -209,6 +211,8 @@ public class GlitchManager : MonoBehaviour
         fakeCursor.gameObject.SetActive(false);
         Cursor.visible = true;
         if (CursorManager.Instance != null) CursorManager.Instance.SetDefaultCursor();
+
+        GameStateManager.Instance.SetGameplayUIBlock(false);
 
         GameManager.Instance.NextPhase();
     }

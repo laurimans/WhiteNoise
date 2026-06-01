@@ -18,4 +18,3 @@ MonoBehaviour:
   activateOtherItem: 0
   actions:
   - {fileID: 11400000, guid: c2f6ca80a96cba04cbb99d5741074d0d, type: 2}
-  - {fileID: 11400000, guid: 00d5adbfbf8259b4c91b483a95420f62, type: 2}

@@ -140,6 +140,11 @@ public class JournalUI : MonoBehaviour
 
     public void OpenJournal()
     {
+        if (GameStateManager.Instance != null && GameStateManager.Instance.IsGameplayUIBlocked)
+        {
+            return;
+        }
+
         journalCanvas.SetActive(true);
         HUDPanel.SetActive(false);
 

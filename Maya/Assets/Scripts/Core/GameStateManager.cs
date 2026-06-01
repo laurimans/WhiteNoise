@@ -14,6 +14,7 @@ public class GameStateManager : MonoBehaviour
 {
     [SerializeField] private GameState currentState = GameState.MainMenu;
     public GameState CurrentState => currentState;
+    public bool IsGameplayUIBlocked { get; private set; } = false;
 
     public static event Action OnGamePause;
     public static event Action OnGameResume;
@@ -59,6 +60,11 @@ public class GameStateManager : MonoBehaviour
         currentState = GameState.Playing;
         SceneManager.LoadScene("GameScene");
         OnGameStart?.Invoke();
+    }
+
+    public void SetGameplayUIBlock(bool isBlocked)
+    {
+        IsGameplayUIBlocked = isBlocked;
     }
 
     public void TogglePause()
