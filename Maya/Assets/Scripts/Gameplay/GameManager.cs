@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
     //Eventos
     public static event Action<GamePhase> OnPhaseChanged;
     public static event Action OnGameEnd;
-    public static event Action<bool> OnExitLockChange;
+    public static event Action OnExitUnlock;
     public static event Action OnTaskDone;
     public static event Action OnTransitionStart;
     public static event Action OnTransitionEnd;
@@ -128,7 +128,7 @@ public class GameManager : MonoBehaviour
         isExitLock = true;
         if (tasksDone >= currentPhaseData.tasksNumber && cluesFound >= currentPhaseData.cluesNumber) isExitLock = false;
 
-        if(isExitLock != lastState) OnExitLockChange?.Invoke(isExitLock);
+        if(isExitLock != lastState) OnExitUnlock?.Invoke();
     }
 
     public void WriteDailyJournal()
@@ -149,13 +149,22 @@ public class GameManager : MonoBehaviour
         int nextPhase = (int)currentPhase + 1;
    
         OnTransitionStart?.Invoke();
-        // Transition
-        StartCoroutine(transitionPanel.PhaseTransition(() =>
-        {
-            LoadDayPhase((GamePhase)nextPhase);
-            OnTransitionEnd?.Invoke();
-        }, daysList[nextPhase].transitionAudio));
 
+        // Transition
+        if (nextPhase != (int) GamePhase.FinalDay)
+        {
+            StartCoroutine(transitionPanel.PhaseTransition(() =>
+            {
+                LoadDayPhase((GamePhase)nextPhase);
+                OnTransitionEnd?.Invoke();
+            }, daysList[nextPhase].transitionAudio));
+        }
+        else
+        {
+            OnTransitionStart?.Invoke();
+            OnTransitionEnd?.Invoke();
+            AudioManager.Instance.PlaySFX(daysList[nextPhase].transitionAudio);
+        }
         
         CursorManager.Instance.SetDefaultCursor();
     }
@@ -184,11 +193,11 @@ public class GameManager : MonoBehaviour
 
         if (confirmationUI != null)
         {
-            confirmationUI.ShowPanel(message, NextPhase);
+            confirmationUI.ShowPanel(message, StartJournalSequence);
         }
         else
         {
-            NextPhase();
+            StartJournalSequence();
         }
     }
     private void Initialize()
@@ -197,6 +206,41 @@ public class GameManager : MonoBehaviour
         {
             AudioManager.Instance.RegisterRoomSources(roomAudioSources);
         }
+    }
+
+    private void StartJournalSequence()
+    {
+        if (currentPhase >= GamePhase.FinalDay)
+        {
+            NextPhase();
+        }
+        else
+        {
+            StartCoroutine(JournalThenTransitionRoutine());
+        }
+    }
+
+    private IEnumerator JournalThenTransitionRoutine()
+    {
+    string journalKey = $"JOURNAL_P{(int)currentPhase}";
+        var entryData = LocalizationManager.Instance.GetJournalEntry(journalKey);
+
+        if (entryData != null)
+        {
+            journalManager.AddEntry(entryData.date, entryData.content);
+            journalUI.TypeNewEntry(entryData.date, entryData.content);
+
+            yield return new WaitForSeconds(1f);
+
+            while (journalUI.IsOpen())
+            {
+                yield return null;
+            }
+            
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        NextPhase();
     }
 
     private void LoadDayPhase(GamePhase _currentPhase)
@@ -233,7 +277,6 @@ public class GameManager : MonoBehaviour
             glitchManager.StopAllGlitches();
         }
 
-        UpdateJournalForNewPhase();
 
         if (roomList != null)
         {
@@ -248,18 +291,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void UpdateJournalForNewPhase()
-    {
-        string journalKey = $"JOURNAL_P{(int)currentPhase}";
-        var entryData = LocalizationManager.Instance.GetJournalEntry(journalKey);
-
-        if (entryData != null)
-        {
-            journalManager.AddEntry(entryData.date, entryData.content);
-            Debug.Log(entryData.title);
-        }
-        Debug.Log(journalKey);
-    }
 
 
     private void InteractionWithItem(InteractableObject item)
@@ -271,7 +302,7 @@ public class GameManager : MonoBehaviour
 
     public void AddClue(string clueId)
     {
-        if (!isJournalPickedUp) return; // Sin diario n puede apuntar listas
+        if (!isJournalPickedUp) return; // Sin diario no puede apuntar listas
 
         OnTaskDone?.Invoke();
         cluesFound++;

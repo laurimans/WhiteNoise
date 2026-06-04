@@ -290,4 +290,9 @@ public class JournalUI : MonoBehaviour
         OpenJournal();
     }
 
+    public bool IsOpen()
+    {
+        return journalCanvas.activeSelf;
+    }
+
 }

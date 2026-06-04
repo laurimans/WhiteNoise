@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: 4_paper_TuesNight
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
   initialSprite: {fileID: 21300000, guid: e805c60d0f0a79343a3c989889ab0ac4, type: 3}
+  darkSprite: {fileID: 0}
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 1
   actions:
   - {fileID: 11400000, guid: d7e2913ff9b1a0f40b79af916dcee524, type: 2}
   - {fileID: 11400000, guid: c2f6ca80a96cba04cbb99d5741074d0d, type: 2}
+  - {fileID: 11400000, guid: 4a7752fd5cf4d4049ab2110032bc5d6e, type: 2}

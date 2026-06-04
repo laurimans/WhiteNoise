@@ -28,6 +28,7 @@ public class PauseMenuUI : MonoBehaviour
         PickUpJournalAction.OnPickUpJournal += ActivateJournalButton;
         GameStateManager.OnGamePause += ShowPauseMenu;
         GameStateManager.OnGameResume += HidePauseMenu;
+        GameManager.OnExitUnlock += HideCameraButton;
     }
 
     private void OnDisable()
@@ -37,6 +38,12 @@ public class PauseMenuUI : MonoBehaviour
 
         GameStateManager.OnGamePause -= ShowPauseMenu;
         GameStateManager.OnGameResume -= HidePauseMenu;
+        GameManager.OnExitUnlock -= HideCameraButton;
+    }
+
+    private void HideCameraButton()
+    {
+        cameraButton.SetActive(false);
     }
 
     private void ShowPauseMenu()
