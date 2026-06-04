@@ -22,7 +22,9 @@ public class InteractableObject : MonoBehaviour
     private GamePhase lastPhase;
     private Room parentRoom;
     private SpriteRenderer sRenderer;
+    InteractableAnimation anim;
     private bool isLightOn = true;
+    private bool isOn;
 
     // Dialogue
     private int currentDialogueIndex = 0;
@@ -32,6 +34,7 @@ public class InteractableObject : MonoBehaviour
      {
         sRenderer = GetComponent<SpriteRenderer>();
         parentRoom = GetComponentInParent<Room>();
+        anim = GetComponent<InteractableAnimation>();
 
         GameManager.OnPhaseChanged += RefreshObject;
       }
@@ -48,6 +51,7 @@ public class InteractableObject : MonoBehaviour
             audioSource.loop = true;
             audioSource.playOnAwake = false;
         }
+        ChangeSpritePhase();
     }
 
     void OnEnable()
@@ -101,6 +105,7 @@ public class InteractableObject : MonoBehaviour
             currentDialogueIndex = 0;
 
             if (audioSource != null) audioSource.clip = null;
+            ChangeSpritePhase();
         }
 
         if (phasesData == null || (int)currentPhase >= phasesData.Length || phasesData[(int)currentPhase] == null)
@@ -134,17 +139,26 @@ public class InteractableObject : MonoBehaviour
     private void HandleLightReaction(bool lightState)
     {
         isLightOn = lightState;
-        UpdateVisuals();
+        UpdateIluminationVisuals();
     }
 
-    private void UpdateVisuals()
+    private void UpdateIluminationVisuals()
     {
         InteractableData data = phasesData[(int)currentPhase];
-        if (data.darkSprite == null) return;
+        if (data.darkSprite == null) return; // Solo se ejecuta si tiene el sprite
 
         Sprite spriteToUse = isLightOn ? data.initialSprite : data.darkSprite;
 
         if (spriteToUse != null) sRenderer.sprite = spriteToUse;
+    }
+
+    private void ChangeSpritePhase() 
+    {
+        if (phasesData == null || (int)currentPhase >= phasesData.Length || phasesData[(int)currentPhase] == null) return;
+
+        InteractableData data = phasesData[(int)currentPhase];
+        Sprite spriteToUse = data.initialSprite;
+        sRenderer.sprite = spriteToUse;
     }
 
     private void HandleObjectActivation(bool shouldBeDisabled)
@@ -156,31 +170,14 @@ public class InteractableObject : MonoBehaviour
             return;
         }
 
-        InteractableData data = phasesData[(int)currentPhase];
-        Sprite spriteToUse = data.initialSprite;
 
-        if(wasInteractedInThisPhase && data.otherSprite != null)
-        {
-            spriteToUse = data.otherSprite;
-        }
-
-        if (spriteToUse != null)
-        {
-            sRenderer.sprite = spriteToUse;
-        }
-        else
-        {
-            sRenderer.sprite = null;
-        }
-
+        UpdateIluminationVisuals();
         this.gameObject.SetActive(true);
-        UpdateVisuals();
     }
 
 
     public virtual void OnObjectClicked()
     {
-        
         InteractableData data = phasesData[(int)currentPhase];
 
         if (data.actions != null)

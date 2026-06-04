@@ -13,6 +13,8 @@ public class InteractableAnimation : MonoBehaviour
     private bool isOn = false;
     private bool isPlayingTimer = false;
 
+    public bool IsOn => isOn;
+
     private void Awake()
     {
         GameManager.OnPhaseChanged += ForceTurnOffOnPhaseChange;
@@ -43,6 +45,8 @@ public class InteractableAnimation : MonoBehaviour
 
     public void ToggleAnimation()
     {
+        if (isPlayingTimer) return; // Si esta en proceso la animación no deja cambiar
+
         isOn = !isOn;
         if (visualObject != null) visualObject.SetActive(isOn);
 

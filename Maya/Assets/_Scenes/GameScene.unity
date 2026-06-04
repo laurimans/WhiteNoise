@@ -831,6 +831,7 @@ GameObject:
   - component: {fileID: 94422103}
   - component: {fileID: 94422105}
   - component: {fileID: 94422104}
+  - component: {fileID: 94422106}
   m_Layer: 0
   m_Name: "Animacio\u0301n-tocadiscos-1"
   m_TagString: Untagged
@@ -934,6 +935,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &94422106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94422102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f818c28a06d70489957194fedb3381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationOpacity
+  opacity: 0.6
 --- !u!1001 &148552098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2863,13 +2877,14 @@ GameObject:
   - component: {fileID: 457744328}
   - component: {fileID: 457744330}
   - component: {fileID: 457744329}
+  - component: {fileID: 457744331}
   m_Layer: 0
   m_Name: Animator_Living_Dust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &457744328
 Transform:
   m_ObjectHideFlags: 0
@@ -2966,6 +2981,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &457744331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457744327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f818c28a06d70489957194fedb3381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationOpacity
+  opacity: 0
 --- !u!1 &513553213
 GameObject:
   m_ObjectHideFlags: 0
@@ -2977,6 +3005,7 @@ GameObject:
   - component: {fileID: 513553214}
   - component: {fileID: 513553216}
   - component: {fileID: 513553215}
+  - component: {fileID: 513553217}
   m_Layer: 0
   m_Name: Animator_shower
   m_TagString: Untagged
@@ -3080,6 +3109,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &513553217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513553213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f818c28a06d70489957194fedb3381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationOpacity
+  opacity: 0.4
 --- !u!1 &535650538
 GameObject:
   m_ObjectHideFlags: 0
@@ -4162,17 +4204,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693645822}
-  m_LocalRotation: {x: -0, y: -0, z: 0.38268343, w: 0.92387956}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1864425982}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -2.9, y: 4.7}
-  m_SizeDelta: {x: 80, y: 80}
+  m_SizeDelta: {x: 97, y: 46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &693645824
 MonoBehaviour:
@@ -4194,7 +4236,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5956791759972817064, guid: 07705d05625a55641a373abdae1a182c, type: 3}
+  m_Sprite: {fileID: -709285956, guid: 07705d05625a55641a373abdae1a182c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5042,13 +5084,14 @@ GameObject:
   - component: {fileID: 777165517}
   - component: {fileID: 777165519}
   - component: {fileID: 777165518}
+  - component: {fileID: 777165520}
   m_Layer: 0
   m_Name: Animator_Room_Dust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &777165517
 Transform:
   m_ObjectHideFlags: 0
@@ -5145,6 +5188,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &777165520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777165516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f818c28a06d70489957194fedb3381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationOpacity
+  opacity: 0
 --- !u!1001 &784841095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8722,6 +8778,7 @@ GameObject:
   - component: {fileID: 1238011028}
   - component: {fileID: 1238011030}
   - component: {fileID: 1238011029}
+  - component: {fileID: 1238011031}
   m_Layer: 0
   m_Name: Animator_Kitchen_Tap
   m_TagString: Untagged
@@ -8825,6 +8882,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1238011031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238011027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f818c28a06d70489957194fedb3381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationOpacity
+  opacity: 0.6
 --- !u!1 &1239273808
 GameObject:
   m_ObjectHideFlags: 0
@@ -8836,6 +8906,7 @@ GameObject:
   - component: {fileID: 1239273809}
   - component: {fileID: 1239273811}
   - component: {fileID: 1239273810}
+  - component: {fileID: 1239273812}
   m_Layer: 0
   m_Name: CoffeeAnimator
   m_TagString: Untagged
@@ -8939,6 +9010,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1239273812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239273808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f818c28a06d70489957194fedb3381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationOpacity
+  opacity: 0.6
 --- !u!1 &1259252751
 GameObject:
   m_ObjectHideFlags: 0
@@ -9195,7 +9279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableAnimation
   visualObject: {fileID: 1238011027}
   autoTurnOff: 1
-  activeDuration: 2.5
+  activeDuration: 3
 --- !u!1 &1295732107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1425736612035570046, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
@@ -9325,6 +9409,7 @@ GameObject:
   - component: {fileID: 1321173496}
   - component: {fileID: 1321173499}
   - component: {fileID: 1321173498}
+  - component: {fileID: 1321173500}
   m_Layer: 0
   m_Name: CoffeeAnimator
   m_TagString: Untagged
@@ -9428,6 +9513,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1321173500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321173495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f818c28a06d70489957194fedb3381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationOpacity
+  opacity: 0.6
 --- !u!1 &1330402688
 GameObject:
   m_ObjectHideFlags: 0
@@ -12047,13 +12145,14 @@ GameObject:
   - component: {fileID: 1730523859}
   - component: {fileID: 1730523861}
   - component: {fileID: 1730523860}
+  - component: {fileID: 1730523862}
   m_Layer: 0
   m_Name: Animator_Kitchen_Dust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1730523859
 Transform:
   m_ObjectHideFlags: 0
@@ -12150,6 +12249,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1730523862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730523858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f818c28a06d70489957194fedb3381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationOpacity
+  opacity: 0
 --- !u!1 &1732153752
 GameObject:
   m_ObjectHideFlags: 0
@@ -13356,7 +13468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.6933962, b: 0.6933962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15169,6 +15281,7 @@ GameObject:
   - component: {fileID: 2084666291}
   - component: {fileID: 2084666293}
   - component: {fileID: 2084666292}
+  - component: {fileID: 2084666294}
   m_Layer: 0
   m_Name: Animator_Bathroom_Tap
   m_TagString: Untagged
@@ -15272,6 +15385,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2084666294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084666290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f818c28a06d70489957194fedb3381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationOpacity
+  opacity: 0.4
 --- !u!1001 &2094635056
 PrefabInstance:
   m_ObjectHideFlags: 0

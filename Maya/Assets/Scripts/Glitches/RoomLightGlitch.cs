@@ -25,10 +25,6 @@ public class RoomLightGlitch : MonoBehaviour
     {
         roomScript.ToggleLight();
 
-        /*
-        var data = roomScript.GetPhaseData();
-        sRenderer.sprite = isOn ? data.defaultBackground : data.otherBackground;*/
-
     }
 
 }
