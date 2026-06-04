@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cbcd486a0cbe645b50fd4157a7eedb, type: 3}
+  m_Name: sfx_turn_on_tv
+  m_EditorClassIdentifier: Assembly-CSharp::PlaySoundAction
+  soundClip: {fileID: 8300000, guid: 17d09447ef567c648869c50d33fb607a, type: 3}

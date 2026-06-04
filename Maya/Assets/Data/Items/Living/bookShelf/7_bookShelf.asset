@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0546ed498f1d5ae49b165140270459f1, type: 3}
-  m_Name: 2_bookShelf_Sunday 1
+  m_Name: 7_bookShelf
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
-  initialSprite: {fileID: 21300000, guid: 0c49b3f7a5c09d243bd2b001324e3fdd, type: 3}
+  initialSprite: {fileID: 21300000, guid: 6a9d7b415d5922949a98dc5b58da43fb, type: 3}
   otherSprite: {fileID: 0}
   startDisable: 1
   activateOtherItem: 0

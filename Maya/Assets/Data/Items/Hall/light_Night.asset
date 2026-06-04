@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: light_Night
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
   initialSprite: {fileID: 21300000, guid: 3f4b493537f0a7841b57137416d6ce9b, type: 3}
+  darkSprite: {fileID: 0}
   otherSprite: {fileID: 21300000, guid: ba22e3362e838dc4abcbc6682d33cb0d, type: 3}
   startDisable: 0
   activateOtherItem: 0

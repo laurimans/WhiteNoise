@@ -7,6 +7,7 @@ public class InteractableData : ScriptableObject
 {
     [Header("Visual")]
     public Sprite initialSprite;
+    public Sprite darkSprite;
     public Sprite otherSprite;
     public bool startDisable;
     public bool activateOtherItem;

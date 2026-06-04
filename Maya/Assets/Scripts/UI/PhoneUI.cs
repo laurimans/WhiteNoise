@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class PhoneUI : MonoBehaviour
 {
@@ -20,6 +21,20 @@ public class PhoneUI : MonoBehaviour
         GameObject prefab = isMaya ? mayaBubblePrefab : momBubblePrefab;
         GameObject newBubble = Instantiate(prefab, chatContent);
         newBubble.GetComponentInChildren<TextMeshProUGUI>().text = text;
+
+        newBubble.transform.localScale = Vector3.one;
+
+        LayoutRebuilder.ForceRebuildLayoutImmediate(chatContent.GetComponent<RectTransform>());
+
+        Canvas.ForceUpdateCanvases();
+        scrollRect.verticalNormalizedPosition = 0f;
+
+        StartCoroutine(ScrollToBottom());
+    }
+
+    private IEnumerator ScrollToBottom()
+    {
+        yield return new WaitForEndOfFrame();
 
         Canvas.ForceUpdateCanvases();
         scrollRect.verticalNormalizedPosition = 0f;

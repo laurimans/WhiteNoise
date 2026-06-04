@@ -1,5 +1,6 @@
 using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
+using System;
 
 public class Room : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class Room : MonoBehaviour
     private RoomData currentRoomData;
 
     public bool dialogueDone = false;
+
+    public event Action<bool> OnLightToggled;
 
     void Awake()
     {
@@ -73,6 +76,8 @@ public class Room : MonoBehaviour
             Sprite sprite = lightIsOn ? currentRoomData.defaultBackground : currentRoomData.otherBackground;
             sRenderer.sprite = sprite;
         }
+
+        OnLightToggled?.Invoke(lightIsOn);
     }
 
     private void OnDestroy()

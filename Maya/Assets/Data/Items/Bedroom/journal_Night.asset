@@ -12,13 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0546ed498f1d5ae49b165140270459f1, type: 3}
   m_Name: journal_Night
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
-  initialSprite: {fileID: 21300000, guid: d38868e3d4333fd41ae0a248bc47ef9e, type: 3}
+  initialSprite: {fileID: 21300000, guid: 6a26be5ac8fc1e74cb3d8f6423934b8a, type: 3}
+  darkSprite: {fileID: 21300000, guid: 5d1ca43612b820f479a4f1be8be3adae, type: 3}
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
   actions:
   - {fileID: 11400000, guid: 20a30f36c7620a34aa6791898d060d2a, type: 2}
-  sound: {fileID: 0}
-  dialoguesList: []
-  isTask: 0
-  isClue: 0

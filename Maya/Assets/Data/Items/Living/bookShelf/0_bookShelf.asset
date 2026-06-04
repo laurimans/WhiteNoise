@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0546ed498f1d5ae49b165140270459f1, type: 3}
-  m_Name: Orchids_Night
+  m_Name: 0_bookShelf
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
-  initialSprite: {fileID: 21300000, guid: adfaf706f46ccce4f9ea8666b5aaf945, type: 3}
+  initialSprite: {fileID: 21300000, guid: 0c49b3f7a5c09d243bd2b001324e3fdd, type: 3}
+  darkSprite: {fileID: 0}
   otherSprite: {fileID: 0}
-  startDisable: 0
+  startDisable: 1
   activateOtherItem: 0
   actions:
   - {fileID: 11400000, guid: c2f6ca80a96cba04cbb99d5741074d0d, type: 2}

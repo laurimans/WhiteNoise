@@ -23,10 +23,11 @@ public class RoomLightGlitch : MonoBehaviour
 
     private void UpdateLightState(bool isOn)
     {
-        //if (GameManager.Instance.GetCurrentPhase() != GamePhase.ThursdayMorning) return;
+        roomScript.ToggleLight();
 
+        /*
         var data = roomScript.GetPhaseData();
-        sRenderer.sprite = isOn ? data.defaultBackground : data.otherBackground;
+        sRenderer.sprite = isOn ? data.defaultBackground : data.otherBackground;*/
 
     }
 

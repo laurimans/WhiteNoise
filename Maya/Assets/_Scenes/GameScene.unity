@@ -470,6 +470,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1747753127}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a5edb907e7295d9479c3a4262977259a, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &37193835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,7 +527,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37193832}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f235a47b7f3e2d4bb530e1799abb5fd, type: 3}
   m_Name: 
@@ -4838,16 +4850,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764616375}
-  m_LocalRotation: {x: -0, y: -0, z: 0.04347312, w: 0.9990547}
+  m_LocalRotation: {x: -0, y: -0, z: 0.089234225, w: 0.99601066}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1204456529}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.983}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.239}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 273, y: -166.5}
+  m_AnchoredPosition: {x: 286, y: -229}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &764616377
@@ -9176,12 +9188,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295279232}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa5c89a3120395f4d93aafeae47b8016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableAnimation
   visualObject: {fileID: 1238011027}
+  autoTurnOff: 1
+  activeDuration: 2.5
 --- !u!1 &1295732107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1425736612035570046, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
@@ -10616,6 +10630,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableAnimation
   visualObject: {fileID: 1239273808}
+  autoTurnOff: 0
+  activeDuration: 2.5
 --- !u!1 &1542682907 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1425736612035570046, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
@@ -10660,7 +10676,7 @@ PrefabInstance:
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[4]'
       value: 
-      objectReference: {fileID: 11400000, guid: ca68f1b993e930447868f22d795f25c1, type: 2}
+      objectReference: {fileID: 11400000, guid: 41c77c45bc207d64298cd590fb2af548, type: 2}
     - target: {fileID: 5301071298664272741, guid: 1981d1853902c5a4aba5d4cf2fc36903, type: 3}
       propertyPath: 'phasesData.Array.data[5]'
       value: 
@@ -11378,6 +11394,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1747753127}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a5edb907e7295d9479c3a4262977259a, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1608800218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11423,7 +11451,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608800215}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f235a47b7f3e2d4bb530e1799abb5fd, type: 3}
   m_Name: 
@@ -12266,6 +12294,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84c062ac887e3cc4ebe7706b1443d4dd, type: 3}
+--- !u!114 &1747753127 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1996650856625340169, guid: 84c062ac887e3cc4ebe7706b1443d4dd, type: 3}
+  m_PrefabInstance: {fileID: 1747753126}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deedec4c31aa3c141876db0febe01870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
 --- !u!1001 &1755317941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12866,6 +12905,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableAnimation
   visualObject: {fileID: 513553213}
+  autoTurnOff: 1
+  activeDuration: 2.5
 --- !u!1 &1821013470
 GameObject:
   m_ObjectHideFlags: 0
@@ -13943,6 +13984,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableAnimation
   visualObject: {fileID: 1321173495}
+  autoTurnOff: 0
+  activeDuration: 2.5
 --- !u!1 &1993488577
 GameObject:
   m_ObjectHideFlags: 0
@@ -16134,6 +16177,10 @@ PrefabInstance:
       value: bathroom_tap
       objectReference: {fileID: 0}
     - target: {fileID: 3090570607382971202, guid: e324d1a11db954449a491ce6b395cdb2, type: 3}
+      propertyPath: autoTurnOff
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090570607382971202, guid: e324d1a11db954449a491ce6b395cdb2, type: 3}
       propertyPath: visualObject
       value: 
       objectReference: {fileID: 2084666290}
@@ -17163,6 +17210,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableAnimation
   visualObject: {fileID: 94422102}
+  autoTurnOff: 0
+  activeDuration: 2.5
 --- !u!61 &8354663153299129895
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17231,6 +17280,7 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1354749885}
   - {fileID: 1747753126}
   - {fileID: 212395}
   - {fileID: 1599081713}
@@ -17240,7 +17290,6 @@ SceneRoots:
   - {fileID: 1718060459}
   - {fileID: 605556831}
   - {fileID: 671372563}
-  - {fileID: 1354749885}
   - {fileID: 1231309782}
   - {fileID: 1646667374}
   - {fileID: 430982045}

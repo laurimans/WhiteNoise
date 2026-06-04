@@ -4,7 +4,6 @@ using UnityEngine.Audio;
 [CreateAssetMenu(fileName = "NewMusicAction", menuName = "Actions/Music")]
 public class ToggleMusicAction : InteractableAction
 {
-    private bool isPlaying = false;
     [SerializeField] private AudioClip music;
 
     public override bool Execute(InteractableObject owner)
@@ -18,16 +17,14 @@ public class ToggleMusicAction : InteractableAction
             return true;
         }
 
-        if (isPlaying)
+        if (audioSource.isPlaying && audioSource.clip == music)
         {
             audioSource.Stop();
-            isPlaying = false;
         }
         else
         {
             audioSource.clip = music;
             audioSource.Play();
-            isPlaying = true;
         }
 
         return true;

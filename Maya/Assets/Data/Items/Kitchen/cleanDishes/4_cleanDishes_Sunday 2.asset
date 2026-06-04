@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 4_cleanDishes_Sunday 2
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
   initialSprite: {fileID: 21300000, guid: c8ac7395f4ea6e04cb16ffd2a14c4887, type: 3}
+  darkSprite: {fileID: 21300000, guid: 84da26e7be4c40d42b803e7afe7f7229, type: 3}
   otherSprite: {fileID: 0}
   startDisable: 1
   activateOtherItem: 0

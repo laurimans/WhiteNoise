@@ -15,27 +15,28 @@ public class InteractableObject : MonoBehaviour
     [Header("Phases")]
     [SerializeField] private InteractableData[] phasesData;
 
-    private SpriteRenderer sRenderer;
-    
-
     [Header("Audio Source")]
     [SerializeField] protected AudioSource audioSource;
 
     private GamePhase currentPhase = 0;
     private GamePhase lastPhase;
+    private Room parentRoom;
+    private SpriteRenderer sRenderer;
+    private bool isLightOn = true;
 
     // Dialogue
     private int currentDialogueIndex = 0;
 
 
-    protected virtual void Awake()
-    {
+     void Awake()
+     {
         sRenderer = GetComponent<SpriteRenderer>();
+        parentRoom = GetComponentInParent<Room>();
 
         GameManager.OnPhaseChanged += RefreshObject;
-    }
+      }
 
-    protected virtual void Start()
+    void Start()
     {
         if (itemID == null) Debug.LogWarning($"El item {itemID} no tiene id");
         if (sRenderer == null) Debug.LogError($"El item {itemID} no tiene spriteRenderer");
@@ -49,12 +50,29 @@ public class InteractableObject : MonoBehaviour
         }
     }
 
-    protected virtual void OnEnable()
+    void OnEnable()
     {
-        if (GameManager.Instance != null)
+        if (parentRoom != null)
         {
-            RefreshObject(currentPhase);
+            parentRoom.OnLightToggled += HandleLightReaction;
+
+            isLightOn = parentRoom.GetLightData();
         }
+
+        RefreshObject(currentPhase);
+    }
+
+    void OnDisable()
+    {
+        if (parentRoom != null)
+        {
+            parentRoom.OnLightToggled -= HandleLightReaction;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.OnPhaseChanged -= RefreshObject;
     }
 
     public string GetID() => itemID;
@@ -109,8 +127,24 @@ public class InteractableObject : MonoBehaviour
             }
         }
 
-        HandleObjectActivation(!shouldBeActivate); // Le pasamos "shouldBeDisabled"
+        HandleObjectActivation(!shouldBeActivate);
 
+    }
+
+    private void HandleLightReaction(bool lightState)
+    {
+        isLightOn = lightState;
+        UpdateVisuals();
+    }
+
+    private void UpdateVisuals()
+    {
+        InteractableData data = phasesData[(int)currentPhase];
+        if (data.darkSprite == null) return;
+
+        Sprite spriteToUse = isLightOn ? data.initialSprite : data.darkSprite;
+
+        if (spriteToUse != null) sRenderer.sprite = spriteToUse;
     }
 
     private void HandleObjectActivation(bool shouldBeDisabled)
@@ -140,6 +174,7 @@ public class InteractableObject : MonoBehaviour
         }
 
         this.gameObject.SetActive(true);
+        UpdateVisuals();
     }
 
 
@@ -188,9 +223,6 @@ public class InteractableObject : MonoBehaviour
         CursorManager.Instance.SetDefaultCursor();
     }
 
-    void OnDestroy()
-    {
-        GameManager.OnPhaseChanged -= RefreshObject;
-    }
+
 
 }
