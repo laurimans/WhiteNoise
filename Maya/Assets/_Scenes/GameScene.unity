@@ -12807,7 +12807,7 @@ PrefabInstance:
     - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
       propertyPath: 'phasesData.Array.data[7]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 431ba06c5d100294faae49bfe3487312, type: 2}
     - target: {fileID: 8083688211094590049, guid: 1a6eee1243004a24b9bc6c6dadb8ebd3, type: 3}
       propertyPath: 'phasesData.Array.data[8]'
       value: 
