@@ -134,6 +134,20 @@ public class InteractableObject : MonoBehaviour
 
         HandleObjectActivation(!shouldBeActivate);
 
+        BoxCollider2D bCollider = GetComponent<BoxCollider2D>();
+        if (bCollider != null)
+        {            
+            if (this.gameObject.activeSelf && data != null)
+            {
+                bool hasActions = data.actions != null && data.actions.Count > 0;
+                bCollider.enabled = hasActions;
+            }
+            else
+            {
+                bCollider.enabled = false;
+            }
+        }
+
     }
 
     private void HandleLightReaction(bool lightState)

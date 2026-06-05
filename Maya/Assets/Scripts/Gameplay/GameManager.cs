@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private JournalManager journalManager;
     [SerializeField] private JournalUI journalUI;
 
+
     [Header("Glitches")]
     [SerializeField] private GlitchManager glitchManager;
 
@@ -260,6 +261,11 @@ public class GameManager : MonoBehaviour
 
         AudioManager.Instance.SetupDayAmbience(roomList, currentPhase);
 
+        if(_currentPhase == GamePhase.TuesdayNight)
+        {
+            journalManager.AddEntry("Día de Investigación", "");
+        }
+
         if (_currentPhase == GamePhase.ThursdayMorning)
         {
             GameObject camBtn = GameObject.Find("CameraButton");
@@ -276,6 +282,8 @@ public class GameManager : MonoBehaviour
         if (_currentPhase == GamePhase.FinalDay)
         {
             glitchManager.StopAllGlitches();
+            journalManager.ClearJournal();
+            journalUI.SetTornPage();
         }
 
 

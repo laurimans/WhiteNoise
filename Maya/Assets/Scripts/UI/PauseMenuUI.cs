@@ -29,6 +29,7 @@ public class PauseMenuUI : MonoBehaviour
         GameStateManager.OnGamePause += ShowPauseMenu;
         GameStateManager.OnGameResume += HidePauseMenu;
         GameManager.OnExitUnlock += HideCameraButton;
+        GameManager.OnPhaseChanged += HideJournalButton;
     }
 
     private void OnDisable()
@@ -39,11 +40,17 @@ public class PauseMenuUI : MonoBehaviour
         GameStateManager.OnGamePause -= ShowPauseMenu;
         GameStateManager.OnGameResume -= HidePauseMenu;
         GameManager.OnExitUnlock -= HideCameraButton;
+        GameManager.OnPhaseChanged -= HideJournalButton;
     }
 
     private void HideCameraButton()
     {
         cameraButton.SetActive(false);
+    }
+
+    private void HideJournalButton(GamePhase gamePhase)
+    {
+        if(gamePhase == GamePhase.FinalDay) cameraButton.SetActive(false);
     }
 
     private void ShowPauseMenu()

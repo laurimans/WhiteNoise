@@ -67,6 +67,12 @@ public class JournalManager : MonoBehaviour
         }
     }
 
+    public void ClearJournal()
+    {
+        journalEntries.Clear();
+        Debug.Log("El diario se ha borrado.");
+    }
+
 }
     
 

@@ -38,10 +38,16 @@ public class JournalUI : MonoBehaviour
     [SerializeField] private Vector2 visiblePosition = Vector2.zero;
     [SerializeField] private AnimationCurve animationCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
+    [Header("Final Day System")]
+    [SerializeField] private Image journalBackgroundImage;
+    [SerializeField] private Sprite tornPageSprite;
+
     private int currentIndex = 0;
     private Coroutine typewriterCoroutine;
     private Coroutine animationCoroutine;
     public Action OnJournalButtonAction;
+    private bool isTyping = false;
+    private string targetFullText = "";
 
     private void Start()
     {
@@ -77,6 +83,7 @@ public class JournalUI : MonoBehaviour
 
     public void NextPage()
     {
+        if (isTyping) return;
         if (currentIndex < journal.GetEntriesCount() - 1)
         {
             currentIndex++;
@@ -131,6 +138,7 @@ public class JournalUI : MonoBehaviour
 
     public void PreviousPage()
     {
+        if (isTyping) return;
         if (currentIndex > 0)
         {
             currentIndex--;
@@ -177,14 +185,31 @@ public class JournalUI : MonoBehaviour
 
     IEnumerator TypeSentece(string sentence)
     {
+        isTyping = true;
+        nextButton.interactable = false;
+        prevButton.interactable = false;
+        
         bodyText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
             bodyText.text += letter;
             yield return new WaitForSeconds(0.05f);
         }
-
+        isTyping = false;
         UpdateJournalUI();
+    }
+
+    public void SkipTyping()
+    {
+        if (isTyping)
+        {
+            if (typewriterCoroutine != null) StopCoroutine(typewriterCoroutine);
+
+            bodyText.text = targetFullText;
+            isTyping = false;
+
+            UpdateJournalUI();
+        }
     }
 
     public void TypeNewClue(string newText)
@@ -228,11 +253,18 @@ public class JournalUI : MonoBehaviour
 
     IEnumerator AppendText(string textToAppend)
     {
+        isTyping = true;
+        nextButton.interactable = false;
+        prevButton.interactable = false;
+
         foreach (char letter in textToAppend.ToCharArray())
         {
             bodyText.text += letter;
             yield return new WaitForSeconds(0.04f);
         }
+
+        isTyping = false;
+        UpdateJournalUI();
     }
 
     private void UpdateJournalUI()
@@ -255,10 +287,14 @@ public class JournalUI : MonoBehaviour
             photoContainer.gameObject.SetActive(false);
         }
 
-        int totalEntries = journal.GetEntriesCount();
-        nextButton.interactable = currentIndex < totalEntries - 1;
-        prevButton.interactable = currentIndex > 0;
-    }
+        if (!isTyping)
+        {
+
+            int totalEntries = journal.GetEntriesCount();
+            nextButton.interactable = currentIndex < totalEntries - 1;
+            prevButton.interactable = currentIndex > 0;
+        }
+     }
 
     public void ShowCorrectPhoto(string roomID)
     {
@@ -281,6 +317,17 @@ public class JournalUI : MonoBehaviour
         }
 
         photoContainer.gameObject.SetActive(found);
+    }
+
+    public void SetTornPage()
+    {
+        if (journalBackgroundImage != null && tornPageSprite != null)
+        {
+            journalBackgroundImage.sprite = tornPageSprite;
+            dateText.text = "";
+            bodyText.text = "";
+            photoContainer.gameObject.SetActive(false);
+        }
     }
 
     public void OpenWithPhoto(RoomID roomID)
