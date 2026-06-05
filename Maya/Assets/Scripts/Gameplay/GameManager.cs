@@ -162,6 +162,7 @@ public class GameManager : MonoBehaviour
         else
         {
             OnTransitionStart?.Invoke();
+            LoadDayPhase((GamePhase)nextPhase);
             OnTransitionEnd?.Invoke();
             AudioManager.Instance.PlaySFX(daysList[nextPhase].transitionAudio);
         }
