@@ -15,4 +15,5 @@ MonoBehaviour:
   ambientClip: {fileID: 8300000, guid: 7a13d2eeb171d254db9cdaa468a6b3b4, type: 3}
   defaultBackground: {fileID: 21300000, guid: ae1f1330845c1874e895667f94684a28, type: 3}
   otherBackground: {fileID: 21300000, guid: b54d2eb28a84f0d47a9fdefe70a200bf, type: 3}
-  initialDialogue: joe macho los platos
+  lightsStartsOn: 1
+  initialDialogue: Tengo que limpiar antes de irme a dormir

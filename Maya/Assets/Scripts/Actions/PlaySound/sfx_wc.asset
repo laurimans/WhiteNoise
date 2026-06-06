@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cbcd486a0cbe645b50fd4157a7eedb, type: 3}
   m_Name: sfx_wc
   m_EditorClassIdentifier: Assembly-CSharp::PlaySoundAction
-  soundClip: {fileID: 8300000, guid: 091022a6592d0274e8268b6541f72fbd, type: 3}
+  soundClip: {fileID: 8300000, guid: 087b63148ba30434c849b0a62fd00af3, type: 3}

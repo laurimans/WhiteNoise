@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     [SerializeField] private AudioSource UISource;
     [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource dialogueSource;
 
     [SerializeField] private AudioMixer mixer;
     private AudioSource[] audioRooms;
@@ -139,14 +140,14 @@ public class AudioManager : MonoBehaviour
 
         if (randomizePitch)
         {
-            UISource.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
+            dialogueSource.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
         }
         else
         {
-            UISource.pitch = 1f;
+            dialogueSource.pitch = 1f;
         }
 
-        UISource.PlayOneShot(clip);
+        dialogueSource.PlayOneShot(clip);
     }
 
     public void Play3DSFX(AudioClip clip, AudioSource audioSource)

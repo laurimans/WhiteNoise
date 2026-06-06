@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Shower_Normal
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
   initialSprite: {fileID: 0}
+  darkSprite: {fileID: 0}
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
   actions:
   - {fileID: 11400000, guid: 4c8c90fc69f36aa45b2377a5d4472a2a, type: 2}
+  - {fileID: 11400000, guid: ad635b6b42dcbfe409de504a9ba87873, type: 2}

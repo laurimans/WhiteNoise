@@ -15,7 +15,7 @@ MonoBehaviour:
   id_day: 5
   tasksNumber: 1
   cluesNumber: 0
-  transitionAudio: {fileID: 8300000, guid: e5a1a198507048a4caacf6571855e9df, type: 3}
+  transitionAudio: {fileID: 8300000, guid: 2c0f6f6d1f3436543b3c65b3161e0690, type: 3}
   dateText: 
   bodyText: 
   cluesForThisDay: []

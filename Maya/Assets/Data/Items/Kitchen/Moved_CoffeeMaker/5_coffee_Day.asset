@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 5_coffee_Day
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
   initialSprite: {fileID: 21300000, guid: 897103ddb55268342982227da6cf33f0, type: 3}
+  darkSprite: {fileID: 0}
   otherSprite: {fileID: 21300000, guid: 45c9849be4d14134d9f3728c77a674b8, type: 3}
   startDisable: 0
   activateOtherItem: 0
@@ -20,3 +21,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1f32e9ba22c520c46ae635a9aa97b4ce, type: 2}
   - {fileID: 11400000, guid: 4c8c90fc69f36aa45b2377a5d4472a2a, type: 2}
   - {fileID: 11400000, guid: 00d5adbfbf8259b4c91b483a95420f62, type: 2}
+  - {fileID: 11400000, guid: 2c3bf92be32879b4280ea1b51f06e579, type: 2}

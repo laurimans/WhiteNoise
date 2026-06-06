@@ -332,7 +332,7 @@ public class JournalUI : MonoBehaviour
 
     public void OpenWithPhoto(RoomID roomID)
     {
-        journal.AddEntry("Foto: " + roomID.ToString(), "Evidencia recogida.");
+        journal.AddEntry(" ", " ");
         
         OpenJournal();
     }

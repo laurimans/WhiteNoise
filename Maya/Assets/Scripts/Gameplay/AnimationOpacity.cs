@@ -5,7 +5,7 @@ public class AnimationOpacity : MonoBehaviour
     private SpriteRenderer sRenderer;
     private bool isNight = true;
 
-    [SerializeField] [Range(0f, 1f)] private float opacity = 1; 
+    [SerializeField] [Range(0f, 1f)] private float opacity = 0.5f; 
 
     private void Awake()
     {
@@ -33,7 +33,7 @@ public class AnimationOpacity : MonoBehaviour
     private void UpdateVisuals()
     {
         Color newColor = sRenderer.color;
-        newColor.a = isNight? opacity : 1;
+        newColor.a = isNight? opacity : 0.5f;
         sRenderer.color = newColor;
     }
 

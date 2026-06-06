@@ -16,4 +16,4 @@ MonoBehaviour:
   defaultBackground: {fileID: 21300000, guid: ae1f1330845c1874e895667f94684a28, type: 3}
   otherBackground: {fileID: 21300000, guid: b54d2eb28a84f0d47a9fdefe70a200bf, type: 3}
   lightsStartsOn: 1
-  initialDialogue: joe macho los platos
+  initialDialogue: 

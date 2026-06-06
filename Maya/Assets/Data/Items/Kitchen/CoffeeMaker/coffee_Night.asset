@@ -13,14 +13,11 @@ MonoBehaviour:
   m_Name: coffee_Night
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
   initialSprite: {fileID: 21300000, guid: 4c45658c0ed788142b9c4423cefa3d3c, type: 3}
+  darkSprite: {fileID: 0}
   otherSprite: {fileID: 21300000, guid: 09531f32591b1854d87e7eb938c8601c, type: 3}
   startDisable: 0
   activateOtherItem: 0
   actions:
   - {fileID: 11400000, guid: 1f32e9ba22c520c46ae635a9aa97b4ce, type: 2}
   - {fileID: 11400000, guid: 4c8c90fc69f36aa45b2377a5d4472a2a, type: 2}
-  sound: {fileID: 0}
-  dialoguesList:
-  - "La verdad que no son horas de hacerme un caf\xE9, pero nadie se va a enterar."
-  isTask: 0
-  isClue: 0
+  - {fileID: 11400000, guid: 2c3bf92be32879b4280ea1b51f06e579, type: 2}

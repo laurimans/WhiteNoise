@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cbcd486a0cbe645b50fd4157a7eedb, type: 3}
   m_Name: sfx_closeDoor
   m_EditorClassIdentifier: Assembly-CSharp::PlaySoundAction
-  soundClip: {fileID: 0}
+  soundClip: {fileID: 8300000, guid: efb044ec4016f6a48899ed09ebf6714c, type: 3}

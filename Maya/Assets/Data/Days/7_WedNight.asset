@@ -15,7 +15,7 @@ MonoBehaviour:
   id_day: 6
   tasksNumber: 5
   cluesNumber: 0
-  transitionAudio: {fileID: 0}
+  transitionAudio: {fileID: 8300000, guid: 1609b3fe7f5aa8e468f55e083eae45c5, type: 3}
   dateText: 14 de abril
   bodyText: 
   cluesForThisDay: []

@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: bathroom_tap
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
   initialSprite: {fileID: 0}
+  darkSprite: {fileID: 0}
   otherSprite: {fileID: 0}
   startDisable: 0
   activateOtherItem: 0
   actions:
   - {fileID: 11400000, guid: 4c8c90fc69f36aa45b2377a5d4472a2a, type: 2}
+  - {fileID: 11400000, guid: 63c883e0e377fc2469ec940bd28333f9, type: 2}

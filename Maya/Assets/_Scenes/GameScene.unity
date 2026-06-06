@@ -13049,7 +13049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PhoneManager
   phoneUI: {fileID: 430982046}
   phoneID: CALL_MOM
-  delayBeforeRinging: 20
+  delayBeforeRinging: 8
   phoneTone: {fileID: 8300000, guid: 829b4e049a46d5f41aaf4d243dc4b6de, type: 3}
   phoneAudioSource: {fileID: 1821013472}
   isPhoneRinging: 0
@@ -13084,7 +13084,7 @@ MonoBehaviour:
   cameraLense: {fileID: 1231309778}
   journalUI: {fileID: 1156202283}
   HUDPanel: {fileID: 1086749066}
-  cameraAudio: {fileID: 8300000, guid: 4166237faa6a0b6498d7c14c26fae472, type: 3}
+  cameraAudio: {fileID: 8300000, guid: 37514d33d5207bc498b9dbd01b76b575, type: 3}
 --- !u!114 &1718060461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13459,7 +13459,7 @@ PrefabInstance:
     - target: {fileID: 1996650856625340169, guid: 84c062ac887e3cc4ebe7706b1443d4dd, type: 3}
       propertyPath: taskDoneClip
       value: 
-      objectReference: {fileID: 8300000, guid: bb8a43927b07cd240b842105c1da62b8, type: 3}
+      objectReference: {fileID: 8300000, guid: 215ab371caf5e794ca89b91e608af12d, type: 3}
     - target: {fileID: 1996650856625340169, guid: 84c062ac887e3cc4ebe7706b1443d4dd, type: 3}
       propertyPath: menuMusicClip
       value: 

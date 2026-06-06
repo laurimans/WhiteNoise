@@ -15,7 +15,7 @@ MonoBehaviour:
   id_day: 4
   tasksNumber: 1
   cluesNumber: 2
-  transitionAudio: {fileID: 0}
+  transitionAudio: {fileID: 8300000, guid: 1609b3fe7f5aa8e468f55e083eae45c5, type: 3}
   dateText: 13 de abril
   bodyText: 'Estoy notando cosas raras en mi casa... Voy a anotarlo todo, porque
     ya no se si es el estres o que pasn cosas raras de verdad:'
