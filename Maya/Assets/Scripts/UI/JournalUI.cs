@@ -289,7 +289,6 @@ public class JournalUI : MonoBehaviour
 
         if (!isTyping)
         {
-
             int totalEntries = journal.GetEntriesCount();
             nextButton.interactable = currentIndex < totalEntries - 1;
             prevButton.interactable = currentIndex > 0;
@@ -332,8 +331,8 @@ public class JournalUI : MonoBehaviour
 
     public void OpenWithPhoto(RoomID roomID)
     {
-        journal.AddEntry(" ", " ");
-        
+        journal.AddEntry("Foto: " + roomID.ToString(), "");
+
         OpenJournal();
     }
 

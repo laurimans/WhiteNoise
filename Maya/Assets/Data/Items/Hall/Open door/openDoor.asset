@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: openDoor
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
   initialSprite: {fileID: 21300000, guid: 1d8ec4dfb2683c74780716beb9fcc629, type: 3}
+  darkSprite: {fileID: 0}
   otherSprite: {fileID: 21300000, guid: a76ae1b052f60574786828fed33e81db, type: 3}
   startDisable: 0
   activateOtherItem: 1
@@ -20,3 +21,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1f32e9ba22c520c46ae635a9aa97b4ce, type: 2}
   - {fileID: 11400000, guid: d09490d4d0b96374a92dbe6b274483ea, type: 2}
   - {fileID: 11400000, guid: 4a7752fd5cf4d4049ab2110032bc5d6e, type: 2}
+  - {fileID: 11400000, guid: c2f6ca80a96cba04cbb99d5741074d0d, type: 2}

@@ -5,7 +5,8 @@ using System;
 
 public class PauseMenuUI : MonoBehaviour
 {
-    [SerializeField] private GameObject PauseMenuPanel;
+    [SerializeField] private GameObject pauseMenuPanel;
+    [SerializeField] private GameObject exitCanvas;
     [SerializeField] private GameObject HUDPanel;
     [SerializeField] private GameObject journalUI;
     [SerializeField] private GameObject cameraButton;
@@ -18,7 +19,8 @@ public class PauseMenuUI : MonoBehaviour
         if (cameraButton != null) cameraButton.SetActive(false);
         if (journalButton != null) journalButton.SetActive(false);
 
-        PauseMenuPanel.SetActive(false);
+        exitCanvas.SetActive(false);
+        pauseMenuPanel.SetActive(false);
         OnPauseButtonAction = OnPauseButtonPressed;
     }
 
@@ -55,13 +57,13 @@ public class PauseMenuUI : MonoBehaviour
 
     private void ShowPauseMenu()
     {
-        PauseMenuPanel.SetActive(true);
+        pauseMenuPanel.SetActive(true);
         HUDPanel.SetActive(false);
     }
 
     private void HidePauseMenu()
     {
-        PauseMenuPanel.SetActive(false);
+        pauseMenuPanel.SetActive(false);
 
         if (journalUI != null && !journalUI.gameObject.activeInHierarchy)
         {
@@ -85,7 +87,7 @@ public class PauseMenuUI : MonoBehaviour
 
     public void Quit()
     {
-        GameStateManager.Instance.ReturnToMenu();
+        exitCanvas.SetActive(true);
     }
 
     public void ActivateCameraButton()

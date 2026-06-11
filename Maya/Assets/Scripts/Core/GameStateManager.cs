@@ -89,6 +89,19 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        OnGameplayExit?.Invoke();
+
+        IsGameplayUIBlocked = false;
+        currentState = GameState.Playing;
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        OnGameStart?.Invoke();
+    }
+
 
     private void EndGame()
     {
@@ -100,7 +113,7 @@ public class GameStateManager : MonoBehaviour
     {
         OnGameplayExit?.Invoke();
         currentState = GameState.MainMenu;
-        SceneManager.LoadScene("MainMenuScene");
         Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenuScene");
     }
 }

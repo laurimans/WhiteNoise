@@ -182,6 +182,24 @@
       ]
     },
     {
+      "key": "OBJ_HALL_DOOR_P3",
+      "lines": [
+        "Espera, aún no me he tomado el café"
+      ]
+    },
+    {
+      "key": "OBJ_HALL_DOOR_P5",
+      "lines": [
+        "Espera, aún no me he tomado el café"
+      ]
+    },
+    {
+      "key": "OBJ_HALL_DOOR_P8",
+      "lines": [
+        "Espera, aún no me he tomado el café"
+      ]
+    },
+    {
       "key": "OBJ_HALL_BOXES_P6",
       "lines": [
         "¡Aquí estás! Espero que no se haya estropeado con la mudanza"
